@@ -2,21 +2,21 @@ import React from "react";
 
 export default function HeroSection() {
     return (
-        <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-12 pt-20 md:pt-5 bg-gradient-to-br from-green-50 to-white">
+        <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-12 pt-20 md:pt-5 bg-gradient-to-br from-green-50 to-secondary">
             <div className="max-w-xl">
-                <h2 className="text-4xl md:text-5xl font-extrabold text-green-800 leading-tight">
+                <h2 className="heading font-extrabold text-primary leading-tight">
                     Slash Your Energy Bills & Upgrade Your Home
                 </h2>
-                <p className="mt-4 text-gray-700 text-lg">
+                <p className="mt-4 text-txtColor normalText">
                     100% funded UK home energy improvements — insulation, solar, heat pumps
                     and more with government-backed grants.
                 </p>
 
                 <div className="mt-6 flex gap-4">
-                    <button className="bg-green-700 text-white px-6 py-3 rounded-xl shadow hover:bg-green-800 transition cursor-pointer">
+                    <button className="bg-primary text-secondary px-6 py-3 rounded-xl shadow  transition cursor-pointer">
                         Book Free Survey
                     </button>
-                    <button className="border border-green-700 text-green-700 px-6 py-3 rounded-xl hover:bg-green-100 transition cursor-pointer">
+                    <button className="border border-primary text-primary px-6 py-3 rounded-xl hover:bg-green-100 transition cursor-pointer">
                         Check Eligibility
                     </button>
                 </div>
