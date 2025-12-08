@@ -16,9 +16,7 @@ export default function HeroSection() {
                     <button className="bg-green-700 text-white px-6 py-3 rounded-xl shadow hover:bg-green-800 transition cursor-pointer">
                         Book Free Survey
                     </button>
-                    <button className="border border-green-700 text-green-700 px-6 py-3 rounded-xl hover:bg-green-100 transition cursor-pointer">
-                        Check Eligibility
-                    </button>
+
                 </div>
 
 
