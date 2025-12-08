@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HeroSection() {
     return (
-        <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-12 pt-32 md:pt-40 bg-gradient-to-br from-green-50 to-white">
+        <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-12 pt-20 md:pt-5 bg-gradient-to-br from-green-50 to-white">
             <div className="max-w-xl">
                 <h2 className="text-4xl md:text-5xl font-extrabold text-green-800 leading-tight">
                     Slash Your Energy Bills & Upgrade Your Home
@@ -13,10 +13,10 @@ export default function HeroSection() {
                 </p>
 
                 <div className="mt-6 flex gap-4">
-                    <button className="bg-green-700 text-white px-6 py-3 rounded-xl shadow hover:bg-green-800 transition">
+                    <button className="bg-green-700 text-white px-6 py-3 rounded-xl shadow hover:bg-green-800 transition cursor-pointer">
                         Book Free Survey
                     </button>
-                    <button className="border border-green-700 text-green-700 px-6 py-3 rounded-xl hover:bg-green-100 transition">
+                    <button className="border border-green-700 text-green-700 px-6 py-3 rounded-xl hover:bg-green-100 transition cursor-pointer">
                         Check Eligibility
                     </button>
                 </div>
@@ -25,12 +25,15 @@ export default function HeroSection() {
             </div>
 
             <div className="relative w-full md:w-1/2 mt-10 md:mt-0 flex justify-center">
-                <img
-                    src="/hero-eco-home.png"
-                    alt="Eco Friendly UK Home"
-                    className="w-[90%] md:w-[80%] drop-shadow-xl"
-                />
+                <div
+                    className="w-[90%] md:w-[80%] aspect-4/3 bg-center bg-no-repeat bg-cover rounded-xl drop-shadow-xl"
+                    data-alt="A 3D illustration of a modern, eco-friendly home with solar panels on the roof and a lush green garden."
+                    style={{
+                        backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuDpSd_ywqI0_V_vieSTzNsDVMzwNeGsjkAnL_mX75r-m2zh3s4lB4_snkyoMJgRKR3ZeX6Kgo_Yc0ppcs_VYUnOaWwJ0wiVpAHGgKqigcBCaq4c3Fhzz7o9b6PuUmwnkAjNj2u8SYnbs--ETcCvQ3-S8yBSyYZ-ftOF9HYZy_n08BHotPGRkw_amzTSKAC-W8ICii98bU9H8rTn3CyUiuOeMy6SgY9anhMoEgzZgsYUW_awNgFb8GXi3rVUVd3ysVFuYpoQe81vRwHA")`
+                    }}
+                ></div>
             </div>
+
         </section>
     );
 }

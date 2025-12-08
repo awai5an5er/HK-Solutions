@@ -15,14 +15,12 @@ export default function Navbar() {
                 <nav className="hidden md:flex items-center gap-6 text-gray-700 font-medium">
                     <a href="#" className="hover:text-green-700 transition">Home</a>
                     <a href="#" className="hover:text-green-700 transition">Services</a>
-                    <a href="#" className="hover:text-green-700 transition">Grants</a>
                     <a href="#" className="hover:text-green-700 transition">About</a>
-                    <a href="#" className="hover:text-green-700 transition">Case Studies</a>
                     <a href="#" className="hover:text-green-700 transition">Contact</a>
                 </nav>
 
                 {/* Desktop Button */}
-                <button className="hidden md:block bg-green-700 text-white px-5 py-2 rounded-xl shadow hover:bg-green-800 transition">
+                <button className="hidden md:block bg-green-700 text-white px-5 py-2 rounded-xl shadow hover:bg-green-800 transition cursor-pointer">
                     Book Free Survey
                 </button>
 
