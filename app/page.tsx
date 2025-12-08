@@ -1,13 +1,19 @@
+import EligibilityCalculator from "./components/EligibilityCalculator";
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Services from "./components/Services";
+import WhyChooseUs from "./components/WhyChooseUs";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
       <HeroSection />
-      <Footer />
+      <WhyChooseUs />
+      <Services />
+      <EligibilityCalculator />
+      <Footer/>
     </div>
   );
 }
