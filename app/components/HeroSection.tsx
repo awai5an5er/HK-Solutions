@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-12 pt-20 md:pt-5 bg-gradient-to-br from-green-50 to-secondary">
+    <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-12 pt-20 md:pt-5 bg-secondary">
       <div className="max-w-xl">
         <h2 className="heading font-extrabold text-primary leading-tight">
           Slash Your Energy Bills & Upgrade Your Home

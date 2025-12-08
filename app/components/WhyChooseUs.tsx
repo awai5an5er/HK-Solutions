@@ -12,19 +12,19 @@ const StatCard = ({ icon, title, subtitle }: StatCardProps) => {
         <div
             className="
             flex items-center gap-5 
-            p-6 rounded-2xl border border-green-100 
-            bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)]
+            p-6 rounded-2xl border border-primary 
+            bg-secondery shadow-[0_4px_20px_rgba(0,0,0,0.05)]
             hover:shadow-[0_6px_30px_rgba(0,0,0,0.10)]
             transition-all duration-300 hover:-translate-y-1
             "
         >
-            <div className="text-green-700">{icon}</div>
+            <div className="text-primary">{icon}</div>
 
             <div>
-                <p className="font-bold text-xl text-green-900">
+                <p className="font-bold normalText text-primary">
                     {title}
                 </p>
-                <p className="text-gray-600 text-sm mt-1">
+                <p className="text-txtColor normalText mt-1">
                     {subtitle}
                 </p>
             </div>
