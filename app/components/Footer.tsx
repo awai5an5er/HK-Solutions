@@ -5,7 +5,6 @@ const Footer=()=>{
     return(
         <footer className="bg-primary">
         <div className=" flex justify-around py-10">
-            
         <div className="flex flex-col gap-5 w-1/4 ">
         <span className="subHeading text-secondary font-bold">EcoHome Uk</span>
         <p className="normalText text-secondary">Your trusted partner for a greener,more 
