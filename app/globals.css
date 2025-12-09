@@ -2,13 +2,13 @@
 
 @theme {
   --color-primary: #016630;
-  --color-secondary:#ffffff ;
+  --color-secondary: #ffffff;
   --color-accent: #f6f1de;
   --color-txtColor: #3e3f5b;
 }
 
 .heading {
-  @apply text-4xl md:text-5xl uppercase;
+  @apply text-3xl md:text-5xl uppercase;
 }
 .subHeading {
   @apply text-xl md:text-2xl uppercase;

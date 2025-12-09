@@ -4,11 +4,11 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bg-primary">
-      <div className="w-[95%] flex mx-auto justify-between flex-wrap gap-10 py-10">
+      <div className="w-[95%] flex mx-auto justify-around md:justify-between flex-wrap gap-3 md:gap-10 py-10">
         {text.map((value, i) => (
           <div
             key={`${value} ${i}`}
-            className="flex flex-col gap-3 w-full sm:w-1/4 lg:w-1/3 xl:w-1/4 "
+            className="flex flex-col gap-3 w-9/20 sm:w-1/4 md:w-1/5"
           >
             <span className="subHeading text-secondary font-bold">
               {value.title}
@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
           </div>
         ))}
-        <div className="flex flex-col gap-3 w-full sm:w-1/4 lg:w-1/5 xl:w-1/4">
+        <div className="flex flex-col gap-3 w-9/20 sm:w-auto">
           <span className="subHeading text-secondary font-bold">
             {services[0].title}
           </span>
@@ -38,7 +38,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-3 w-full sm:w-1/4 lg:w-1/5 xl:w-1/4">
+        <div className="flex flex-col gap-3 w-9/20 sm:w-auto">
           <span className="subHeading text-secondary font-bold">
             {quiklinks[0].title}
           </span>
@@ -53,7 +53,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="flex flex-col gap-3 w-full sm:w-1/4">
+        <div className="flex flex-col gap-3 w-1/2 sm:w-auto">
           <span className="subHeading text-secondary font-bold">
             {contact.title}
           </span>

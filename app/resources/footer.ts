@@ -100,6 +100,6 @@ export const contact: ContactSection = {
   items: [
     { icon: MapPin, text: "123 Green Street, London, UK" },
     { icon: Phone, text: "+44 1234 567890" },
-    { icon: Mail, text: "hello@ecohomeuk.co.uk" },
+    { icon: Mail, text: "hello@hk.co.uk" },
   ],
 };
