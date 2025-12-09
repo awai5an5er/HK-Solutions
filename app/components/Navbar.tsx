@@ -12,7 +12,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="w-full fixed top-0 left-0 z-50 bg-accent backdrop-blur-md shadow-sm">
+    <header className="w-full sticky top-0 left-0 z-50 bg-accent backdrop-blur-md shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <h1 className="font-bold text-primary subHeading">
           HK Energy Solutions
@@ -25,8 +25,8 @@ export default function Navbar() {
               {link.submenu ? (
                 <>
                   <button className="hover:text-primary transition flex items-center gap-1 cursor-pointer">
-                    {link.name} <ChevronDown className="w-4 h-4 relative top-px" />
- 
+                    {link.name}{" "}
+                    <ChevronDown className="w-4 h-4 relative top-px" />
                   </button>
 
                   {/* Dropdown Menu */}
@@ -71,7 +71,9 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`md:hidden bg-secondary shadow-lg transition-all duration-300 ${
-          isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+          isOpen
+            ? "max-h-screen opacity-100"
+            : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
         <nav className="flex flex-col gap-4 p-6 text-txtColor normalText font-medium">
@@ -99,7 +101,7 @@ export default function Navbar() {
                         <Link
                           key={sublink.name}
                           href={sublink.href}
-                          onClick={() => setIsOpen(false)}   // 👈 AUTO CLOSE HERE
+                          onClick={() => setIsOpen(false)} // 👈 AUTO CLOSE HERE
                           className="hover:text-primary transition"
                         >
                           {sublink.name}
@@ -111,7 +113,7 @@ export default function Navbar() {
               ) : (
                 <Link
                   href={link.href || "#"}
-                  onClick={() => setIsOpen(false)}   // 👈 CLOSE ON NORMAL LINKS TOO
+                  onClick={() => setIsOpen(false)} // 👈 CLOSE ON NORMAL LINKS TOO
                   className="hover:text-primary transition"
                 >
                   {link.name}
@@ -125,7 +127,6 @@ export default function Navbar() {
           </button>
         </nav>
       </div>
-
     </header>
   );
 }
