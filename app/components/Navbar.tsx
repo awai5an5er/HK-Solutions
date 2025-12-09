@@ -1,9 +1,10 @@
-'use client'
+"use client";
 import React, { useState } from "react";
+import Link from "next/link";
+import { navLinks, navButton, NavLink } from "../resources/Nanlinks";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
@@ -13,19 +14,23 @@ export default function Navbar() {
 
                 {/* Desktop Menu */}
                 <nav className="hidden md:flex items-center gap-6 text-txtColor normalText font-medium">
-                    <a href="#" className="hover:text-primary transition">Home</a>
-                    <a href="#" className="hover:text-primary transition">Services</a>
-                    <a href="#" className="hover:text-primary transition">About</a>
-                    <a href="#" className="hover:text-primary transition">Contact</a>
+                    {navLinks.map((link: NavLink) => (
+                        <Link key={link.name} href={link.href} className="hover:text-primary transition">
+                            {link.name}
+                        </Link>
+                    ))}
                 </nav>
 
                 {/* Desktop Button */}
-                <button className="hidden md:block bg-primary text-secondary normalText px-5 py-2 rounded-xl shadow  transition cursor-pointer">
-                    Book Free Survey
+                <button className="hidden md:block bg-primary text-secondary normalText px-5 py-2 rounded-xl shadow transition cursor-pointer">
+                    {navButton.text}
                 </button>
 
                 {/* Mobile Hamburger */}
-                <div className="md:hidden text-primary subHeading font-bold cursor-pointer" onClick={toggleMenu}>
+                <div
+                    className="md:hidden text-primary subHeading font-bold cursor-pointer"
+                    onClick={toggleMenu}
+                >
                     ☰
                 </div>
             </div>
@@ -36,14 +41,13 @@ export default function Navbar() {
                     }`}
             >
                 <nav className="flex flex-col gap-4 p-6 text-txtColor normalText font-medium">
-                    <a href="#" className="hover:text-primary transition">Home</a>
-                    <a href="#" className="hover:text-primary  transition">Services</a>
-                    <a href="#" className="hover:text-primary  transition">Grants</a>
-                    <a href="#" className="hover:text-primary  transition">About</a>
-                    <a href="#" className="hover:text-primary  transition">Case Studies</a>
-                    <a href="#" className="hover:text-primary  transition">Contact</a>
+                    {navLinks.map((link: NavLink) => (
+                        <Link key={link.name} href={link.href} className="hover:text-primary transition">
+                            {link.name}
+                        </Link>
+                    ))}
                     <button className="bg-primary text-secondary normalText px-5 py-2 rounded-xl shadow transition mt-4">
-                        Book Free Survey
+                        {navButton.text}
                     </button>
                 </nav>
             </div>
