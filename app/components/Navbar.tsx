@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { navLinks, navButton, NavLink } from "../resources/Nanlinks";
 import { ChevronDown, ChevronUp } from "lucide-react";
@@ -9,7 +9,25 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
 
+  const mobileMenuRef = useRef<HTMLDivElement | null>(null);
+
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  // ---------- 🔥 Outside Click Handler for Mobile Menu ----------
+  useEffect(() => {
+    const handleOutsideClick = (e: MouseEvent) => {
+      if (
+        isOpen &&
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(e.target as Node)
+      ) {
+        setIsOpen(false); // Close menu
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => document.removeEventListener("mousedown", handleOutsideClick);
+  }, [isOpen]);
 
   return (
     <header className="w-full sticky top-0 left-0 z-50 bg-accent backdrop-blur-md shadow-sm">
@@ -25,11 +43,10 @@ export default function Navbar() {
               {link.submenu ? (
                 <>
                   <button className="hover:text-primary transition flex items-center gap-1 cursor-pointer">
-                    {link.name}{" "}
+                    {link.name}
                     <ChevronDown className="w-4 h-4 relative top-px" />
                   </button>
 
-                  {/* Dropdown Menu */}
                   <div className="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg rounded-lg p-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
                     {link.submenu.map((sublink) => (
                       <Link
@@ -70,6 +87,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
+        ref={mobileMenuRef}
         className={`md:hidden bg-secondary shadow-lg transition-all duration-300 ${
           isOpen
             ? "max-h-screen opacity-100"
@@ -81,7 +99,6 @@ export default function Navbar() {
             <div key={link.name}>
               {link.submenu ? (
                 <>
-                  {/* Accordion Button */}
                   <button
                     onClick={() =>
                       setOpenDropdown(openDropdown === index ? null : index)
@@ -94,15 +111,14 @@ export default function Navbar() {
                     </span>
                   </button>
 
-                  {/* Accordion Body */}
                   {openDropdown === index && (
                     <div className="ml-4 mt-2 flex flex-col gap-2">
                       {link.submenu.map((sublink) => (
                         <Link
                           key={sublink.name}
                           href={sublink.href}
-                          onClick={() => setIsOpen(false)} // 👈 AUTO CLOSE HERE
                           className="hover:text-primary transition"
+                          onClick={() => setIsOpen(false)} // Close when clicking item
                         >
                           {sublink.name}
                         </Link>
@@ -113,8 +129,8 @@ export default function Navbar() {
               ) : (
                 <Link
                   href={link.href || "#"}
-                  onClick={() => setIsOpen(false)} // 👈 CLOSE ON NORMAL LINKS TOO
                   className="hover:text-primary transition"
+                  onClick={() => setIsOpen(false)} // Close when clicking item
                 >
                   {link.name}
                 </Link>
