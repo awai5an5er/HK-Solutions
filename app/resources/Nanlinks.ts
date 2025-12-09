@@ -1,11 +1,29 @@
-export type NavLink = {
+export type SubMenuLink = {
   name: string;
   href: string;
 };
 
+export type NavLink = {
+  name: string;
+  href?: string;
+  submenu?: SubMenuLink[];
+};
+
 export const navLinks: NavLink[] = [
   { name: "Home", href: "/" },
-  { name: "Services", href: "/services/heat-pump-systems" },
+
+  {
+    name: "Services",
+    submenu: [
+      { name: "Solar PV Installation", href: "/services/solar-pv-installation" },
+      { name: "Heat Pump Systems", href: "/services/heat-pump-systems" },
+      { name: "Home Insulation", href: "/services/home-insulation" },
+      { name: "EPC Certificates", href: "/services/epc-certificates" },
+      { name: "Battery Storage", href: "/services/battery-storage" },
+      { name: "EV Charging Solutions", href: "/services/ev-charging-solutions" },
+    ],
+  },
+
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];
@@ -13,10 +31,10 @@ export const navLinks: NavLink[] = [
 // Optional: Button data
 export type NavButton = {
   text: string;
-  href?: string; // optional if it's a link
+  href?: string;
 };
 
 export const navButton: NavButton = {
   text: "Book Free Survey",
-  href: "#", // change to actual link if needed
+  href: "#",
 };
