@@ -59,7 +59,7 @@ export default function WhyChooseUs() {
                     <StatCard
                         icon={<ClipboardCheck className="w-12 h-12" />}
                         title="100% Free Survey"
-                        subtitle="No Obligation, No Hidden Costs"
+                        subtitle="No hidden Charges"
                     />
                 </div>
 
