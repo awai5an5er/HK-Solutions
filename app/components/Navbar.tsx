@@ -10,6 +10,7 @@ export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
 
   const mobileMenuRef = useRef<HTMLDivElement | null>(null);
+  const hamBurgerRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -19,7 +20,8 @@ export default function Navbar() {
       if (
         isOpen &&
         mobileMenuRef.current &&
-        !mobileMenuRef.current.contains(e.target as Node)
+        !mobileMenuRef.current.contains(e.target as Node) &&
+        !hamBurgerRef.current?.contains(e.target as Node)
       ) {
         setIsOpen(false); // Close menu
       }
@@ -37,7 +39,7 @@ export default function Navbar() {
         </h1>
 
         {/* Desktop Menu */}
-        <nav className="hidden lg:flex items-center gap-8 text-txtColor normalText font-medium relative">
+        <nav className="hidden md:flex items-center gap-8 text-txtColor normalText font-medium relative">
           {navLinks.map((link: NavLink) => (
             <div key={link.name} className="relative group">
               {link.submenu ? (
@@ -47,7 +49,7 @@ export default function Navbar() {
                     <ChevronDown className="w-4 h-4 relative top-px" />
                   </button>
 
-                  <div className="absolute left-0 top-full mt-2 w-56 bg-secondary shadow-lg rounded-lg p-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
+                  <div className="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg rounded-lg p-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
                     {link.submenu.map((sublink) => (
                       <Link
                         key={sublink.name}
@@ -72,13 +74,14 @@ export default function Navbar() {
         </nav>
 
         {/* Desktop Button */}
-        <button className="hidden lg:block bg-primary text-secondary normalText px-5 py-2 rounded-xl shadow">
+        <button className="hidden md:block bg-primary text-secondary normalText px-5 py-2 rounded-xl shadow">
           {navButton.text}
         </button>
 
         {/* Mobile Hamburger */}
         <div
-          className="lg:hidden text-primary text-2xl font-bold cursor-pointer"
+          ref={hamBurgerRef}
+          className="md:hidden text-primary text-2xl font-bold cursor-pointer"
           onClick={toggleMenu}
         >
           ☰
@@ -88,7 +91,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         ref={mobileMenuRef}
-        className={`lg:hidden bg-secondary shadow-lg transition-all duration-300 ${
+        className={`md:hidden bg-secondary shadow-lg transition-all duration-300 ${
           isOpen
             ? "max-h-screen opacity-100"
             : "max-h-0 opacity-0 overflow-hidden"
@@ -137,11 +140,10 @@ export default function Navbar() {
               )}
             </div>
           ))}
-          <div className="flex justify-center">
-            <button className="bg-primary text-secondary normalText px-5 py-2 rounded-xl shadow mt-4">
-              {navButton.text}
-            </button>
-          </div>
+
+          <button className="bg-primary text-secondary normalText px-5 py-2 rounded-xl shadow mt-4">
+            {navButton.text}
+          </button>
         </nav>
       </div>
     </header>
