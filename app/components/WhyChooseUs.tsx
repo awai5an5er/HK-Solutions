@@ -49,11 +49,27 @@ export default function WhyChooseUs() {
           />
         </div>
 
-        <div className="w-full sm:w-[48%] lg:w-[35%]">
+        <div className="w-full sm:w-[48%] lg:w-[30%]">
+          <StatCard
+            icon={<ShieldCheck className="w-12 h-12" />}
+            title="UK Certified"
+            subtitle="TrustMark Approved Installers"
+          />
+        </div>
+
+        <div className="w-full sm:w-[48%] lg:w-[30%]">
+          <StatCard
+            icon={<Banknote className="w-12 h-12" />}
+            title="Government Grants"
+            subtitle="Access Full Funding Schemes"
+          />
+        </div>
+
+        <div className="w-full sm:w-[48%] lg:w-[30%]">
           <StatCard
             icon={<ClipboardCheck className="w-12 h-12" />}
             title="100% Free Survey"
-            subtitle="No Obligation, No Hidden Costs"
+            subtitle="No hidden Charges"
           />
         </div>
       </div>
