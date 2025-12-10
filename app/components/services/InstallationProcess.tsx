@@ -8,9 +8,9 @@ export default function InstallationProcess({
   installprops: InstallationStep[];
 }) {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
+    <section className="py-20 bg-accent">
+      <div className="mx-auto px-4">
+        <h2 className="heading font-bold text-center pb-8 text-primary">
           Installation Process
         </h2>
 
@@ -18,13 +18,13 @@ export default function InstallationProcess({
           {installprops.map((step) => (
             <div
               key={step.stepNumber}
-              className="bg-white p-8 shadow-lg rounded-xl flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300"
+              className="bg-secondary p-8 shadow-lg rounded-xl flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300"
             >
               <div className="w-16 h-16 bg-primary text-white flex items-center justify-center rounded-full text-xl font-bold">
                 {step.stepNumber}
               </div>
-              <h3 className="text-xl font-semibold mt-4">{step.title}</h3>
-              <p className="txtColor mt-3 text-justify">{step.description}</p>
+              <h3 className="subHeading txtColor font-semibold pt-4">{step.title}</h3>
+              <p className="txtColor normalText pt-3 text-justify">{step.description}</p>
             </div>
           ))}
         </div>
