@@ -13,7 +13,7 @@ export default async function Page({
   const data = await params;
   const selectedService = findService(data.service);
   return (
-    <div className="pt-35">
+    <div className="pt-15">
       {selectedService ? (
         <div>
           <Hero heroProps={selectedService.hero} />
@@ -22,8 +22,9 @@ export default async function Page({
           <InstallationProcess
             installprops={selectedService.installationProcess}
           />
+                    <CTA ctaprops={selectedService.cta} />
+
           <FAQ faqs={selectedService.faqs} />
-          <CTA ctaprops={selectedService.cta} />
         </div>
       ) : (
         <h1>Service not found</h1>

@@ -15,33 +15,33 @@ type FeaturesProps = {
 
 export default function Features({ features }: FeaturesProps) {
     return (
-        <section className="py-20 bg-brand-background-secondary">
-            <div className="max-w-6xl mx-auto px-4">
+        <section className="py-10 bg-accent">
+            <div className="px-4">
                 {/* Heading */}
-                <div className="text-center mb-14">
-                    <h2 className="text-4xl font-bold text-primary">
+                <div className="text-center py-4">
+                    <h2 className="heading font-bold text-primary">
                         Why Choose Solar Energy?
                     </h2>
-                    <p className="txtColor normalText mt-3 mx-auto text-lg">
+                    <p className="txtColor normalText py-3">
                         Transform your home with clean, renewable energy. Discover the benefits of going solar today.
                     </p>
                 </div>
 
                 {/* Cards Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-14">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-10">
                     {features.map((feature, i) => {
                         return (
                             <div
                                 key={i}
-                                className="relative flex flex-col items-start p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+                                className="relative flex flex-col items-start p-4 md:p-7 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
                             >
-                                {/* Icon Circle */}
-                                <div className="flex items-center justify-center w-16 h-16 rounded-full mb-4 text-primary text-2xl shadow-lg">
+                                {/* Icon Circle
+                                <div className="flex items-center justify-center w-12 h-12 rounded-full pb-4 text-primary  shadow-lg">
                                     <DollarSign strokeWidth={2.5} size={28} />
-                                </div>
+                                </div> */}
 
                                 {/* Title */}
-                                <h3 className="text-xl font-bold text-primary mb-2">
+                                <h3 className="subHeading font-bold text-primary pb-2">
                                     {feature.title}
                                 </h3>
 

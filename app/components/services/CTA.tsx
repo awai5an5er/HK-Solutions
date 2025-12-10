@@ -10,14 +10,14 @@ export default function CTA({ ctaprops }:
     }
 ) {
     return (
-        <section className="py-20 mb-10 mx-15  bg-primary    text-white">
-            <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+        <section className="py-10 mb-5 w-[98%] mx-auto   bg-primary    text-secondary">
+            <div className="mx-auto flex flex-col md:flex-row items-center justify-between px-4">
 
-                <div className="mb-8 md:mb-0">
-                    <h2 className="text-3xl md:text-4xl font-bold">
+                <div className="pb-8 md:mb-0">
+                    <h2 className="heading font-bold">
                         {ctaprops.heading}
                     </h2>
-                    <p className="text-lg mt-4 max-w-md">
+                    <p className="normalText mt-4 max-w-md">
                         {ctaprops.subHeading}
 
                     </p>

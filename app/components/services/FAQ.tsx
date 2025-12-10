@@ -13,9 +13,9 @@ export default function FAQ({ faqs }:
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     return (
-        <section className="py-20">
-            <div className="max-w-4xl mx-auto px-4">
-                <h2 className="text-3xl text-primary md:text-4xl font-bold text-center mb-12">
+        <section className="py-8 sm:py-6">
+            <div className="mx-auto px-4">
+                <h2 className="heading text-primary font-bold text-center pb-12">
                     Frequently Asked Questions
                 </h2>
 
@@ -26,12 +26,12 @@ export default function FAQ({ faqs }:
                                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                                 className="w-full flex justify-between items-center text-left"
                             >
-                                <span className="text-lg font-semibold ">{faq.question}</span>
-                                <span className="text-xl  cursor-pointer">{openIndex === i ? "-" : "+"}</span>
+                                <span className="normalText font-semibold ">{faq.question}</span>
+                                <span className="normalText  cursor-pointer">{openIndex === i ? "-" : "+"}</span>
                             </button>
 
                             {openIndex === i && (
-                                <p className="mt-3 text-gray-600">{faq.answer}</p>
+                                <p className="mt-3 text-primary">{faq.answer}</p>
                             )}
                         </div>
                     ))}

@@ -22,7 +22,6 @@ export type ServiceData = {
     heading: string;
     subHeading: string;
     backgroundImage: string;
-    buttonText: string;
   };
   features: Feature[];
   howItWorks: {
@@ -49,7 +48,6 @@ export const services: ServiceData[] = [
         "Harness the power of the sun to reduce your energy bills and carbon footprint.",
       backgroundImage:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuARZTFDetSvY-TPCqYWfhKDO6fMyWnOKLCXLzQdFwY3aYdROaNKsXZEN-IYhALf6U0Dn4TBfvcNBTGE8L5sxfPp6IwmjATRiIFgC_vCQYCHZJt1qm9kDvRDqQi1KWqejWvByZyLwt_EHsPY9Vh6c3_aWp3j7P1GNJgXQ5xgDpdVywVE2GNB38sH6O2tSM4vdEj42e2uky6QE1xNXPI0OYN7ssrTpReK-1CPvUSEmz5qYYk3Qz09fgVZpeBCyjBJzYbCxYo1IkPZztnv",
-      buttonText: "Get a Free Solar Survey",
     },
     features: [
       {
@@ -133,7 +131,6 @@ export const services: ServiceData[] = [
       subHeading:
         "Reduce energy consumption and maintain a comfortable temperature all year round.",
       backgroundImage: "https://example.com/heatpump-hero.jpg",
-      buttonText: "Get a Free Heat Pump Survey",
     },
     features: [
       {
@@ -215,7 +212,6 @@ export const services: ServiceData[] = [
       subHeading:
         "Keep your home warm in winter and cool in summer while saving energy.",
       backgroundImage: "https://example.com/insulation-hero.jpg",
-      buttonText: "Get Insulation Quote",
     },
     features: [
       {
@@ -297,7 +293,6 @@ export const services: ServiceData[] = [
       subHeading:
         "Get certified for energy efficiency compliance and property sale requirements.",
       backgroundImage: "https://example.com/epc-hero.jpg",
-      buttonText: "Get EPC Certificate",
     },
     features: [
       {
@@ -376,7 +371,6 @@ export const services: ServiceData[] = [
       subHeading:
         "Store excess solar energy to use anytime and increase energy independence.",
       backgroundImage: "https://example.com/battery-hero.jpg",
-      buttonText: "Get Battery Storage Quote",
     },
     features: [
       {
@@ -457,7 +451,6 @@ export const services: ServiceData[] = [
       subHeading:
         "Charge your electric vehicle safely and efficiently at home.",
       backgroundImage: "https://example.com/evcharging-hero.jpg",
-      buttonText: "Get EV Charger Quote",
     },
     features: [
       {
