@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { User, Mail, Phone, MessageSquare } from "lucide-react";
 
-export default function PremiumContactForm() {
+export default function ContactForm({ hideLeft }: { hideLeft?: boolean }) {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -22,10 +22,14 @@ export default function PremiumContactForm() {
   };
 
   return (
-    <section className="w-full px-6 py-20 md:py-28 bg-secondary">
+    <section className="w-full px-6 py-15 md:py-20 bg-secondary">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10">
         {/* LEFT INFO PANEL */}
-        <div className="md:w-1/2 flex flex-col justify-center">
+        <div
+          className={`md:w-1/2 ${
+            hideLeft ? "hidden" : "flex"
+          } flex-col justify-center`}
+        >
           <h2 className="heading font-extrabold text-primary leading-tight">
             Contact Our Energy Experts
           </h2>
@@ -61,6 +65,9 @@ export default function PremiumContactForm() {
           <div className="absolute inset-0 bg-primary rounded-3xl blur-xl opacity-20 -z-10"></div>
           <div className="bg-accent backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-accent">
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+              <h3 className="subHeading font-bold text-primary">
+                Send Us a message
+              </h3>
               {/* NAME */}
               <div className="relative">
                 <label className="sr-only">Full Name</label>
