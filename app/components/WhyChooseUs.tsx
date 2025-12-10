@@ -13,7 +13,7 @@ const StatCard = ({ icon, title, subtitle }: StatCardProps) => {
       className="
             flex items-center gap-5 
             p-6 rounded-2xl border border-primary 
-            bg-secondery shadow-[0_4px_20px_rgba(0,0,0,0.05)]
+            bg-secondary shadow-[0_4px_20px_rgba(0,0,0,0.05)]
             hover:shadow-[0_6px_30px_rgba(0,0,0,0.10)]
             transition-all duration-300 hover:-translate-y-1
             "
