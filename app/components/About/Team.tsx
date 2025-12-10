@@ -2,7 +2,7 @@ import { team } from "@/app/resources/about"
 
 const Team=()=>{
     return(
-        <section className="py-10 w-[95%] mx-auto">
+        <section className="py-10 w-[95%] mx-auto flex flex-col gap-15">
             <div className="flex flex-col  items-center gap-5">
             <h1 className="text-primary heading font-bold">Meet Our Team</h1>
             <p className="text-txtColor normalText max-w-2xl text-center mx-auto">
@@ -10,7 +10,7 @@ const Team=()=>{
 </p>
             
             </div>
-            <div className="flex justify-around flex-wrap gap-20 pt-10">
+            <div className="flex justify-around flex-wrap gap-15">
             {
             team.map((value,i)=>(
                 

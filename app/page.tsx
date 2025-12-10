@@ -10,7 +10,12 @@ export default function Home() {
       <HeroSection />
       <WhyChooseUs />
       <Services />
-      <CtaBanner />
+      <CtaBanner
+        title="Ready to Slash Your Energy Bills & Go Green?"
+        description="Our team is ready to provide a free, no-obligation survey to assess your home’s needs and unlock
+                    full funding for your energy-efficient upgrades."
+        buttonText="Book My Free Home Survey"
+      />
       <ContactForm />
     </div>
   );

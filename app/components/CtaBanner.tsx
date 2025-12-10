@@ -1,8 +1,13 @@
 import React from "react";
+interface CtaBannerProps {
+  title: string;
+  description: string;
+  buttonText: string;
+}
 
-export default function CtaBanner() {
+export default function CtaBanner({title,description,buttonText}:CtaBannerProps) {
     return (
-        <section className="w-full px-6 py-8 md:py-8">
+        <section className="w-full px-6 py-8 md:py-10">
             <div
                 className="
                     max-w-6xl mx-auto 
@@ -14,12 +19,11 @@ export default function CtaBanner() {
                 "
             >
                 <h2 className="heading font-bold tracking-tight leading-snug">
-                    Ready to Slash Your Energy Bills & Go Green?
+                    {title}
                 </h2>
 
                 <p className="mt-4 max-w-2xl mx-auto normalText  opacity-90 leading-relaxed">
-                    Our team is ready to provide a free, no-obligation survey to assess your home’s needs and unlock
-                    full funding for your energy-efficient upgrades.
+                    {description}
                 </p>
 
                 <button
@@ -34,7 +38,7 @@ export default function CtaBanner() {
                         transition-all normalText
                     "
                 >
-                    Book My Free Home Survey
+                    {buttonText}
                 </button>
             </div>
         </section>
