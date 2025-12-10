@@ -47,7 +47,7 @@ export default function Navbar() {
                     <ChevronDown className="w-4 h-4 relative top-px" />
                   </button>
 
-                  <div className="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg rounded-lg p-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
+                  <div className="absolute left-0 top-full mt-2 w-56 bg-secondary shadow-lg rounded-lg p-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
                     {link.submenu.map((sublink) => (
                       <Link
                         key={sublink.name}
