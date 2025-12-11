@@ -1,3 +1,4 @@
+import Testimonials from "@/app/components/services/Testimonial";
 import CTA from "../../components/services/CTA";
 import FAQ from "../../components/services/FAQ";
 import Features from "../../components/services/Features";
@@ -22,7 +23,9 @@ export default async function Page({
           <InstallationProcess
             installprops={selectedService.installationProcess}
           />
-                    <CTA ctaprops={selectedService.cta} />
+          <Testimonials testimonials={selectedService.testimonials} />
+
+          <CTA ctaprops={selectedService.cta} />
 
           <FAQ faqs={selectedService.faqs} />
         </div>
