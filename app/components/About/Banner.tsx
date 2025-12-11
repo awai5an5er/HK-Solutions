@@ -1,5 +1,6 @@
 const Banner = () => {
   return (
+    
     <section
       className="
         relative 

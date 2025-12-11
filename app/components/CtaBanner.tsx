@@ -1,3 +1,4 @@
+import { section } from "framer-motion/client";
 import React from "react";
 interface CtaBannerProps {
   title: string;
@@ -7,40 +8,24 @@ interface CtaBannerProps {
 
 export default function CtaBanner({title,description,buttonText}:CtaBannerProps) {
     return (
-        <section className="w-full px-6 py-8 md:py-10">
-            <div
-                className="
-                    max-w-6xl mx-auto 
-                    rounded-2xl 
-                    bg-linear-to-r from-primary to-primary/60
-                    p-8 md:p-12
-                    text-center text-secondary
-                    shadow-xl
-                "
-            >
-                <h2 className="heading font-bold tracking-tight leading-snug">
+        <section className="">
+        <div className="w-[95%] mx-auto rounded-3xl bg-primary p-10">
+            <div className="flex flex-col gap-5 items-center">
+                <h2 className="heading text-secondary font-bold ">
                     {title}
                 </h2>
 
-                <p className="mt-4 max-w-2xl mx-auto normalText  opacity-90 leading-relaxed">
+                <p className="normalText text-secondary max-w-4xl text-center">
                     {description}
                 </p>
-
-                <button
-                    className="
-                        mt-8
-                        mx-auto
-                        flex items-center justify-center
-                        h-12 sm:h-14 px-6 sm:px-10
-                        rounded-xl
-                        bg-accent text-primary font-bold
-                        shadow-lg hover:bg-opacity-90
-                        transition-all normalText
-                    "
-                >
+             </div>
+             <div className="flex justify-center pt-10">
+                <button className="bg-accent px-8 py-3 rounded-2xl text-primary font-medium ">
                     {buttonText}
                 </button>
+                
             </div>
+        </div>
         </section>
     );
 }

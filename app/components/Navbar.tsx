@@ -39,7 +39,7 @@ export default function Navbar() {
         </h1>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center gap-8 text-secondary normalText font-medium relative">
+        <nav className="hidden lg:flex items-center gap-8 text-secondary normalText font-medium relative">
           {navLinks.map((link: NavLink) => (
             <div key={link.name} className="relative group">
               {link.submenu ? (
@@ -69,14 +69,14 @@ export default function Navbar() {
         </nav>
 
         {/* Desktop Button */}
-        <button className="hidden md:block bg-secondary text-primary cursor-pointer font-bold normalText px-5 py-2 rounded-xl shadow">
+        <button className="hidden lg:block bg-secondary text-primary cursor-pointer font-bold normalText px-5 py-2 rounded-xl shadow">
           {navButton.text}
         </button>
 
         {/* Mobile Hamburger */}
         <div
           ref={hamBurgerRef}
-          className="md:hidden text-secondary text-2xl font-bold cursor-pointer"
+          className="lg:hidden text-secondary text-2xl font-bold cursor-pointer"
           onClick={toggleMenu}
         >
           ☰
@@ -86,7 +86,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         ref={mobileMenuRef}
-        className={`md:hidden bg-primary shadow-lg transition-all duration-300 ${
+        className={`lg:hidden bg-primary shadow-lg transition-all duration-300 ${
           isOpen
             ? "max-h-screen opacity-100"
             : "max-h-0 opacity-0 overflow-hidden"
@@ -133,10 +133,11 @@ export default function Navbar() {
               )}
             </div>
           ))}
-
+         <div className="flex justify-center">
           <button className="bg-secondary text-primary normalText px-5 py-2 rounded-xl shadow mt-4">
             {navButton.text}
           </button>
+          </div>
         </nav>
       </div>
     </header>

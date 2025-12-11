@@ -22,11 +22,11 @@ export default function ContactForm({ hideLeft }: { hideLeft?: boolean }) {
   };
 
   return (
-    <section className="w-full px-6 py-15 md:py-20 bg-secondary">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10">
+    <section className="">
+      <div className="flex flex-col sm:flex-row w-[95%] justify-between mx-auto gap-8 py-15">
         {/* LEFT INFO PANEL */}
         <div
-          className={`md:w-1/2 ${
+          className={`w-full sm:w-[50%] md:w-[45%] lg:w-1/2 ${
             hideLeft ? "hidden" : "flex"
           } flex-col justify-center`}
         >
@@ -61,7 +61,7 @@ export default function ContactForm({ hideLeft }: { hideLeft?: boolean }) {
         </div>
 
         {/* RIGHT FORM PANEL */}
-        <div className="md:w-1/2 relative">
+        <div className="w-full sm:w-[50%] md:w-[45%] lg:w-1/2 relative">
           <div className="absolute inset-0 bg-primary rounded-3xl blur-xl opacity-20 -z-10"></div>
           <div className="bg-accent backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-accent">
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">

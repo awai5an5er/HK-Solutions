@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
-      <WhyChooseUs />
       <Services />
+      <WhyChooseUs />
       <CtaBanner
         title="Ready to Slash Your Energy Bills & Go Green?"
         description="Our team is ready to provide a free, no-obligation survey to assess your home’s needs and unlock
