@@ -1,6 +1,6 @@
-import Testimonials from "@/app/components/services/Testimonial";
+import Testimonials from "@/app/components/Testimonial";
 import CTA from "../../components/services/CTA";
-import FAQ from "../../components/services/FAQ";
+import FAQ from "../../components/FAQ";
 import Features from "../../components/services/Features";
 import Hero from "../../components/services/Hero";
 import HowItWorks from "../../components/services/HowItWorks";
@@ -23,7 +23,7 @@ export default async function Page({
           <InstallationProcess
             installprops={selectedService.installationProcess}
           />
-          <Testimonials testimonials={selectedService.testimonials} />
+          <Testimonials />
 
           <CTA ctaprops={selectedService.cta} />
 
