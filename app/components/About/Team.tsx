@@ -10,13 +10,14 @@ const Team=()=>{
 </p>
             
             </div>
-            <div className="flex justify-around flex-wrap gap-15">
+            <div className="flex justify-around sm:justify-between flex-wrap gap-5">
             {
             team.map((value,i)=>(
                 
             
             <div key={`${value} ${i}`} className="flex flex-col gap-2 items-center">
-            <img src={value.image} alt="Error" className="rounded-full size-20" />
+                
+            <img src={value.image} alt="Error" className="rounded-2xl" />
             <span className="subHeading text-primary font-bold">{value.name}</span>
             <span className="normalText italic text-txtColor">{value.role}</span>
             </div>

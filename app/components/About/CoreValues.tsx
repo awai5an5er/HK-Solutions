@@ -13,7 +13,7 @@ const CoreValues=()=>{
         const Icon=value.icon
         return(
       
-      <div key={`${value} ${i}`} className="flex flex-col gap-3 bg-accent p-5 rounded-2xl">
+      <div key={`${value} ${i}`} className="flex flex-col gap-3 bg-secondary p-5 rounded-2xl">
         <Icon className="text-primary" />
        <h1 className="subHeading text-primary fonld-bold">{value.title}</h1>
        <p className="text-txtColor normalText">{value.content}</p>

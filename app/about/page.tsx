@@ -8,16 +8,24 @@ const AboutPage = () => {
   return (
     <>
       <Banner />
-      <MissionVision />
-      <CoreValues />
       <Story />
-      <Team />
+      <div className="bg-accent">
+
+      
+      <CoreValues />
+      </div>
+      <div className="mt-10">
       <CtaBanner 
         title="Looking to Upgrade Your Home’s Energy Efficiency?"
         description="Learn how HK Solution Energy can transform your home with innovative, eco-friendly solutions tailored to your needs."
         buttonText="Learn More About Our Services"
         
       />
+      </div>
+      <MissionVision />
+      
+      <Team />
+      
     </>
   );
 };

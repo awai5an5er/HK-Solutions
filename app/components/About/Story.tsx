@@ -3,7 +3,7 @@
 import { milestones } from "@/app/resources/about"
 const Story=()=>{
     return(
-        <section className="flex flex-col sm:flex-row justify-around py-10 w-[95%] mx-auto gap-10">
+        <section className="flex flex-col sm:flex-row justify-between py-10 w-[95%] mx-auto gap-10">
             <div className="flex flex-col gap-5 w-full sm:w-1/2">
                 <h1 className="heading text-primary font-bold">Our Story</h1>
                 <p className="text-txtColor normalText">HK Energy Solutions was founded with a clear mission: to make sustainable energy and renewable energy solutions accessible and efficient for every home and business. Leveraging expertise in solar PV installation, heat pump systems, home insulation, and energy-efficient technologies, we deliver tailored solutions that reduce energy costs, lower environmental impact, and empower our clients to embrace a greener, more sustainable future.</p>
