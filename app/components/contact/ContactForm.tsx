@@ -126,7 +126,7 @@ export default function ContactForm({ hideLeft }: { hideLeft?: boolean }) {
 
               <button
                 type="submit"
-                className="mt-2 h-12 mormalText bg-primary text-secondary font-bold rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-transform"
+                className="mt-2 h-12 mormalText bg-primary text-secondary font-bold cursor-pointer rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-transform"
               >
                 Send Message
               </button>

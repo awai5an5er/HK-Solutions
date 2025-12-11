@@ -1,18 +1,9 @@
 "use client";
 
 import React from "react";
+import { testimonials } from "../resources/testimonial";
 
-type Testimonial = {
-  name: string;
-  role?: string;
-  feedback: string;
-};
-
-type TestimonialsProps = {
-  testimonials: Testimonial[];
-};
-
-export default function Testimonials({ testimonials }: TestimonialsProps) {
+export default function Testimonials() {
   return (
     <section className="relative py-10 bg-secondary overflow-hidden">
       <div className="w-[99%] mx-auto px-6 relative z-10">
@@ -28,11 +19,11 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  cursor-pointer">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 cursor-pointer">
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="relative bg-secondary/30  border border-primary/40 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3"
+              className="relative bg-secondary/30 border border-primary/40 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3"
             >
               {/* Feedback */}
               <p className="txtColor normalText italic py-4">{t.feedback}</p>

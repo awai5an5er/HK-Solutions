@@ -7,12 +7,6 @@ export type Feature = {
   gradient?: string;
 };
 
-export type Testimonial = {
-  name: string;
-  role?: string;
-  feedback: string;
-};
-
 export type InstallationStep = {
   stepNumber: number;
   title: string;
@@ -31,7 +25,6 @@ export type ServiceData = {
     backgroundImage: string;
   };
   features: Feature[];
-  testimonials: Testimonial[];
   howItWorks: {
     heading: string;
     description: string;
@@ -137,26 +130,6 @@ export const services: ServiceData[] = [
           "Yes, solar panels still generate electricity in cloudy conditions, although output may be slightly reduced.",
       },
     ],
-    testimonials: [
-      {
-        name: "John Doe",
-        role: "Homeowner",
-        feedback:
-          "The solar panels installation was fast and efficient. Highly recommended!",
-      },
-      {
-        name: "Sarah Smith",
-        role: "Business Owner",
-        feedback:
-          "Professional team, excellent service, and great aftercare support.",
-      },
-      {
-        name: "Ali Khan",
-        role: "Homeowner",
-        feedback:
-          "Our electricity bills dropped significantly after installing their system.",
-      },
-    ],
   },
 
   // --- Heat Pump Systems ---
@@ -236,26 +209,6 @@ export const services: ServiceData[] = [
         question: "Is maintenance required?",
         answer:
           "Heat pumps require minimal maintenance, usually an annual service check.",
-      },
-    ],
-    testimonials: [
-      {
-        name: "John Doe",
-        role: "Homeowner",
-        feedback:
-          "The solar panels installation was fast and efficient. Highly recommended!",
-      },
-      {
-        name: "Sarah Smith",
-        role: "Business Owner",
-        feedback:
-          "Professional team, excellent service, and great aftercare support.",
-      },
-      {
-        name: "Ali Khan",
-        role: "Homeowner",
-        feedback:
-          "Our electricity bills dropped significantly after installing their system.",
       },
     ],
   },
@@ -339,26 +292,6 @@ export const services: ServiceData[] = [
           "Yes, proper insulation can significantly reduce heating and cooling costs.",
       },
     ],
-    testimonials: [
-      {
-        name: "John Doe",
-        role: "Homeowner",
-        feedback:
-          "The solar panels installation was fast and efficient. Highly recommended!",
-      },
-      {
-        name: "Sarah Smith",
-        role: "Business Owner",
-        feedback:
-          "Professional team, excellent service, and great aftercare support.",
-      },
-      {
-        name: "Ali Khan",
-        role: "Homeowner",
-        feedback:
-          "Our electricity bills dropped significantly after installing their system.",
-      },
-    ],
   },
 
   // --- EPC Certificates ---
@@ -435,26 +368,6 @@ export const services: ServiceData[] = [
       {
         question: "Do I need an EPC to sell my home?",
         answer: "Yes, an EPC is required when selling or renting a property.",
-      },
-    ],
-    testimonials: [
-      {
-        name: "John Doe",
-        role: "Homeowner",
-        feedback:
-          "The solar panels installation was fast and efficient. Highly recommended!",
-      },
-      {
-        name: "Sarah Smith",
-        role: "Business Owner",
-        feedback:
-          "Professional team, excellent service, and great aftercare support.",
-      },
-      {
-        name: "Ali Khan",
-        role: "Homeowner",
-        feedback:
-          "Our electricity bills dropped significantly after installing their system.",
       },
     ],
   },
@@ -537,26 +450,6 @@ export const services: ServiceData[] = [
           "Most batteries last 10-15 years depending on usage and maintenance.",
       },
     ],
-    testimonials: [
-      {
-        name: "John Doe",
-        role: "Homeowner",
-        feedback:
-          "The solar panels installation was fast and efficient. Highly recommended!",
-      },
-      {
-        name: "Sarah Smith",
-        role: "Business Owner",
-        feedback:
-          "Professional team, excellent service, and great aftercare support.",
-      },
-      {
-        name: "Ali Khan",
-        role: "Homeowner",
-        feedback:
-          "Our electricity bills dropped significantly after installing their system.",
-      },
-    ],
   },
 
   // --- EV Charging Solutions ---
@@ -636,26 +529,6 @@ export const services: ServiceData[] = [
         question: "Can I use my solar panels to charge my EV?",
         answer:
           "Yes, solar energy can be used to charge your electric vehicle, reducing grid dependency.",
-      },
-    ],
-    testimonials: [
-      {
-        name: "John Doe",
-        role: "Homeowner",
-        feedback:
-          "The solar panels installation was fast and efficient. Highly recommended!",
-      },
-      {
-        name: "Sarah Smith",
-        role: "Business Owner",
-        feedback:
-          "Professional team, excellent service, and great aftercare support.",
-      },
-      {
-        name: "Ali Khan",
-        role: "Homeowner",
-        feedback:
-          "Our electricity bills dropped significantly after installing their system.",
       },
     ],
   },
