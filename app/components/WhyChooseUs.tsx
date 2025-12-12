@@ -25,7 +25,7 @@ export default function WhyChooseUs() {
     <section className="w-[95%] mx-auto py-15">
        <div className="flex flex-col items-center gap-5">
       <h1 className="heading text-primary font-bold">Why Choose US</h1>
-      <p className="text-txtColor normalText max-w-5xl">At HK Energy Solutions, we combine innovative renewable technologies with expert installation to deliver efficient, reliable energy systems. Our tailored solutions—from solar PV to EV charging—help reduce costs and support a more sustainable future.</p>
+      <p className="text-txtColor normalText max-w-5xl">At HK Energy Solutions, we provide reliable energy upgrades that reduce bills, improve comfort, and add long term value. Our certified experts use advanced technology to deliver efficient, high quality solutions for a cleaner and more sustainable home.</p>
       </div>
       <div className=" mx-auto grid gap-8 
         grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10">
