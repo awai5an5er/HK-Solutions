@@ -1,6 +1,4 @@
-"use client";
-import React, { useState } from "react";
-import { User, Mail, Phone, MessageSquare } from "lucide-react";
+import { User, Mail, Phone } from "lucide-react";
 import Form from "../Form";
 
 export default function ContactForm() {
