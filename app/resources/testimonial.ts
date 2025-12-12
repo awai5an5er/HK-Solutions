@@ -19,6 +19,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "Michael Brown",
+    role: "Manager",
     feedback:
       "From installation to maintenance, everything was seamless and efficient.",
   },
