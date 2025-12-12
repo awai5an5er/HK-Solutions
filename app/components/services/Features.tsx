@@ -9,20 +9,20 @@ type Feature = {
 
 type FeaturesProps = {
   features: Feature[];
+  featuresHeading: { heading: string; subHeading: string };
 };
 
-export default function Features({ features }: FeaturesProps) {
+export default function Features({ features, featuresHeading }: FeaturesProps) {
   return (
     <section className="py-10 bg-accent">
       <div className="px-4">
         {/* Heading */}
         <div className="text-center py-4">
           <h2 className="heading font-bold text-primary">
-            Why Choose Solar Energy
+            {featuresHeading.heading}
           </h2>
           <p className="txtColor normalText py-3">
-            Transform your home with clean, renewable energy. Discover the
-            benefits of going solar today.
+            {featuresHeading.subHeading}
           </p>
         </div>
 

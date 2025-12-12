@@ -24,6 +24,7 @@ export type ServiceData = {
     subHeading: string;
     backgroundImage: string;
   };
+  featuresHeading: { heading: string; subHeading: string };
   features: Feature[];
   howItWorks: {
     heading: string;
@@ -50,17 +51,20 @@ export const services: ServiceData[] = [
       backgroundImage:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuARZTFDetSvY-TPCqYWfhKDO6fMyWnOKLCXLzQdFwY3aYdROaNKsXZEN-IYhALf6U0Dn4TBfvcNBTGE8L5sxfPp6IwmjATRiIFgC_vCQYCHZJt1qm9kDvRDqQi1KWqejWvByZyLwt_EHsPY9Vh6c3_aWp3j7P1GNJgXQ5xgDpdVywVE2GNB38sH6O2tSM4vdEj42e2uky6QE1xNXPI0OYN7ssrTpReK-1CPvUSEmz5qYYk3Qz09fgVZpeBCyjBJzYbCxYo1IkPZztnv",
     },
+    featuresHeading: {
+      heading: "Why Choose Solar Energy",
+      subHeading:
+        "Transform your home with clean, renewable energy. Discover the benefits of going solar today.",
+    },
     features: [
       {
         icon: "/assets/wallet.png",
-
         title: "Save on Bills",
         text: "Significantly lower your monthly electricity costs by generating your own power.",
         gradient: "from-green-400 to-green-600",
       },
       {
         icon: "/assets/leaf.svg",
-
         title: "Reduce Carbon Footprint",
         text: "Decrease your household's environmental impact with clean, green energy.",
         gradient: "from-teal-400 to-teal-600",
@@ -141,23 +145,33 @@ export const services: ServiceData[] = [
         "Reduce energy consumption and maintain a comfortable temperature all year round.",
       backgroundImage: "https://example.com/heatpump-hero.jpg",
     },
+    featuresHeading: {
+      heading: "Why Choose Heat Pump System",
+      subHeading:
+        "Experience year-round comfort with energy-efficient heat pump systems designed to heat and cool your home effortlessly",
+    },
     features: [
       {
+        icon: "/assets/wallet.png",
+
         title: "Lower Heating Bills",
         text: "Efficient heating reduces energy costs significantly.",
         gradient: "from-orange-400 to-orange-600",
       },
       {
+        icon: "/assets/leaf.svg",
         title: "Eco-Friendly",
         text: "Reduce carbon footprint with green heating solutions.",
         gradient: "from-red-400 to-red-600",
       },
       {
+        icon: "/assets/battery.svg",
         title: "Reliable Comfort",
         text: "Consistent temperature and comfort for your home.",
         gradient: "from-blue-400 to-blue-600",
       },
       {
+        icon: "/assets/increase.svg",
         title: "Increase Home Value",
         text: "Modern heating systems can enhance property value.",
         gradient: "from-purple-400 to-purple-600",
@@ -222,23 +236,32 @@ export const services: ServiceData[] = [
         "Keep your home warm in winter and cool in summer while saving energy.",
       backgroundImage: "https://example.com/insulation-hero.jpg",
     },
+    featuresHeading: {
+      heading: "Why Choose Home Insulation",
+      subHeading:
+        "Keep your home warmer in winter and cooler in summer with high-performance insulation for lasting comfort and energy savings",
+    },
     features: [
       {
+        icon: "/assets/wallet.png",
         title: "Save on Energy",
         text: "Proper insulation reduces heating and cooling costs.",
         gradient: "from-yellow-400 to-yellow-600",
       },
       {
+        icon: "/assets/leaf.svg",
         title: "Comfort All Year",
         text: "Maintain ideal indoor temperature throughout the seasons.",
         gradient: "from-green-400 to-green-600",
       },
       {
+        icon: "/assets/battery.svg",
         title: "Eco-Friendly",
         text: "Reduce your carbon footprint by improving energy efficiency.",
         gradient: "from-blue-400 to-blue-600",
       },
       {
+        icon: "/assets/increase.svg",
         title: "Increase Home Value",
         text: "Well-insulated homes are more attractive to buyers.",
         gradient: "from-purple-400 to-purple-600",
@@ -303,23 +326,32 @@ export const services: ServiceData[] = [
         "Get certified for energy efficiency compliance and property sale requirements.",
       backgroundImage: "https://example.com/epc-hero.jpg",
     },
+    featuresHeading: {
+      heading: "Why Choose EPC Certificates",
+      subHeading:
+        "Get a reliable EPC certificate to understand your home’s energy performance and unlock smarter efficiency upgrades",
+    },
     features: [
       {
+        icon: "/assets/wallet.png",
         title: "Compliance",
         text: "Meet legal and regulatory energy efficiency standards.",
         gradient: "from-blue-400 to-blue-600",
       },
       {
+        icon: "/assets/leaf.svg",
         title: "Property Value",
         text: "Boost buyer confidence with a certified energy rating.",
         gradient: "from-purple-400 to-purple-600",
       },
       {
+        icon: "/assets/battery.svg",
         title: "Reduce Costs",
         text: "Identify energy inefficiencies to lower bills.",
         gradient: "from-green-400 to-green-600",
       },
       {
+        icon: "/assets/increase.svg",
         title: "Sustainability",
         text: "Promote eco-friendly living and responsible energy use.",
         gradient: "from-teal-400 to-teal-600",
@@ -381,23 +413,32 @@ export const services: ServiceData[] = [
         "Store excess solar energy to use anytime and increase energy independence.",
       backgroundImage: "https://example.com/battery-hero.jpg",
     },
+    featuresHeading: {
+      heading: "Why Choose Battery Storage",
+      subHeading:
+        "Store clean energy efficiently and power your home anytime with advanced, reliable battery storage solutions",
+    },
     features: [
       {
+        icon: "/assets/wallet.png",
         title: "Backup Power",
         text: "Maintain electricity supply during outages.",
         gradient: "from-blue-400 to-blue-600",
       },
       {
+        icon: "/assets/leaf.svg",
         title: "Save Money",
         text: "Store excess energy for later use, reducing bills.",
         gradient: "from-green-400 to-green-600",
       },
       {
+        icon: "/assets/battery.svg",
         title: "Eco-Friendly",
         text: "Maximize renewable energy usage and reduce carbon footprint.",
         gradient: "from-teal-400 to-teal-600",
       },
       {
+        icon: "/assets/increase.svg",
         title: "Energy Independence",
         text: "Be less reliant on the grid and gain control over your energy.",
         gradient: "from-purple-400 to-purple-600",
@@ -461,23 +502,32 @@ export const services: ServiceData[] = [
         "Charge your electric vehicle safely and efficiently at home.",
       backgroundImage: "https://example.com/evcharging-hero.jpg",
     },
+    featuresHeading: {
+      heading: "Why Choose EV Charging",
+      subHeading:
+        "Charge your electric vehicle faster and smarter with modern, home-ready EV charging solutions",
+    },
     features: [
       {
+        icon: "/assets/wallet.png",
         title: "Cost Savings",
         text: "Charge at home at lower electricity rates.",
         gradient: "from-green-400 to-green-600",
       },
       {
+        icon: "/assets/leaf.svg",
         title: "Safety",
         text: "Certified chargers for safe operation.",
         gradient: "from-blue-400 to-blue-600",
       },
       {
+        icon: "/assets/battery.svg",
         title: "Convenience",
         text: "Charge anytime without visiting public stations.",
         gradient: "from-teal-400 to-teal-600",
       },
       {
+        icon: "/assets/increase.svg",
         title: "Sustainability",
         text: "Promote clean mobility with home EV charging.",
         gradient: "from-purple-400 to-purple-600",
