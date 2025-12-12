@@ -19,35 +19,35 @@ export default function FAQ({
           Frequently Asked Questions
         </h2>
 
-        <div className="space-y-4 cursor-pointer">
+        <div className="space-y-4">
           {faqs.map((faq, i) => (
-            <div
-              key={i}
-              className="bg-primary cursor-pointer border border-secondary rounded-xl p-5 shadow-sm hover:shadow-md transition-all"
-            >
-              <button
+            <div key={i} className="space-y-2">
+              {/* Question Box */}
+              <div
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full flex justify-between items-center text-left cursor-pointer"
+                className="bg-primary border border-secondary rounded-xl p-5 shadow-sm hover:shadow-md transition-all flex justify-between items-center cursor-pointer"
               >
-                <span className="normalText font-semibold text-secondary cursor-pointer">
+                <span className="normalText font-semibold text-secondary">
                   {faq.question}
                 </span>
-                <span className="normalText text-secondary font-bold text-xl leading-none">
+
+                <span className="normalText text-secondary font-bold text-xl">
                   {openIndex === i ? "-" : "+"}
                 </span>
-              </button>
+              </div>
 
-              {
-                <div
-                  className={`transition-all duration-300 overflow-hidden ${
-                    openIndex === i ? "max-h-40 mt-3" : "max-h-0"
-                  }`}
-                >
-                  <p className="text-secondary normalText leading-relaxed cursor-pointer">
+              {/* Answer Box (Separate) */}
+              <div
+                className={`overflow-hidden transition-all duration-500 ${
+                  openIndex === i ? "max-h-40" : "max-h-0"
+                }`}
+              >
+                <div className="bg-secondary border border-txtColor rounded-xl p-8">
+                  <p className="text-txtColor normalText leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>
-              }
+              </div>
             </div>
           ))}
         </div>
