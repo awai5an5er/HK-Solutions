@@ -1,5 +1,5 @@
-import ContactForm from "../components/contact/ContactForm";
 import ContactPage from "../components/contact/ContactPage";
+import Form from "../components/Form";
 
 export default function Page() {
   return (
@@ -8,10 +8,10 @@ export default function Page() {
         get in touch: we are here to help you
       </h2>
       <div className="w-full flex">
-        <div className="w-[60%] ">
-          <ContactForm hideLeft={true} />
+        <div className="w-[50%] ">
+          <Form />
         </div>
-        <div className="w-[40%]">
+        <div className="w-[50%]">
           <ContactPage />
         </div>
       </div>

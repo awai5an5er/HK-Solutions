@@ -3,15 +3,13 @@ import React, { useState } from "react";
 import { User, Mail, Phone, MessageSquare } from "lucide-react";
 import Form from "../Form";
 
-export default function ContactForm({ hideLeft }: { hideLeft?: boolean }) {
+export default function ContactForm() {
   return (
     <section className="">
       <div className="flex flex-col sm:flex-row w-[95%] justify-between mx-auto gap-8 py-15">
         {/* LEFT INFO PANEL */}
         <div
-          className={`w-full sm:w-[50%] md:w-[45%] lg:w-1/2 ${
-            hideLeft ? "hidden" : "flex"
-          } flex-col justify-center`}
+          className={`w-full sm:w-[50%] md:w-[45%] lg:w-1/2 flex flex-col justify-center`}
         >
           <h2 className="heading font-extrabold text-primary leading-tight">
             Contact Our Energy Experts

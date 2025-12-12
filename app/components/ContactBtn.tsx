@@ -21,11 +21,11 @@ function ContactBtn({ text, classes }: { text: string; classes: string }) {
           <div>
             <div
               onClick={() => setPopup(false)}
-              className="fixed inset-0 w-full h-full backdrop-blur-[5px]"
+              className="fixed z-30 inset-0 w-full h-full backdrop-blur-[5px]"
             ></div>
             <div
               ref={formPopup}
-              className="fixed w-full md:w-2/3 lg:w-1/2 p-3 inset-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
+              className="fixed z-40 w-full md:w-2/3 lg:w-1/2 p-3 inset-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
             >
               <span
                 onClick={() => setPopup(false)}
