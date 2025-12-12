@@ -3,7 +3,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { navLinks, navButton, NavLink } from "../resources/Nanlinks";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, Contact } from "lucide-react";
+import ContactBtn from "./ContactBtn";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,9 +70,13 @@ export default function Navbar() {
         </nav>
 
         {/* Desktop Button */}
-        <button className="hidden lg:block bg-secondary text-primary cursor-pointer font-bold normalText px-5 py-2 rounded-xl shadow">
+        <ContactBtn
+          text={navButton.text}
+          classes="hidden lg:block bg-secondary text-primary cursor-pointer font-bold normalText px-5 py-2 rounded-xl shadow"
+        />
+        {/* <button className="hidden lg:block bg-secondary text-primary cursor-pointer font-bold normalText px-5 py-2 rounded-xl shadow">
           {navButton.text}
-        </button>
+        </button> */}
 
         {/* Mobile Hamburger */}
         <div
@@ -133,10 +138,14 @@ export default function Navbar() {
               )}
             </div>
           ))}
-         <div className="flex justify-center">
-          <button className="bg-secondary text-primary normalText px-5 py-2 rounded-xl shadow mt-4">
-            {navButton.text}
-          </button>
+          <div className="flex justify-center">
+            <ContactBtn
+              text={navButton.text}
+              classes="bg-secondary text-primary normalText px-5 py-2 rounded-xl shadow mt-4"
+            />
+            {/* <button className="bg-secondary text-primary normalText px-5 py-2 rounded-xl shadow mt-4">
+              {navButton.text}
+            </button> */}
           </div>
         </nav>
       </div>

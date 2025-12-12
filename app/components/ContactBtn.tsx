@@ -1,0 +1,45 @@
+"use client";
+import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
+import Form from "./Form";
+
+function ContactBtn({ text, classes }: { text: string; classes: string }) {
+  const [popup, setPopup] = useState(false);
+  const formPopup = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    popup
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "scroll");
+  }, [popup]);
+  return (
+    <div>
+      <button onClick={() => setPopup(true)} className={classes}>
+        {text}
+      </button>
+      {popup &&
+        createPortal(
+          <div>
+            <div
+              onClick={() => setPopup(false)}
+              className="fixed inset-0 w-full h-full backdrop-blur-[5px]"
+            ></div>
+            <div
+              ref={formPopup}
+              className="fixed w-full md:w-2/3 lg:w-1/2 p-3 inset-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
+            >
+              <span
+                onClick={() => setPopup(false)}
+                className="text-center absolute right-7/100 top-7/100 md:right-5/100 md:top-7/100 z-10 rounded-2xl bg-red-500 hover:bg-red-600 px-2 cursor-pointer"
+              >
+                X
+              </span>
+              <Form />
+            </div>
+          </div>,
+          document.body
+        )}
+    </div>
+  );
+}
+
+export default ContactBtn;
