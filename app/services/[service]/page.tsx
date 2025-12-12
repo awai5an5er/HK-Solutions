@@ -18,7 +18,10 @@ export default async function Page({
       {selectedService ? (
         <div>
           <Hero heroProps={selectedService.hero} />
-          <Features features={selectedService.features} />
+          <Features
+            featuresHeading={selectedService.featuresHeading}
+            features={selectedService.features}
+          />
           <HowItWorks worksprops={selectedService.howItWorks} />
           <InstallationProcess
             installprops={selectedService.installationProcess}
