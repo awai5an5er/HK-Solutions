@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { navLinks, navButton, NavLink } from "../resources/Nanlinks";
-import { ChevronDown, ChevronUp, Contact } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import ContactBtn from "./ContactBtn";
 
 export default function Navbar() {

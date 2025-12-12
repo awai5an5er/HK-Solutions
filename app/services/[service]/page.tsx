@@ -14,7 +14,7 @@ export default async function Page({
   const data = await params;
   const selectedService = findService(data.service);
   return (
-    <div className="pt-15">
+    <div className="pt-5">
       {selectedService ? (
         <div>
           <Hero heroProps={selectedService.hero} />
