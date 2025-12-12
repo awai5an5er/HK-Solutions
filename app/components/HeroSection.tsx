@@ -9,9 +9,7 @@ export default function HeroSection() {
           Slash your energy bills & upgrade your home
         </h1>
         <span className="normalText text-txtColor">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          impedit molestiae qui ratione perspiciatis minus incidunt consequuntur
-          nisi provident numquam.
+          Transform your home with reliable and energy efficient solutions designed to reduce your utility costs and improve long term comfort. At HK Energy Solutions, we provide high quality services including solar PV installation, heat pump systems, home insulation, and more to help you create a safer, greener, and more efficient living space.
         </span>
         <div>
           <ContactBtn 

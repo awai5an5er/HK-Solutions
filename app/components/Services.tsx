@@ -5,32 +5,32 @@ export default function Services() {
   const services = [
     {
       title: "Solar PV Installation",
-      desc: "High-efficiency solar systems designed to lower your energy bills and boost home value.",
+         desc: "Advanced solar PV systems that deliver maximum energy generation and long-term savings.",
       icon: <Sun className="w-14 h-14 text-primary" />,
     },
     {
       title: "Heat Pump Systems",
-      desc: "Eco-friendly air-source and ground-source heat pumps backed by UK grants.",
+     desc: "Efficient air-source and ground-source heat pumps designed to cut heating costs and improve comfort.",
       icon: <Flame className="w-14 h-14 text-primary" />,
     },
     {
       title: "Home Insulation",
-      desc: "Premium loft, cavity, and solid-wall insulation to maximise heat retention.",
+      desc: "High-quality loft, cavity, and solid-wall insulation that boosts efficiency and reduces heat loss.",
       icon: <Layers className="w-14 h-14 text-primary" />,
     },
     {
       title: "EPC Certificates",
-      desc: "Fast and reliable EPC inspections for landlords and UK homeowners.",
+      desc: "Professional and accurate EPC assessments for landlords, homeowners, and property sellers.",
       icon: <FileCheck className="w-14 h-14 text-primary" />,
     },
     {
       title: "Battery Storage",
-      desc: "Store excess solar energy and power your home even after sunset efficiently.",
+        desc: "Smart battery storage solutions that let you save excess solar power for reliable, round-the-clock use.",
       icon: <Battery className="w-14 h-14 text-primary" />,
     },
     {
       title: "EV Charging Solutions",
-      desc: "Smart and fast EV home chargers installed by certified UK professionals.",
+     desc: "Fast and reliable EV home charging installations carried out by certified UK technicians.",
       icon: <Battery className="w-14 h-14 text-primary" />,
     },
   ];
@@ -41,12 +41,11 @@ export default function Services() {
       <div className="flex flex-col gap-20 w-[95%] mx-auto ">
       <div className="flex flex-col items-center gap-5">
       <h2 className="heading  font-extrabold text-primary ">
-        Our Energy Services
+        Our Energy Solutions
       </h2>
 
-      <p className=" text-txtColor normalText text-center">
-        Premium UK home energy upgrades backed by government grants & certified
-        installers.
+      <p className=" text-txtColor max-w-5xl  normalText">
+       Reliable and efficient home energy upgrades designed to improve comfort, reduce costs, and enhance long term performance. Our certified experts deliver tailored solutions that boost your home's energy efficiency, increase property value, and provide lasting savings for years to come.
       </p>
 </div>
       {/* FLEXBOX LAYOUT (3 per row) */}
