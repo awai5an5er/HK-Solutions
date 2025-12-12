@@ -1,5 +1,6 @@
 import React from "react";
-
+import ContactBtn from "./ContactBtn";
+import { navButton } from "../resources/Nanlinks";
 export default function HeroSection() {
   return (
     <section className="flex w-[95%] flex-col-reverse md:flex-row mx-auto h-auto md:h-[90vh] py-10">
@@ -13,9 +14,12 @@ export default function HeroSection() {
           nisi provident numquam.
         </span>
         <div>
-          <button className="normalText bg-primary px-7 py-3 rounded-2xl text-secondary">
-            Book Free Survey
-          </button>
+          <ContactBtn 
+             
+             text="Book Free Survey"
+             classes="normalText bg-primary px-7 py-3 rounded-2xl text-secondary cursor-pointer"
+                />
+         
         </div>
       </div>
       <div className="w-full h-[40vh] md:h-auto md:w-1/2 bg-[url('/assets/hero.webp')] bg-no-repeat bg-cover bg-center rounded-2xl">

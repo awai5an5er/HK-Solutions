@@ -1,5 +1,5 @@
 "use client";
-
+import ContactBtn from "../ContactBtn";
 export default function CTA({ ctaprops }:
     {
         ctaprops: {
@@ -22,13 +22,10 @@ export default function CTA({ ctaprops }:
 
                     </p>
                 </div>
-
-                <a
-                    href="#"
-                    className="bg-white text-primary font-semibold px-8 py-4 rounded-full shadow hover:bg-gray-100 transition"
-                >
-                    {ctaprops.buttonText}
-                </a>
+                    <ContactBtn
+                    text={ctaprops.buttonText}
+                    classes="bg-white text-primary font-semibold px-8 py-4 rounded-full shadow hover:bg-gray-100 transition"
+                    />
 
             </div>
         </section>
