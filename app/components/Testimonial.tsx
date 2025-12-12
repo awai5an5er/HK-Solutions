@@ -23,7 +23,7 @@ export default function Testimonials() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="relative bg-secondary/30 border border-primary/40 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3"
+              className="relative bg-accent border border-primary/40 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3"
             >
               {/* Feedback */}
               <p className="txtColor normalText italic py-4">{t.feedback}</p>
@@ -39,8 +39,8 @@ export default function Testimonials() {
       </div>
 
       {/* Optional Floating Blurred Circles for Premium Look */}
-      <div className="absolute -top-20 -left-20 w-72 h-72 bg-purple-200/30 rounded-full filter blur-3xl"></div>
-      <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-pink-300/30 rounded-full filter blur-3xl"></div>
+      {/* <div className="absolute -top-20 -left-20 w-72 h-72 bg-purple-200/30 rounded-full filter blur-3xl"></div>
+      <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-pink-300/30 rounded-full filter blur-3xl"></div> */}
     </section>
   );
 }

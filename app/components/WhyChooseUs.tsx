@@ -9,7 +9,7 @@ interface StatCardProps {
 
 const StatCard = ({ icon, title, subtitle }: StatCardProps) => {
   return (
-    <div className="flex gap-5 border p-5 rounded-2xl hover:shadow-xl transition-all duration-300 bg-white">
+    <div className="flex gap-5 border p-5 rounded-2xl hover:shadow-xl transition-all duration-300 bg-secondary">
       <div className="text-primary">{icon}</div>
 
       <div className="flex flex-col gap-2">
