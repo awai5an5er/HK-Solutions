@@ -189,7 +189,7 @@ function Form() {
             value={form.message}
             onChange={handleChange}
             placeholder="Your Message"
-            className="pl-10 h-12 w-full rounded-xl border-2 border-primary focus:border-primary/75 focus:ring-1 focus:ring-primary outline-none transition"
+            className="pl-10 pt-2 w-full rounded-xl border-2 border-primary focus:border-primary/75 focus:ring-1 focus:ring-primary outline-none transition"
           />
         </div>
         {errors.message && (
