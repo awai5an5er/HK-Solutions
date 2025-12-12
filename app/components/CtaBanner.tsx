@@ -1,5 +1,6 @@
 import { section } from "framer-motion/client";
 import React from "react";
+import ContactBtn from "./ContactBtn";
 interface CtaBannerProps {
   title: string;
   description: string;
@@ -20,10 +21,10 @@ export default function CtaBanner({title,description,buttonText}:CtaBannerProps)
                 </p>
              </div>
              <div className="flex justify-center pt-10">
-                <button className="bg-secondary px-8 py-3 rounded-2xl normalText text-primary font-medium ">
-                    {buttonText}
-                </button>
-                
+               <ContactBtn 
+                     text={buttonText}
+                     classes="bg-secondary px-8 py-3 rounded-2xl normalText text-primary font-medium cursor-pointer"
+               />    
             </div>
         </div>
         </section>

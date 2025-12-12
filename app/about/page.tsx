@@ -18,7 +18,7 @@ const AboutPage = () => {
       <CtaBanner 
         title="Looking to Upgrade Your Home’s Energy Efficiency?"
         description="Learn how HK Solution Energy can transform your home with innovative, eco-friendly solutions tailored to your needs."
-        buttonText="Learn More About Our Services"
+        buttonText="Get Quote"
         
       />
       </div>
