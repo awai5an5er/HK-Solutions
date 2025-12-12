@@ -42,7 +42,7 @@ export default function FAQ({
                   openIndex === i ? "max-h-40" : "max-h-0"
                 }`}
               >
-                <div className="bg-secondary border border-txtColor rounded-xl p-8">
+                <div className="bg-accent border border-txtColor rounded-xl p-8">
                   <p className="text-txtColor normalText leading-relaxed">
                     {faq.answer}
                   </p>
