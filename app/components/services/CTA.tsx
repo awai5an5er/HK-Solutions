@@ -10,7 +10,7 @@ export default function CTA({
   };
 }) {
   return (
-    <section className="py-10 mb-5 w-[98%] mx-auto   bg-primary    text-secondary">
+    <section className="py-10 mb-5 w-[95%] border rounded-2xl mx-auto   bg-primary    text-secondary">
       <div className="mx-auto flex flex-col md:flex-row items-center justify-between px-4">
         <div className="pb-8 md:mb-0">
           <h2 className="heading font-bold">{ctaprops.heading}</h2>
