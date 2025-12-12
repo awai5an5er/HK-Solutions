@@ -29,7 +29,7 @@ function ContactBtn({ text, classes }: { text: string; classes: string }) {
             >
               <span
                 onClick={() => setPopup(false)}
-                className="text-center absolute right-7/100 top-7/100 md:right-5/100 md:top-7/100 z-10 rounded-2xl bg-red-500 hover:bg-red-600 px-2 cursor-pointer"
+                className="text-center absolute right-7/100 top-7/100 md:right-5/100 md:top-7/100 z-10 rounded-2xl px-2 cursor-pointer"
               >
                 X
               </span>
