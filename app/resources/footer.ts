@@ -1,89 +1,77 @@
 import { Phone, MapPin, Mail } from "lucide-react";
-interface servicesType{
-  title:string;
-  links:{
-    name:string;
-    link:string;
-    }[];
+interface servicesType {
+  title: string;
+  links: {
+    name: string;
+    link: string;
+  }[];
 }
-export const services:servicesType[]=[
+export const services: servicesType[] = [
   {
-    title:"Service",
-    links:[
+    title: "Service",
+    links: [
       {
-         name:"Solar PV Panels",
-        link:"/"
+        name: "Solar PV Installation",
+        link: "/services/solar-pv-installation",
       },
       {
-        name:"Air Source Heat Pumps",
-        link:"/"
+        name: "Heat Pump Systems",
+        link: "/services/heat-pump-systems",
       },
       {
-         name:"Home insulation",
-        link:"/"
+        name: "Home Insulation",
+        link: "/services/home-insulation",
       },
       {
-        name:"Battery Storage",
-        link:"/"
+        name: "EPC Certificates",
+        link: "/services/epc-certificates",
       },
       {
-         name:"EV Charging",
-        link:"/"
-      }
-    ]
+        name: "EV Charging Solutions",
+        link: "/services/ev-charging-solutions",
+      },
+    ],
   },
 ];
 
-interface quicklinksType{
-    title:string;
-    links:{
-    name:string;
-    link:string;
-    }[];
+interface quicklinksType {
+  title: string;
+  links: {
+    name: string;
+    link: string;
+  }[];
 }
-export const quiklinks:quicklinksType[]=[
-   {
-    title:"Quick Links",
-    links:[
-      {
-         name:"About Us",
-        link:"/"
-      },
-      {
-        name:"Government Grants",
-        link:"/"
-      },
-      {
-         name:"Case Studies",
-        link:"/"
-      },
-      {
-         name:"Contact Us",
-        link:"/"
-      },
-      {
-         name:"FAQS",
-        link:"/"
-      }
-    ]
-  }
-];
-interface textType{
-  title:string;
-  content:string[];
-  socials:string[];
-}
-export const text:textType[]=[
+export const quiklinks: quicklinksType[] = [
   {
-     title:"EcoHome Uk",
-     content:["Your trusted partner for a greener,more energy-efficient home in the UK.Certified installers of renewable energy solutions."],
-    socials:[
-      "FB","IN","TW"
-    ]
-},
-]; 
-
-
+    title: "Quick Links",
+    links: [
+      {
+        name: "About Us",
+        link: "/about",
+      },
+      {
+        name: "Contact Us",
+        link: "/contact",
+      },
+      {
+        name: "FAQS",
+        link: "/#faqs",
+      },
+    ],
+  },
+];
+interface textType {
+  title: string;
+  content: string[];
+}
+export const text: textType[] = [
+  {
+    title: "EcoHome Uk",
+    content: [
+      "Your trusted partner for a greener,more energy-efficient home in the UK.Certified installers of renewable energy solutions.",
+    ],
+  },
+];
 
 export interface ContactItem {
   icon: React.ComponentType<{ className?: string }>;

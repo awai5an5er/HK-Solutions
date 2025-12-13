@@ -16,7 +16,9 @@ export default function Home() {
       <Services />
       <WhyChooseUs />
       <Testimonials />
-      <FAQ faqs={faqs} />
+      <div id="faqs">
+        <FAQ faqs={faqs} />
+      </div>
       <CtaBanner
         title="Ready to Slash Your Energy Bills & Go Green?"
         description="Our team is ready to provide a free, no-obligation survey to assess your home’s needs and unlock
