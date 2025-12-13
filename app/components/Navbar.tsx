@@ -24,7 +24,7 @@ export default function Navbar() {
         !mobileMenuRef.current.contains(e.target as Node) &&
         !hamBurgerRef.current?.contains(e.target as Node)
       ) {
-        setIsOpen(false); // Close menu
+        setIsOpen(false);
       }
     };
 
@@ -50,12 +50,12 @@ export default function Navbar() {
                     <ChevronDown className="w-4 h-4 relative top-px" />
                   </button>
 
-                  <div className="absolute left-0 top-full mt-2 w-56 bg-primary shadow-lg rounded-lg p-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
+                  <div className="absolute left-0 top-full mt-2 w-56 bg-accent text-primary shadow-lg rounded-lg p-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
                     {link.submenu.map((sublink) => (
                       <Link
                         key={sublink.name}
                         href={sublink.href}
-                        className="block px-4 py-2 rounded"
+                        className="block px-3 py-4 rounded hover-underline"
                       >
                         {sublink.name}
                       </Link>
@@ -74,9 +74,6 @@ export default function Navbar() {
           text={navButton.text}
           classes="hidden lg:block bg-secondary text-primary cursor-pointer font-bold normalText px-5 py-2 rounded-xl shadow"
         />
-        {/* <button className="hidden lg:block bg-secondary text-primary cursor-pointer font-bold normalText px-5 py-2 rounded-xl shadow">
-          {navButton.text}
-        </button> */}
 
         {/* Mobile Hamburger */}
         <div
@@ -91,13 +88,13 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         ref={mobileMenuRef}
-        className={`lg:hidden bg-primary shadow-lg transition-all duration-300 ${
+        className={`lg:hidden absolute w-full bg-primary shadow-lg transition-all duration-300 ${
           isOpen
             ? "max-h-screen opacity-100"
             : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
-        <nav className="flex flex-col gap-4 p-6 text-secondary normalText font-medium">
+        <nav className="flex flex-col gap-4 p-6 text-primary bg-accent normalText font-medium">
           {navLinks.map((link: NavLink, index: number) => (
             <div key={link.name}>
               {link.submenu ? (
@@ -120,7 +117,7 @@ export default function Navbar() {
                         <Link
                           key={sublink.name}
                           href={sublink.href}
-                          onClick={() => setIsOpen(false)} // Close when clicking item
+                          onClick={() => setIsOpen(false)}
                         >
                           {sublink.name}
                         </Link>
@@ -129,10 +126,7 @@ export default function Navbar() {
                   )}
                 </>
               ) : (
-                <Link
-                  href={link.href || "#"}
-                  onClick={() => setIsOpen(false)} // Close when clicking item
-                >
+                <Link href={link.href || "#"} onClick={() => setIsOpen(false)}>
                   {link.name}
                 </Link>
               )}
@@ -141,11 +135,8 @@ export default function Navbar() {
           <div className="flex justify-center">
             <ContactBtn
               text={navButton.text}
-              classes="bg-secondary text-primary normalText px-5 py-2 rounded-xl shadow mt-4"
+              classes="bg-primary text-accent normalText px-5 py-2 rounded-xl shadow mt-4"
             />
-            {/* <button className="bg-secondary text-primary normalText px-5 py-2 rounded-xl shadow mt-4">
-              {navButton.text}
-            </button> */}
           </div>
         </nav>
       </div>

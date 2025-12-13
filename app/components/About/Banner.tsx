@@ -1,6 +1,5 @@
 const Banner = () => {
   return (
-    
     <section
       className="
         relative 
@@ -15,16 +14,22 @@ const Banner = () => {
     >
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative z-10 flex flex-col gap-4 items-center text-center w-full max-w-3xl mx-auto">
-        <h1 className="text-secondary font-bold 
+        <h1
+          className="text-secondary font-bold 
           heading 
-        ">
-           Smart & Sustainable Energy Solutions
+        "
+        >
+          Smart and Sustainable Energy Solutions
         </h1>
 
-        <p className="text-secondary 
+        <p
+          className="text-secondary 
           subHeading
-        ">
-       At HK Energy Solutions, we provide innovative and eco-friendly energy solutions that reduce costs and support a more sustainable future.
+        "
+        >
+          At HK Energy Solutions, we deliver modern, environmentally responsible
+          energy solutions designed to lower energy costs and contribute to a
+          cleaner, more sustainable future.{" "}
         </p>
       </div>
     </section>
@@ -32,4 +37,3 @@ const Banner = () => {
 };
 
 export default Banner;
-

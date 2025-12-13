@@ -8,35 +8,38 @@ export const missionvision: missionvisionType[] = [
   {
     heading: "OUR VISION",
     description:
-      "To become the most trusted and respected automotive repair workshop in Dubai and across the UAE, recognized for excellence in service, customer satisfaction, and innovative solutions that set the benchmark for the automotive industry.",
+      "To become one of the most trusted and respected energy solutions providers in the United Kingdom, recognized for service excellence, customer satisfaction, and innovative approaches that set high standards within the renewable and home energy sector.",
   },
   {
     heading: "OUR MISSION",
     description:
-      "We aim to achieve our vision by fostering a safe and supportive workplace for our team, maintaining high ethical standards, creating opportunities for growth, and delivering outstanding service to our customers, partners, and clients throughout the UAE and Middle East.",
+      "We strive to achieve our vision by creating a safe and supportive working environment for our team, upholding strong ethical and professional standards, encouraging continuous growth and development, and delivering outstanding energy solutions to homeowners and businesses across the United Kingdom.",
   },
 ];
-interface corevaluesType{
-  icon:LucideIcon;
-  title:string;
-  content:string;
+interface corevaluesType {
+  icon: LucideIcon;
+  title: string;
+  content: string;
 }
-export const corevalues:corevaluesType[]=[
-     {
-      icon:ShieldCheck,
-      title:"Integrity",
-      content:"At HK Solution Energy, we are committed to delivering reliable, sustainable, and cost-effective energy solutions that empower homes and businesses for a greener future."
-     },
-     {
-      icon:Lightbulb,
-      title:"Innovation",
-      content:"We embrace cutting-edge technologies and creative solutions to deliver smarter, more efficient energy systems, driving sustainable progress for our clients and communities."
-     },
-     {
-      icon:Users,
-      title:"Customer Focus",
-      content:"Our customers are at the heart of everything we do. We prioritize their needs, deliver personalized solutions, and ensure an exceptional experience with every interaction."
-     }
+export const corevalues: corevaluesType[] = [
+  {
+    icon: ShieldCheck,
+    title: "Integrity",
+    content:
+      "At HK Energy Solutions, we operate with honesty and transparency, delivering dependable, sustainable, and cost-effective energy solutions that help homes and businesses achieve long-term energy efficiency.",
+  },
+  {
+    icon: Lightbulb,
+    title: "Innovation",
+    content:
+      "We adopt advanced technologies and forward-thinking approaches to create smarter, more efficient energy systems that promote sustainable growth for our clients and the wider community.",
+  },
+  {
+    icon: Users,
+    title: "Customer Focus",
+    content:
+      "Our customers are central to everything we do. We listen carefully to their needs, provide tailored energy solutions, and deliver a consistently high standard of service at every stage.",
+  },
 ];
 
 import { Flag, Zap, Globe } from "lucide-react";

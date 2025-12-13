@@ -4,9 +4,9 @@ const CoreValues = () => {
     <section className="w-[95%] mx-auto flex flex-col lg:gap-8 gap-5 justify-center items-center lg:py-10 py-5">
       <h1 className="text-primary heading font-bold">Our Core Values</h1>
       <p className="text-txtColor normalText">
-        At HK Solution Energy, we are committed to delivering reliable,
-        sustainable, and cost-effective energy solutions that empower homes and
-        businesses for a greener future.
+        At HK Energy Solutions, we are dedicated to providing dependable,
+        sustainable, and cost-effective energy solutions that support homes and
+        businesses in moving toward a greener future.
       </p>
       <div className="flex flex-col lg:flex-row lg:gap-10 gap-3">
         {corevalues.map((value, i) => {

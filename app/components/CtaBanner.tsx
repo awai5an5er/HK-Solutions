@@ -13,7 +13,7 @@ export default function CtaBanner({
 }: CtaBannerProps) {
   return (
     <section className="">
-      <div className="w-[95%] mx-auto rounded-3xl bg-primary lg:p-10 p-5">
+      <div className="w-[95%] mx-auto rounded-3xl bg-primary md:p-10 p-5">
         <div className="flex flex-col gap-5 items-center">
           <h2 className="heading text-secondary font-bold text-center mx-auto ">
             {title}
@@ -23,7 +23,7 @@ export default function CtaBanner({
             {description}
           </p>
         </div>
-        <div className="flex justify-center lg:pt-10 pt-3">
+        <div className="flex justify-center md:pt-6 pt-3">
           <ContactBtn
             text={buttonText}
             classes="bg-secondary px-8 py-3 rounded-2xl normalText text-primary font-medium cursor-pointer"
