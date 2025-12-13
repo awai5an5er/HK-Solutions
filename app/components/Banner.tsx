@@ -14,7 +14,7 @@ const Banner = () => {
 
         <p className="text-secondary/95 subHeading leading-relaxed">
           Comprehensive Energy Audits, High-Quality Equipment, and Certified
-          Experts — All Under One Roof.
+          Experts Under One Roof.
         </p>
       </div>
     </section>
