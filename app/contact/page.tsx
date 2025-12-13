@@ -7,8 +7,8 @@ import { faqs } from "../resources/faq";
 export default function Page() {
   return (
     <div className="w-[95%] mx-auto flex flex-col items-center justify-center">
-      <h2 className="heading font-bold text-primary text-center py-13">
-        get in touch: we are here to help you
+      <h2 className="heading font-bold text-primary text-center py-5 md:py-10">
+        Get in touch: we are here to help you
       </h2>
       <div className="w-full flex flex-col md:flex-row justify-between items-center gap-10">
         <div className="md:w-[48%]">

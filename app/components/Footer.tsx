@@ -99,7 +99,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* COPYRIGHT */}
       <hr className="border-secondary" />
       <div className="w-[95%] text-center mx-auto py-5 text-secondary font-bold normalText">
         © 2025 {new Date().getFullYear()} UK — All rights reserved | Privacy

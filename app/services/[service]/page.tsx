@@ -1,11 +1,11 @@
 import Testimonials from "@/app/components/Testimonial";
-import CTA from "../../components/services/CTA";
 import FAQ from "../../components/FAQ";
 import Features from "../../components/services/Features";
 import Hero from "../../components/services/Hero";
 import HowItWorks from "../../components/services/HowItWorks";
 import InstallationProcess from "../../components/services/InstallationProcess";
 import { findService } from "../../resources/services";
+import CtaBanner from "@/app/components/CtaBanner";
 export default async function Page({
   params,
 }: {
@@ -27,8 +27,11 @@ export default async function Page({
             installprops={selectedService.installationProcess}
           />
           <Testimonials />
-
-          <CTA ctaprops={selectedService.cta} />
+          <CtaBanner
+            title={selectedService.cta.heading}
+            description={selectedService.cta.subHeading}
+            buttonText={selectedService.cta.buttonText}
+          />
 
           <FAQ faqs={selectedService.faqs} />
         </div>

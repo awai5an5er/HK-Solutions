@@ -1,5 +1,12 @@
 import React from "react";
-import { ShieldCheck, Banknote, ClipboardCheck, Wrench, Building2, ThumbsUp } from "lucide-react";
+import {
+  ShieldCheck,
+  Banknote,
+  ClipboardCheck,
+  Wrench,
+  Building2,
+  ThumbsUp,
+} from "lucide-react";
 
 interface StatCardProps {
   icon: React.ReactNode;
@@ -22,14 +29,20 @@ const StatCard = ({ icon, title, subtitle }: StatCardProps) => {
 
 export default function WhyChooseUs() {
   return (
-    <section className="w-[95%] mx-auto py-15">
-       <div className="flex flex-col items-center gap-5">
-      <h1 className="heading text-primary font-bold">Why Choose US</h1>
-      <p className="text-txtColor normalText max-w-5xl">At HK Energy Solutions, we provide reliable energy upgrades that reduce bills, improve comfort, and add long term value. Our certified experts use advanced technology to deliver efficient, high quality solutions for a cleaner and more sustainable home.</p>
+    <section className="w-[95%] mx-auto py-5 md:py-10">
+      <div className="flex flex-col items-center gap-3 md:gap-5">
+        <h1 className="heading text-primary font-bold">Why Choose US</h1>
+        <p className="text-txtColor normalText max-w-5xl">
+          At HK Energy Solutions, we provide reliable energy upgrades that
+          reduce bills, improve comfort, and add long term value. Our certified
+          experts use advanced technology to deliver efficient, high quality
+          solutions for a cleaner and more sustainable home.
+        </p>
       </div>
-      <div className=" mx-auto grid gap-8 
-        grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10">
-
+      <div
+        className=" mx-auto grid gap-3 md:gap-8 
+        grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-5 md:pt-10"
+      >
         <StatCard
           icon={<ShieldCheck className="size-10" />}
           title="UK Certified"

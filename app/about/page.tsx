@@ -12,7 +12,7 @@ const AboutPage = () => {
       <div className="bg-accent">
         <CoreValues />
       </div>
-      <div className="lg:mt-10 mt-5">
+      <div className="md:mt-10 mt-5">
         <CtaBanner
           title="Looking to Upgrade Your Home’s Energy Efficiency?"
           description="Learn how HK Solution Energy can transform your home with innovative, eco-friendly solutions tailored to your needs."
