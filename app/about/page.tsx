@@ -10,22 +10,18 @@ const AboutPage = () => {
       <Banner />
       <Story />
       <div className="bg-accent">
-
-      
-      <CoreValues />
+        <CoreValues />
       </div>
-      <div className="mt-10">
-      <CtaBanner 
-        title="Looking to Upgrade Your Home’s Energy Efficiency?"
-        description="Learn how HK Solution Energy can transform your home with innovative, eco-friendly solutions tailored to your needs."
-        buttonText="Get Quote"
-        
-      />
+      <div className="lg:mt-10 mt-5">
+        <CtaBanner
+          title="Looking to Upgrade Your Home’s Energy Efficiency?"
+          description="Learn how HK Solution Energy can transform your home with innovative, eco-friendly solutions tailored to your needs."
+          buttonText="Get Quote"
+        />
       </div>
       <MissionVision />
-      
+
       <Team />
-      
     </>
   );
 };

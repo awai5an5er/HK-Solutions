@@ -5,10 +5,10 @@ import { testimonials } from "../resources/testimonial";
 
 export default function Testimonials() {
   return (
-    <section className="relative py-10 bg-secondary overflow-hidden">
+    <section className="relative lg:py-10 py-5 bg-secondary overflow-hidden">
       <div className="w-[99%] mx-auto px-6 relative z-10">
         {/* Heading */}
-        <div className="text-center mb-16">
+        <div className="text-center lg:mb-16 mb-5">
           <h2 className="heading font-bold text-primary pb-4">
             What Our Clients Say
           </h2>
@@ -19,7 +19,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 cursor-pointer">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 gap-4 cursor-pointer">
           {testimonials.map((t, i) => (
             <div
               key={i}
