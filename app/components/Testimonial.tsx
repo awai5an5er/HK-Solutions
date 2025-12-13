@@ -5,10 +5,10 @@ import { testimonials } from "../resources/testimonial";
 
 export default function Testimonials() {
   return (
-    <section className="relative py-10 bg-secondary overflow-hidden">
-      <div className="w-[99%] mx-auto px-6 relative z-10">
+    <section className="relative py-3 md:py-10 bg-secondary overflow-hidden">
+      <div className="w-[95%] mx-auto ">
         {/* Heading */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-5 md:mb-10">
           <h2 className="heading font-bold text-primary pb-4">
             What Our Clients Say
           </h2>
@@ -19,11 +19,11 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 cursor-pointer">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-10 cursor-pointer">
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="relative bg-accent border border-primary/40 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3"
+              className="relative bg-accent  border border-primary/40 rounded-3xl p-3 md:p-5 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3"
             >
               {/* Feedback */}
               <p className="txtColor normalText italic py-4">{t.feedback}</p>

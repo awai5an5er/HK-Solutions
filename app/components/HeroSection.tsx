@@ -3,7 +3,7 @@ import ContactBtn from "./ContactBtn";
 import { navButton } from "../resources/Nanlinks";
 export default function HeroSection() {
   return (
-    <section className="flex w-[95%] flex-col-reverse md:flex-row mx-auto h-auto md:h-[90vh] py-10">
+    <section className="flex w-[95%] flex-col-reverse md:flex-row mx-auto h-auto md:h-[90vh] py-5 md:py-10">
       <div className="h-[50vh] md:h-auto w-full md:w-1/2 flex flex-col justify-center gap-5 md:gap-10">
         <h1 className="heading text-primary font-extrabold">
           Slash your energy bills & upgrade your home

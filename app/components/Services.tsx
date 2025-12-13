@@ -37,10 +37,10 @@ export default function Services() {
 
   return (
     <section className="">
-    <div className="bg-accent py-20">
-      <div className="flex flex-col gap-20 w-[95%] mx-auto ">
+    <div className="bg-accent py-7 md:py-15">
+      <div className="flex flex-col gap-8 md:gap-12 w-[95%] mx-auto ">
       <div className="flex flex-col items-center gap-5">
-      <h2 className="heading  font-extrabold text-primary ">
+      <h2 className="heading  font-extrabold text-primary  ">
         Our Energy Solutions
       </h2>
 
@@ -50,7 +50,7 @@ export default function Services() {
 </div>
       {/* FLEXBOX LAYOUT (3 per row) */}
 
-      <div className="flex gap-8 justify-around sm:justify-between flex-wrap">
+      <div className="flex gap-3 md:gap-8 justify-around sm:justify-between flex-wrap">
         {services.map((item, i) => (
           <div key={`${item} ${i}`} className="bg-secondary flex flex-col gap-5 p-5 w-full sm:w-[47%]  lg:w-[30%] rounded-2xl ">
             <div className="">{item.icon}</div>

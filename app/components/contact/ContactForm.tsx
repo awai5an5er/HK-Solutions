@@ -4,7 +4,7 @@ import Form from "../Form";
 export default function ContactForm() {
   return (
     <section className="">
-      <div className="flex flex-col sm:flex-row w-[95%] justify-between mx-auto gap-8 py-15">
+      <div className="flex flex-col sm:flex-row w-[95%] justify-between mx-auto gap-8 py-5 md:py-10">
         {/* LEFT INFO PANEL */}
         <div
           className={`w-full sm:w-[50%] md:w-[45%] lg:w-1/2 flex flex-col justify-center`}

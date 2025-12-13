@@ -13,13 +13,13 @@ export default function FAQ({
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-10">
-      <div className="max-w-5xl mx-auto px-4">
-        <h2 className="heading text-primary font-bold text-center pb-10">
+    <section className="py-5 md:py-10">
+      <div className="w-[95%] md:max-w-5xl mx-auto md:px-4">
+        <h2 className="heading text-primary font-bold text-center pb-5 md:pb-10">
           Frequently Asked Questions
         </h2>
 
-        <div className="space-y-4">
+        <div className="space-y-2 md:space-y-4">
           {faqs.map((faq, i) => (
             <div key={i} className="space-y-2">
               {/* Question Box */}

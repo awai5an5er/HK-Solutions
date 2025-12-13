@@ -121,6 +121,7 @@ function Form() {
         <div className="relative">
           <label className="relative bottom-1">Are you a homeowner?</label>
           <select
+            title="homeOwner"
             name="homeOwner"
             value={form.homeOwner}
             onChange={handleChange}

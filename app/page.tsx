@@ -23,6 +23,7 @@ export default function Home() {
                     full funding for your energy-efficient upgrades."
         buttonText="Book My Free Home Survey"
       />
+
       <ContactForm />
     </div>
   );
