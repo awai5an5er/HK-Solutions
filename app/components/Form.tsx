@@ -61,8 +61,8 @@ function Form() {
     console.log("Form submitted:", form);
   };
   return (
-    <div className="bg-accent backdrop-blur-md rounded-3xl p-8 md:p-12 shadow-2xl border border-accent">
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+    <div className="bg-accent backdrop-blur-md rounded-3xl p-6 md:p-12 shadow-2xl border border-accent">
+      <form onSubmit={handleSubmit} className="flex flex-col md:gap-4 gap-3">
         <h3 className="subHeading font-bold text-primary">Send Us a message</h3>
         {/* NAME */}
         <div className="relative">

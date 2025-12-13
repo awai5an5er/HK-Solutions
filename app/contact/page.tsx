@@ -11,10 +11,10 @@ export default function Page() {
         Get in touch: we are here to help you
       </h2>
       <div className="w-full flex flex-col md:flex-row justify-between items-center gap-10">
-        <div className="md:w-[48%]">
+        <div className="md:w-[48%] w-full">
           <Form />
         </div>
-        <div className="md:w-[48%]">
+        <div className="md:w-[48%] w-full">
           <ContactPage />
         </div>
       </div>

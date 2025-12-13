@@ -20,7 +20,7 @@ export default function InstallationProcess({
               key={step.stepNumber}
               className="bg-secondary lg:p-8 p-4 shadow-lg rounded-xl flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300"
             >
-              <div className="w-16 h-16 bg-primary text-white flex items-center justify-center rounded-full text-xl font-bold">
+              <div className="w-16 h-16 bg-primary text-secondary flex items-center justify-center rounded-full subHeading font-bold">
                 {step.stepNumber}
               </div>
               <h3 className="subHeading txtColor font-semibold pt-4">

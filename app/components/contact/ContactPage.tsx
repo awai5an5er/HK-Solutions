@@ -3,9 +3,9 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const ContactPage = () => {
   return (
-    <div className="p-8 bg-accent rounded-xl mx-auto text-center">
+    <div className="md:p-8 p-5 bg-accent rounded-xl mx-auto text-center">
       <div className="flex flex-col items-center">
-        <h2 className="subHeading text-primary font-bold pb-3">
+        <h2 className="subHeading normalText text-primary font-bold pb-3">
           Our Contact Details
         </h2>
 
@@ -16,12 +16,14 @@ const ContactPage = () => {
 
         <div className="flex flex-row py-2 gap-3">
           <Mail className=" text-primary w-5 h-5" />
-          <p className="text-primary">hello@hk.co.uk</p>
+          <p className="normalText text-primary">hello@hk.co.uk</p>
         </div>
 
         <div className="flex flex-row py-2 gap-3">
           <MapPin className=" text-primary w-5 h-5" />
-          <p className="text-primary">123 Green Street, London, UK</p>
+          <p className="normalText text-primary">
+            123 Green Street, London, UK
+          </p>
         </div>
       </div>
 
@@ -31,18 +33,18 @@ const ContactPage = () => {
         </h2>
 
         <div className="flex flex-row py-2 gap-3 ">
-          <p className="text-primary">Monday-Thursday</p>
-          <p className="text-primary">9:00 AM - 5:00 PM</p>
+          <p className="normalText text-primary">Monday-Thursday</p>
+          <p className="normalText text-primary">9:00 AM - 5:00 PM</p>
         </div>
 
         <div className="flex flex-row py-2 gap-3">
-          <p className="text-primary">Saturday</p>
-          <p className="text-primary">10:00 AM - 2:00 PM</p>
+          <p className="normalText text-primary">Saturday</p>
+          <p className="normalText text-primary">10:00 AM - 2:00 PM</p>
         </div>
 
         <div className="flex flex-row py-2 gap-3 ">
-          <p className="text-primary">Sunday</p>
-          <p className="text-primary">Closed</p>
+          <p className="normalText text-primary">Sunday</p>
+          <p className="normalText text-primary">Closed</p>
         </div>
       </div>
 
