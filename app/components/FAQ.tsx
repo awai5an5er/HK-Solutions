@@ -15,13 +15,13 @@ export default function FAQ({
   return (
     <section className="lg:py-10 py-4">
       <div className="max-w-5xl mx-auto lg:px-4 px-2">
-        <h2 className="heading text-primary font-bold text-center lg:pb-10">
+        <h2 className="heading text-primary font-bold text-center lg:pb-10 pb-4">
           Frequently Asked Questions
         </h2>
 
-        <div className="lg:space-y-4 space-y-0">
+        <div className="lg:space-y-4 space-y-2">
           {faqs.map((faq, i) => (
-            <div key={i} className="space-y-2">
+            <div key={i} className="lg:space-y-2 space-y-0">
               {/* Question Box */}
               <div
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
