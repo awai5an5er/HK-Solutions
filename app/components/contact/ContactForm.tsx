@@ -50,7 +50,6 @@ export default function ContactForm() {
 
         {/* RIGHT FORM PANEL */}
         <div className="w-full sm:w-[50%] md:w-[45%] lg:w-1/2 relative">
-          <div className="absolute inset-0 bg-primary rounded-3xl blur-xl opacity-20 -z-10"></div>
           <Form />
         </div>
       </div>

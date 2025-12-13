@@ -132,7 +132,10 @@ export default function Navbar() {
               )}
             </div>
           ))}
-          <div className="flex justify-center">
+          <div
+            onClick={() => isOpen && setIsOpen(false)}
+            className="flex justify-center"
+          >
             <ContactBtn
               text={navButton.text}
               classes="bg-primary text-accent normalText px-5 py-2 rounded-xl shadow mt-4"
