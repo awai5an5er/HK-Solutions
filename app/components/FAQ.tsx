@@ -13,15 +13,15 @@ export default function FAQ({
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-5 md:py-10">
-      <div className="w-[95%] md:max-w-5xl mx-auto md:px-4">
-        <h2 className="heading text-primary font-bold text-center pb-5 md:pb-10">
+    <section className="md:py-10 py-4">
+      <div className="max-w-5xl mx-auto md:px-4 px-2">
+        <h2 className="heading text-primary font-bold text-center md:pb-10 pb-4">
           Frequently Asked Questions
         </h2>
 
-        <div className="space-y-2 md:space-y-4">
+        <div className="md:space-y-4 space-y-2">
           {faqs.map((faq, i) => (
-            <div key={i} className="space-y-2">
+            <div key={i} className="md:space-y-2 space-y-0">
               {/* Question Box */}
               <div
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
@@ -42,7 +42,7 @@ export default function FAQ({
                   openIndex === i ? "max-h-40" : "max-h-0"
                 }`}
               >
-                <div className="bg-accent border border-txtColor rounded-xl lg:p-8 p-4">
+                <div className="bg-accent border border-txtColor rounded-xl md:p-8 p-4">
                   <p className="text-txtColor normalText leading-relaxed">
                     {faq.answer}
                   </p>
