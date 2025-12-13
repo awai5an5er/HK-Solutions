@@ -10,16 +10,18 @@ export default function CTA({
   };
 }) {
   return (
-    <section className="py-10 mb-5 w-[95%] border rounded-2xl mx-auto   bg-primary    text-secondary">
-      <div className="mx-auto flex flex-col md:flex-row items-center justify-between px-4">
-        <div className="pb-8 md:mb-0">
-          <h2 className="heading font-bold">{ctaprops.heading}</h2>
-          <p className="normalText mt-4 max-w-md">{ctaprops.subHeading}</p>
+    <section className="lg:p-6 p-4 mb-5 w-full border rounded-2xl mx-auto   bg-primary    text-secondary">
+      <div className=" flex flex-col md:flex-row items-center justify-between ">
+        <div className="pb-5 md:pb-0">
+          <h2 className="heading font-bold text-center">{ctaprops.heading}</h2>
+          <p className="normalText mt-4 lg:text-start text-center">
+            {ctaprops.subHeading}
+          </p>
         </div>
 
         <ContactBtn
           text={ctaprops.buttonText}
-          classes="bg-white text-primary font-semibold px-8 py-4 rounded-full shadow hover:bg-gray-100 transition"
+          classes="bg-white text-primary font-semibold lg:px-8 lg:py-4 p-4 rounded-full shadow hover:bg-gray-100 transition"
         />
       </div>
     </section>

@@ -14,10 +14,10 @@ type FeaturesProps = {
 
 export default function Features({ features, featuresHeading }: FeaturesProps) {
   return (
-    <section className="my-5 py-10 bg-accent rounded-2xl">
+    <section className="my-5 lg:py-10 py-5 bg-accent rounded-2xl">
       <div className="px-4">
         {/* Heading */}
-        <div className="text-center py-4">
+        <div className="text-center lg:py-4 ">
           <h2 className="heading font-bold text-primary">
             {featuresHeading.heading}
           </h2>
@@ -27,7 +27,7 @@ export default function Features({ features, featuresHeading }: FeaturesProps) {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-4 gap-3 md:gap-10">
           {features.map((feature, i) => {
             return (
               <div
