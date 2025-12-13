@@ -5,18 +5,18 @@ export type FAQ = {
 
 export const faqs: FAQ[] = [
   {
-    question: "What types of home energy solutions do you offer?",
+    question: "What home energy solutions do you provide?",
     answer:
-      "We provide solar panel installations, battery storage systems, energy-efficient lighting, smart thermostats, and comprehensive home energy audits.",
+      "We offer a complete range of home energy services including solar PV installation, heat pump systems, home insulation, battery storage, EPC certificates, and EV charging solutions. Each service is tailored to improve efficiency, comfort, and long term performance.",
   },
   {
-    question: "How much can I save on my energy bills?",
+    question:" How much can I reduce my energy bills?",
     answer:
-      "Savings vary depending on your home's energy usage and the solutions implemented, but many customers see a reduction of 20-50% in monthly energy costs.",
+      "Energy savings vary depending on your property type, current energy usage, and the solution installed. However, many homeowners experience noticeable reductions in their energy bills by improving efficiency and switching to renewable energy systems.",
   },
   {
-    question: "Do you offer maintenance and support services?",
+    question: "Do you provide ongoing maintenance and customer support?",
     answer:
-      "Yes, we provide full maintenance, system monitoring, and prompt support to ensure your energy systems operate efficiently.",
+      "Yes, we offer reliable maintenance and after-installation support to ensure your systems continue to perform efficiently. Our team is always available to assist with inspections, advice, and long term system care.",
   },
 ];

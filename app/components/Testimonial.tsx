@@ -12,7 +12,7 @@ export default function Testimonials() {
           <h2 className="heading font-bold text-primary pb-4">
             What Our Clients Say
           </h2>
-          <p className="txtColor normalText mx-auto">
+          <p className="text-txtColor normalText mx-auto">
             Trusted by hundreds of satisfied customers. See why they love our
             services.
           </p>
@@ -26,12 +26,12 @@ export default function Testimonials() {
               className="relative bg-accent  border border-primary/40 rounded-3xl p-3 md:p-5 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3"
             >
               {/* Feedback */}
-              <p className="txtColor normalText italic py-4">{t.feedback}</p>
+              <p className="text-txtColor normalText  py-1 md:py-4">{t.feedback}</p>
 
               {/* Name & Role */}
-              <div className="text-center pt-4">
+              <div className=" pt-2 md:pt-4">
                 <p className="subHeading font-bold text-primary">{t.name}</p>
-                {t.role && <p className="txtColor normalText">{t.role}</p>}
+                {t.role && <p className="text-txtColor normalText">{t.role}</p>}
               </div>
             </div>
           ))}

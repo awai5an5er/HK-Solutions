@@ -31,7 +31,7 @@ export default function FAQ({
                   {faq.question}
                 </span>
 
-                <span className="normalText text-secondary font-bold text-xl">
+                <span className="normalText text-secondary font-bold">
                   {openIndex === i ? "-" : "+"}
                 </span>
               </div>

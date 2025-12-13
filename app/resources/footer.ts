@@ -66,7 +66,7 @@ interface textType {
 }
 export const text: textType[] = [
   {
-    title: "EcoHome Uk",
+    title: "HK Energy Solutions",
     content: [
       "Your trusted partner for a greener,more energy-efficient home in the UK.Certified installers of renewable energy solutions.",
     ],
