@@ -1,5 +1,12 @@
 import React from "react";
-import { ShieldCheck, Banknote, ClipboardCheck } from "lucide-react";
+import {
+  ShieldCheck,
+  Banknote,
+  ClipboardCheck,
+  Wrench,
+  Building2,
+  ThumbsUp,
+} from "lucide-react";
 
 interface StatCardProps {
   icon: React.ReactNode;
@@ -9,20 +16,12 @@ interface StatCardProps {
 
 const StatCard = ({ icon, title, subtitle }: StatCardProps) => {
   return (
-    <div
-      className="
-            flex items-center gap-5 
-            p-6 rounded-2xl border border-primary 
-            bg-secondary shadow-[0_4px_20px_rgba(0,0,0,0.05)]
-            hover:shadow-[0_6px_30px_rgba(0,0,0,0.10)]
-            transition-all duration-300 hover:-translate-y-1
-            "
-    >
+    <div className="flex gap-5 border p-5 rounded-2xl hover:shadow-xl transition-all duration-300 bg-secondary">
       <div className="text-primary">{icon}</div>
 
-      <div>
-        <p className="font-bold normalText text-primary">{title}</p>
-        <p className="text-txtColor normalText mt-1">{subtitle}</p>
+      <div className="flex flex-col gap-2">
+        <h1 className="font-bold subHeading text-primary">{title}</h1>
+        <p className="text-txtColor normalText">{subtitle}</p>
       </div>
     </div>
   );
@@ -30,48 +29,57 @@ const StatCard = ({ icon, title, subtitle }: StatCardProps) => {
 
 export default function WhyChooseUs() {
   return (
-    <section className="w-full px-6 py-3 md:px-12 max-w-7xl mx-auto">
-      {/* FLEXBOX ONLY */}
-      <div className="flex flex-wrap gap-8 sm:gap-5 justify-center">
-        <div className="w-full sm:w-[48%] lg:w-[30%]">
-          <StatCard
-            icon={<ShieldCheck className="w-12 h-12" />}
-            title="UK Certified"
-            subtitle="TrustMark Approved Installers"
-          />
-        </div>
+    <section className="w-[95%] mx-auto py-5 md:py-10">
+      <div className="flex flex-col items-center gap-3 md:gap-5">
+        <h1 className="heading text-primary font-bold">Why Choose US</h1>
+        <p className="text-txtColor text-center normalText max-w-5xl">
+          HK Energy Solutions helps homeowners access reliable, government
+          backed energy upgrades that lower bills, enhance comfort, and add
+          long-term value. We ensure a smooth process to approved solutions that
+          support a cleaner, more efficient, and sustainable home
+        </p>
+      </div>
+      <div
+        className=" mx-auto grid gap-3 md:gap-8 
+        grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-5 md:pt-10"
+      >
+        <StatCard
+          icon={<ShieldCheck className="size-10" />}
+          title="UK Certified"
+          subtitle="TrustMark Approved Installers"
+        />
 
-        <div className="w-full sm:w-[48%] lg:w-[30%]">
-          <StatCard
-            icon={<Banknote className="w-12 h-12" />}
-            title="Government Grants"
-            subtitle="Access Full Funding Schemes"
-          />
-        </div>
+        <StatCard
+          icon={<Banknote className="size-10" />}
+          title="Government Grants"
+          subtitle="Access Full Funding Schemes"
+        />
 
-        <div className="w-full sm:w-[48%] lg:w-[30%]">
-          <StatCard
-            icon={<ShieldCheck className="w-12 h-12" />}
-            title="UK Certified"
-            subtitle="TrustMark Approved Installers"
-          />
-        </div>
+        <StatCard
+          icon={<ClipboardCheck className="size-10" />}
+          title="100% Free Survey"
+          subtitle="No Hidden Charges"
+        />
 
-        <div className="w-full sm:w-[48%] lg:w-[30%]">
-          <StatCard
-            icon={<Banknote className="w-12 h-12" />}
-            title="Government Grants"
-            subtitle="Access Full Funding Schemes"
-          />
-        </div>
+        {/* NEW CARDS BELOW */}
 
-        <div className="w-full sm:w-[48%] lg:w-[30%]">
-          <StatCard
-            icon={<ClipboardCheck className="w-12 h-12" />}
-            title="100% Free Survey"
-            subtitle="No hidden Charges"
-          />
-        </div>
+        <StatCard
+          icon={<Wrench className="size-10" />}
+          title="Expert Engineers"
+          subtitle="Professionally trained installation team"
+        />
+
+        <StatCard
+          icon={<Building2 className="size-10" />}
+          title="All Home Types"
+          subtitle="Solutions for flats & houses"
+        />
+
+        <StatCard
+          icon={<ThumbsUp className="size-10" />}
+          title="Customer Satisfaction"
+          subtitle="Rated excellent by happy homeowners"
+        />
       </div>
     </section>
   );

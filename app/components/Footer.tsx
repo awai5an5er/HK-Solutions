@@ -1,76 +1,111 @@
+import { Facebook, Instagram, Twitter } from "lucide-react";
 import { services, quiklinks, text, contact } from "../resources/footer";
 import Link from "next/link";
 
 const Footer = () => {
+  const socialMedia = [
+    { icon: Facebook },
+    { icon: Instagram },
+    { icon: Twitter },
+  ];
   return (
     <footer className="bg-primary">
-      <div className="w-[95%] flex mx-auto justify-around md:justify-between flex-wrap gap-3 md:gap-10 py-10">
+      <div
+        className="
+        w-[95%] mx-auto py-3 md:py-10 
+        flex flex-wrap 
+        md:justify-between 
+        md:gap-10
+      "
+      >
         {text.map((value, i) => (
           <div
-            key={`${value} ${i}`}
-            className="flex flex-col gap-3 w-9/20 sm:w-1/4 md:w-1/5"
+            key={i}
+            className="
+              flex flex-col gap-3
+              w-1/2 md:w-[22%]
+            "
           >
             <span className="subHeading text-secondary font-bold">
               {value.title}
             </span>
+
             <p className="normalText text-secondary">{value.content}</p>
-            <div className="flex gap-5 text-secondary normalText font-bold">
-              {value.socials.map((items, index) => (
-                <span key={`${items} ${index}`}>{items}</span>
-              ))}
-            </div>
           </div>
         ))}
-        <div className="flex flex-col gap-3 w-9/20 sm:w-auto">
+
+        {/* SERVICES */}
+        <div
+          className="
+            hidden md:flex flex-col gap-3
+            w-full md:w-[22%]
+          "
+        >
           <span className="subHeading text-secondary font-bold">
             {services[0].title}
           </span>
 
           <ul className="flex flex-col gap-2">
             {services[0].links.map(({ name, link }, i) => (
-              <li
-                key={`${name} ${link} ${i}`}
-                className="text-secondary normalText"
-              >
+              <li key={i} className="text-secondary normalText">
+                <Link href={link}>{name}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div
+          className="
+            hidden md:flex flex-col gap-3
+            w-full md:w-[22%]
+          "
+        >
+          <span className="hidden md:block subHeading text-secondary font-bold">
+            {quiklinks[0].title}
+          </span>
+
+          <ul className="flex flex-col gap-2">
+            {quiklinks[0].links.map(({ name, link }, i) => (
+              <li key={i} className="text-secondary normalText">
                 <Link href={link}>{name}</Link>
               </li>
             ))}
           </ul>
         </div>
 
-        <div className="flex flex-col gap-3 w-9/20 sm:w-auto">
-          <span className="subHeading text-secondary font-bold">
-            {quiklinks[0].title}
-          </span>
-          <ul className="flex flex-col gap-2">
-            {quiklinks[0].links.map(({ name, link }, i) => (
-              <li
-                key={`${name} ${link} ${i}`}
-                className="text-secondary normalText"
-              >
-                <Link href={link}>{name}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="flex flex-col gap-3 w-1/2 sm:w-auto">
+        {/* CONTACT */}
+        <div
+          className="
+            flex flex-col gap-3
+            w-1/2 md:w-[22%]
+          "
+        >
           <span className="subHeading text-secondary font-bold">
             {contact.title}
           </span>
 
           {contact.items.map(({ icon: Icon, text }, i) => (
-            <div key={i} className="flex gap-3 items-center text-secondary">
+            <div key={i} className="flex gap-3 items-end text-secondary">
               <Icon />
-              <span className="normalText text-secondary">{text}</span>
+              <span className="normalText">{text}</span>
             </div>
           ))}
+          <div className="flex gap-5 text-secondary normalText font-bold">
+            {socialMedia.map(({ icon: Icon }, index) => (
+              <div className="p-2 bg-secondary rounded-full" key={index}>
+                <Icon size={15} className="text-primary" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-      <hr className="text-secondary" />
-      <div className="w-[95%] text-center py-5 text-secondary font-bold normalText">
-        @2025 EcoHome UK, All right reserved | Privacy Policy
+
+      <hr className="border-secondary" />
+      <div className="w-[95%] text-center mx-auto py-5 text-secondary font-bold normalText">
+        © 2025 {new Date().getFullYear()} UK — All rights reserved | Privacy
+        Policy
       </div>
     </footer>
   );
 };
+
 export default Footer;

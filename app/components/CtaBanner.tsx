@@ -1,46 +1,34 @@
-import React from "react";
+import ContactBtn from "./ContactBtn";
 interface CtaBannerProps {
   title: string;
   description: string;
   buttonText: string;
 }
 
-export default function CtaBanner({title,description,buttonText}:CtaBannerProps) {
-    return (
-        <section className="w-full px-6 py-8 md:py-10">
-            <div
-                className="
-                    max-w-6xl mx-auto 
-                    rounded-2xl 
-                    bg-linear-to-r from-primary to-primary/60
-                    p-8 md:p-12
-                    text-center text-secondary
-                    shadow-xl
-                "
-            >
-                <h2 className="heading font-bold tracking-tight leading-snug">
-                    {title}
-                </h2>
+export default function CtaBanner({
+  title,
+  description,
+  buttonText,
+}: CtaBannerProps) {
+  return (
+    <section className="">
+      <div className="w-[95%] mx-auto rounded-3xl bg-primary md:p-10 p-5">
+        <div className="flex flex-col gap-5 items-center">
+          <h2 className="heading text-secondary font-bold text-center mx-auto ">
+            {title}
+          </h2>
 
-                <p className="mt-4 max-w-2xl mx-auto normalText  opacity-90 leading-relaxed">
-                    {description}
-                </p>
-
-                <button
-                    className="
-                        mt-8
-                        mx-auto
-                        flex items-center justify-center
-                        h-12 sm:h-14 px-6 sm:px-10
-                        rounded-xl
-                        bg-accent text-primary font-bold
-                        shadow-lg hover:bg-opacity-90
-                        transition-all normalText
-                    "
-                >
-                    {buttonText}
-                </button>
-            </div>
-        </section>
-    );
+          <p className="normalText text-secondary max-w-4xl mx-auto text-center">
+            {description}
+          </p>
+        </div>
+        <div className="flex justify-center md:pt-6 pt-3">
+          <ContactBtn
+            text={buttonText}
+            classes="bg-secondary px-8 py-3 rounded-2xl normalText text-primary font-medium cursor-pointer"
+          />
+        </div>
+      </div>
+    </section>
+  );
 }

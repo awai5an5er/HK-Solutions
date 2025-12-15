@@ -1,26 +1,33 @@
-import React from "react";
-
-export default function HeroSection() {
+const Story = () => {
   return (
-    <section className="flex w-[95%] flex-col-reverse md:flex-row mx-auto h-auto md:h-[90vh] py-7">
-      <div className="h-[50vh] md:h-auto w-full md:w-1/2 flex flex-col justify-center gap-5 md:gap-10">
-        <h1 className="heading text-primary font-extrabold">
-          Slash your energy bills & upgrade your home
+    <section className="flex flex-col lg:items-center lg:flex-row justify-between lg:py-10 py-5 w-[95%] mx-auto gap-10">
+      <div className="flex flex-col  gap-2 w-full lg:w-7/10">
+        <h1 className="heading text-primary font-bold">
+          {" "}
+          Transform Your Home with Government Backed Energy Solutions
         </h1>
-        <span className="normalText text-txtColor">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          impedit molestiae qui ratione perspiciatis minus incidunt consequuntur
-          nisi provident numquam.
-        </span>
-        <div>
-          <button className="normalText bg-primary px-7 py-3 rounded-2xl text-secondary">
-            Book Free Survey
-          </button>
-        </div>
+        <p className="text-txtColor normalText text-justify">
+          Upgrade your home effortlessly with UK government-supported services
+          designed to reduce energy costs, enhance comfort, and improve
+          sustainability. At HK Energy Solutions, we act as your trusted
+          intermediary, connecting homeowners with certified programs for solar
+          PV installations, heat pump systems, home insulation, battery storage,
+          EV charging, and EPC certification.Our team ensures a smooth process
+          from start to finish, helping you access high-quality services
+          approved by the UK government. Enjoy lower utility bills, a reduced
+          carbon footprint, and a safer, greener home all while benefiting from
+          solutions tailored to your energy and efficiency goals.
+        </p>
       </div>
-      <div className="w-full h-[40vh] md:h-auto md:w-1/2 bg-[url('/assets/hero.webp')] bg-no-repeat bg-cover bg-center rounded-2xl">
-        {/* <img className="w-2/3" src="/assets/hero.webp" alt="" /> */}
+
+      <div className="flex justify-center ">
+        <img
+          src="/assets/hero.webp"
+          alt=""
+          className="w-full object-cover object-contain object-center rounded-2xl"
+        />
       </div>
     </section>
   );
-}
+};
+export default Story;

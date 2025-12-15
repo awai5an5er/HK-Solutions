@@ -1,9 +1,10 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { navLinks, navButton, NavLink } from "../resources/Nanlinks";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import ContactBtn from "./ContactBtn";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function Navbar() {
         !mobileMenuRef.current.contains(e.target as Node) &&
         !hamBurgerRef.current?.contains(e.target as Node)
       ) {
-        setIsOpen(false); // Close menu
+        setIsOpen(false);
       }
     };
 
@@ -34,12 +35,12 @@ export default function Navbar() {
   return (
     <header className="w-full sticky top-0 left-0 z-50 bg-primary backdrop-blur-md shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <h1 className="font-bold text-secondary subHeading">
+        <Link href="/" className="font-bold text-secondary subHeading">
           HK Energy Solutions
-        </h1>
+        </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center gap-8 text-secondary normalText font-medium relative">
+        <nav className="hidden lg:flex items-center gap-8 text-secondary normalText font-medium relative">
           {navLinks.map((link: NavLink) => (
             <div key={link.name} className="relative group">
               {link.submenu ? (
@@ -49,12 +50,12 @@ export default function Navbar() {
                     <ChevronDown className="w-4 h-4 relative top-px" />
                   </button>
 
-                  <div className="absolute left-0 top-full mt-2 w-56 bg-primary shadow-lg rounded-lg p-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
+                  <div className="absolute left-0 top-full mt-2 w-56 bg-accent text-primary shadow-lg rounded-lg p-2 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
                     {link.submenu.map((sublink) => (
                       <Link
                         key={sublink.name}
                         href={sublink.href}
-                        className="block px-4 py-2 rounded"
+                        className="block px-3 py-4 rounded hover-underline"
                       >
                         {sublink.name}
                       </Link>
@@ -69,14 +70,15 @@ export default function Navbar() {
         </nav>
 
         {/* Desktop Button */}
-        <button className="hidden md:block bg-secondary text-primary cursor-pointer font-bold normalText px-5 py-2 rounded-xl shadow">
-          {navButton.text}
-        </button>
+        <ContactBtn
+          text={navButton.text}
+          classes="hidden lg:block bg-secondary text-primary cursor-pointer font-bold normalText px-5 py-2 rounded-xl shadow"
+        />
 
         {/* Mobile Hamburger */}
         <div
           ref={hamBurgerRef}
-          className="md:hidden text-secondary text-2xl font-bold cursor-pointer"
+          className="lg:hidden text-secondary text-2xl font-bold cursor-pointer"
           onClick={toggleMenu}
         >
           ☰
@@ -86,13 +88,13 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         ref={mobileMenuRef}
-        className={`md:hidden bg-primary shadow-lg transition-all duration-300 ${
+        className={`lg:hidden absolute w-full bg-primary shadow-lg transition-all duration-300 ${
           isOpen
             ? "max-h-screen opacity-100"
             : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
-        <nav className="flex flex-col gap-4 p-6 text-secondary normalText font-medium">
+        <nav className="flex flex-col gap-4 p-6 text-primary bg-accent normalText font-medium">
           {navLinks.map((link: NavLink, index: number) => (
             <div key={link.name}>
               {link.submenu ? (
@@ -115,7 +117,7 @@ export default function Navbar() {
                         <Link
                           key={sublink.name}
                           href={sublink.href}
-                          onClick={() => setIsOpen(false)} // Close when clicking item
+                          onClick={() => setIsOpen(false)}
                         >
                           {sublink.name}
                         </Link>
@@ -124,19 +126,21 @@ export default function Navbar() {
                   )}
                 </>
               ) : (
-                <Link
-                  href={link.href || "#"}
-                  onClick={() => setIsOpen(false)} // Close when clicking item
-                >
+                <Link href={link.href || "#"} onClick={() => setIsOpen(false)}>
                   {link.name}
                 </Link>
               )}
             </div>
           ))}
-
-          <button className="bg-secondary text-primary normalText px-5 py-2 rounded-xl shadow mt-4">
-            {navButton.text}
-          </button>
+          <div
+            onClick={() => isOpen && setIsOpen(false)}
+            className="flex justify-center"
+          >
+            <ContactBtn
+              text={navButton.text}
+              classes="bg-primary text-accent normalText px-5 py-2 rounded-xl shadow mt-4"
+            />
+          </div>
         </nav>
       </div>
     </header>

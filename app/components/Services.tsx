@@ -1,83 +1,77 @@
-import React from "react";
 import { Sun, Flame, Layers, FileCheck, Battery } from "lucide-react";
 
 export default function Services() {
   const services = [
     {
       title: "Solar PV Installation",
-      desc: "High-efficiency solar systems designed to lower your energy bills and boost home value.",
+      desc: "Government approved solar PV solutions that help homeowners generate clean energy and reduce long-term electricity costs.",
       icon: <Sun className="w-14 h-14 text-primary" />,
     },
     {
       title: "Heat Pump Systems",
-      desc: "Eco-friendly air-source and ground-source heat pumps backed by UK grants.",
+      desc: "UK government supported heat pump programs designed to lower heating expenses while maintaining year-round home comfort.",
       icon: <Flame className="w-14 h-14 text-primary" />,
     },
     {
       title: "Home Insulation",
-      desc: "Premium loft, cavity, and solid-wall insulation to maximise heat retention.",
+      desc: "Certified insulation services accessed through government schemes to improve efficiency and minimise heat loss.",
       icon: <Layers className="w-14 h-14 text-primary" />,
     },
     {
       title: "EPC Certificates",
-      desc: "Fast and reliable EPC inspections for landlords and UK homeowners.",
+      desc: "Official EPC assessments arranged through approved UK providers to meet compliance and energy standards.",
       icon: <FileCheck className="w-14 h-14 text-primary" />,
     },
     {
       title: "Battery Storage",
-      desc: "Store excess solar energy and power your home even after sunset efficiently.",
+      desc: "Government backed battery storage options that allow homeowners to store energy for smarter daily use.",
       icon: <Battery className="w-14 h-14 text-primary" />,
     },
     {
       title: "EV Charging Solutions",
-      desc: "Smart and fast EV home chargers installed by certified UK professionals.",
+      desc: "Access approved EV charging installations through UK government programs for safe and reliable home charging.",
       icon: <Battery className="w-14 h-14 text-primary" />,
     },
   ];
 
   return (
-    <section className="w-full py-20 bg-accent px-6 md:px-12">
-      <h2 className="heading md:text-4xl font-extrabold text-primary text-center">
-        Our Energy Services
-      </h2>
+    <section className="">
+      <div className="bg-accent py-7 md:py-15">
+        <div className="flex flex-col gap-8 md:gap-12 w-[95%] mx-auto ">
+          <div className="flex flex-col text-center items-center gap-3">
+            <h2 className="heading font-extrabold text-primary ">
+              Our Energy Solutions
+            </h2>
 
-      <p className="text-center max-w-2xl mx-auto mt-3 text-txtColor normalText">
-        Premium UK home energy upgrades backed by government grants & certified
-        installers.
-      </p>
-
-      {/* FLEXBOX LAYOUT (3 per row) */}
-      <div
-        className="
-                    flex flex-wrap justify-center 
-                    gap-5 mt-16 max-w-7xl mx-auto
-                "
-      >
-        {services.map((item, i) => (
-          <div
-            key={i}
-            className="
-                            w-full sm:w-[48%] lg:w-[30%] 
-                            p-10 rounded-3xl border border-accent 
-                            bg-secondary shadow-[0_6px_30px_rgba(0,0,0,0.06)]
-                            transition-all duration-300 cursor-pointer
-                            hover:shadow-[0_12px_50px_rgba(0,0,0,0.15)]
-                            hover:-translate-y-2 hover:scale-[1.03]
-                        "
-          >
-            <div className="mb-6">{item.icon}</div>
-
-            <h3 className="subHeading font-bold text-primary">{item.title}</h3>
-
-            <p className="text-txtColor mt-3 leading-relaxed normalText">
-              {item.desc}
+            <p className=" text-txtColor  max-w-5xl  normalText">
+              Reliable, government backed energy solutions that improve comfort,
+              reduce costs, and help UK homeowners access certified programs for
+              a more efficient and sustainable home.
             </p>
-
-            <button className="mt-6 text-primary font-semibold hover:underline flex items-center gap-1 normalText">
-              Learn More →
-            </button>
           </div>
-        ))}
+          {/* FLEXBOX LAYOUT (3 per row) */}
+
+          <div className="flex gap-3 md:gap-8 justify-around sm:justify-between flex-wrap">
+            {services.map((item, i) => (
+              <div
+                key={`${item} ${i}`}
+                className="bg-secondary flex flex-col gap-5 p-5 w-full sm:w-[47%]  lg:w-[30%] rounded-2xl "
+              >
+                <div className="">{item.icon}</div>
+
+                <h3 className="subHeading font-bold text-primary">
+                  {item.title}
+                </h3>
+
+                <p className="text-txtColor normalText">{item.desc}</p>
+
+                <button className=" text-primary font-semibold hover:underline flex items-center  normalText">
+                  Learn More →
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
