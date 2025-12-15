@@ -2,16 +2,10 @@ import { milestones } from "@/app/resources/about";
 const Story = () => {
   return (
     <section className="flex flex-col sm:flex-row justify-between lg:py-10 py-5 w-[95%] mx-auto gap-10">
-      <div className="flex flex-col gap-5 w-full sm:w-1/2">
+      <div className="flex flex-col gap-5 w-full sm:w-7/10">
         <h1 className="heading text-primary font-bold">Our Story</h1>
-        <p className="text-txtColor normalText">
-          HK Energy Solutions was established with a clear mission to make
-          sustainable and renewable energy solutions accessible, reliable, and
-          efficient for homes and businesses. With proven expertise in solar PV
-          installation, heat pump systems, home insulation, and energy-efficient
-          technologies, we deliver tailored solutions that reduce energy costs,
-          minimize environmental impact, and support our clients in building a
-          cleaner, more sustainable future.
+        <p className="text-txtColor normalText text-justify">
+        HK Energy Solutions was founded to simplify access to UK government-supported energy and sustainability programs for homeowners and businesses. Our mission is to make approved renewable and energy-efficient solutions accessible, reliable, and easy to understand. By acting as a trusted intermediary, we connect clients with certified government schemes for solar PV, heat pump systems, home insulation, and other efficiency-focused technologies, helping reduce energy costs, lower environmental impact, and support a cleaner, more sustainable future.
         </p>
         <div className="flex flex-col gap-3">
           {milestones.map((item, index) => {

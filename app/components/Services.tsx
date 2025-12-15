@@ -3,36 +3,37 @@ import { Sun, Flame, Layers, FileCheck, Battery } from "lucide-react";
 
 export default function Services() {
   const services = [
-    {
-      title: "Solar PV Installation",
-         desc: "Advanced solar PV systems that deliver maximum energy generation and long-term savings.",
-      icon: <Sun className="w-14 h-14 text-primary" />,
-    },
-    {
-      title: "Heat Pump Systems",
-     desc: "Efficient air-source and ground-source heat pumps designed to cut heating costs and improve comfort.",
-      icon: <Flame className="w-14 h-14 text-primary" />,
-    },
-    {
-      title: "Home Insulation",
-      desc: "High-quality loft, cavity, and solid-wall insulation that boosts efficiency and reduces heat loss.",
-      icon: <Layers className="w-14 h-14 text-primary" />,
-    },
-    {
-      title: "EPC Certificates",
-      desc: "Professional and accurate EPC assessments for landlords, homeowners, and property sellers.",
-      icon: <FileCheck className="w-14 h-14 text-primary" />,
-    },
-    {
-      title: "Battery Storage",
-        desc: "Smart battery storage solutions that let you save excess solar power for reliable, round-the-clock use.",
-      icon: <Battery className="w-14 h-14 text-primary" />,
-    },
-    {
-      title: "EV Charging Solutions",
-     desc: "Fast and reliable EV home charging installations carried out by certified UK technicians.",
-      icon: <Battery className="w-14 h-14 text-primary" />,
-    },
+   {
+  title: "Solar PV Installation",
+  desc: "Government-approved solar PV solutions that help homeowners generate clean energy and reduce long-term electricity costs.",
+  icon: <Sun className="w-14 h-14 text-primary" />,
+},
+{
+  title: "Heat Pump Systems",
+  desc: "UK government-supported heat pump programs designed to lower heating expenses while maintaining year-round home comfort.",
+  icon: <Flame className="w-14 h-14 text-primary" />,
+},
+{
+  title: "Home Insulation",
+  desc: "Certified insulation services accessed through government schemes to improve efficiency and minimise heat loss.",
+  icon: <Layers className="w-14 h-14 text-primary" />,
+},
+{
+  title: "EPC Certificates",
+  desc: "Official EPC assessments arranged through approved UK providers to meet compliance and energy standards.",
+  icon: <FileCheck className="w-14 h-14 text-primary" />,
+},
+{
+  title: "Battery Storage",
+  desc: "Government-backed battery storage options that allow homeowners to store energy for smarter daily use.",
+  icon: <Battery className="w-14 h-14 text-primary" />,
+},
+{
+  title: "EV Charging Solutions",
+  desc: "Access approved EV charging installations through UK government programs for safe and reliable home charging.",
+  icon: <Battery className="w-14 h-14 text-primary" />,
+},
+
   ];
 
   return (
@@ -45,7 +46,7 @@ export default function Services() {
       </h2>
 
       <p className=" text-txtColor max-w-5xl  normalText">
-       Reliable and efficient home energy upgrades designed to improve comfort, reduce costs, and enhance long term performance. Our certified experts deliver tailored solutions that boost your home's energy efficiency, increase property value, and provide lasting savings for years to come.
+      Reliable, government-backed energy solutions that improve comfort, reduce costs, and help UK homeowners access certified programs for a more efficient and sustainable home.
       </p>
 </div>
       {/* FLEXBOX LAYOUT (3 per row) */}

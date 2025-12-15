@@ -33,10 +33,7 @@ export default function WhyChooseUs() {
       <div className="flex flex-col items-center gap-3 md:gap-5">
         <h1 className="heading text-primary font-bold">Why Choose US</h1>
         <p className="text-txtColor normalText max-w-5xl">
-          At HK Energy Solutions, we provide reliable energy upgrades that
-          reduce bills, improve comfort, and add long term value. Our certified
-          experts use advanced technology to deliver efficient, high quality
-          solutions for a cleaner and more sustainable home.
+         HK Energy Solutions helps homeowners access reliable, government-backed energy upgrades that lower bills, enhance comfort, and add long-term value. We ensure a smooth process to approved solutions that support a cleaner, more efficient, and sustainable home.
         </p>
       </div>
       <div

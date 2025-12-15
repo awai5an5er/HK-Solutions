@@ -9,7 +9,7 @@ const MissionVision = () => {
             `}
         >
           <h1 className="subHeading font-bold text-primary">{value.heading}</h1>
-          <p className="normalText text-txtColor">{value.description}</p>
+          <p className="normalText text-txtColor text-justify">{value.description}</p>
         </div>
       ))}
     </section>

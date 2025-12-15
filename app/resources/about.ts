@@ -23,23 +23,24 @@ interface corevaluesType {
 }
 export const corevalues: corevaluesType[] = [
   {
-    icon: ShieldCheck,
-    title: "Integrity",
-    content:
-      "At HK Energy Solutions, we operate with honesty and transparency, delivering dependable, sustainable, and cost-effective energy solutions that help homes and businesses achieve long-term energy efficiency.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Innovation",
-    content:
-      "We adopt advanced technologies and forward-thinking approaches to create smarter, more efficient energy systems that promote sustainable growth for our clients and the wider community.",
-  },
-  {
-    icon: Users,
-    title: "Customer Focus",
-    content:
-      "Our customers are central to everything we do. We listen carefully to their needs, provide tailored energy solutions, and deliver a consistently high standard of service at every stage.",
-  },
+  icon: ShieldCheck,
+  title: "Integrity",
+  content:
+    "We operate with transparency and professionalism, guiding homeowners and businesses toward trusted, government-approved energy programs that support long-term efficiency and reliability.",
+},
+{
+  icon: Lightbulb,
+  title: "Innovation",
+  content:
+    "We stay aligned with evolving government initiatives and modern energy technologies to help clients access smarter, more efficient solutions for a sustainable future.",
+},
+{
+  icon: Users,
+  title: "Customer Focus",
+  content:
+    "Our clients come first. We provide clear guidance, tailored support, and a smooth experience while connecting customers with approved energy solutions that meet their needs.",
+},
+
 ];
 
 import { Flag, Zap, Globe } from "lucide-react";
