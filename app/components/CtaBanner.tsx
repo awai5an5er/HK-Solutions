@@ -25,7 +25,7 @@ export default function CtaBanner({
         <div className="flex justify-center md:pt-6 pt-3">
           <ContactBtn
             text={buttonText}
-            classes="bg-secondary px-8 py-3 rounded-2xl normalText text-primary font-medium cursor-pointer"
+            classes="bg-accent px-8 py-3 rounded-2xl normalText text-primary font-medium cursor-pointer"
           />
         </div>
       </div>

@@ -7,8 +7,8 @@ function ContactBtn({ text, classes }: { text: string; classes: string }) {
   const [popup, setPopup] = useState(false);
   useEffect(() => {
     popup
-      ? (document.body.style.overflow = "hidden")
-      : (document.body.style.overflow = "scroll");
+      ? (document.body.style.overflowY = "hidden")
+      : (document.body.style.overflowY = "scroll");
   }, [popup]);
   return (
     <div>

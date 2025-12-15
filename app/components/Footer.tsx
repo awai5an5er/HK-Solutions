@@ -1,36 +1,33 @@
-import { Facebook, Instagram, Twitter } from "lucide-react";
 import { services, quiklinks, text, contact } from "../resources/footer";
 import Link from "next/link";
 
 const Footer = () => {
-  const socialMedia = [
-    { icon: Facebook },
-    { icon: Instagram },
-    { icon: Twitter },
-  ];
   return (
     <footer className="bg-primary">
       <div
         className="
         w-[95%] mx-auto py-3 md:py-10 
         flex flex-wrap 
-        md:justify-between 
+        md:justify-between
+        gap-3 
         md:gap-10
+      
       "
       >
         {text.map((value, i) => (
           <div
             key={i}
             className="
-              flex flex-col gap-3
-              w-1/2 md:w-[22%]
+            md:mb-0 mb-4
+              flex flex-col md:gap-3 gap-0
+              w-full md:w-[22%]
             "
           >
             <span className="subHeading text-secondary font-bold">
               {value.title}
             </span>
 
-            <p className="normalText text-secondary">{value.content}</p>
+            <p className="normalText text-secondary pe-2">{value.content}</p>
           </div>
         ))}
 
@@ -76,7 +73,7 @@ const Footer = () => {
         <div
           className="
             flex flex-col gap-3
-            w-1/2 md:w-[22%]
+            w-full md:w-[22%]
           "
         >
           <span className="subHeading text-secondary font-bold">
@@ -84,25 +81,17 @@ const Footer = () => {
           </span>
 
           {contact.items.map(({ icon: Icon, text }, i) => (
-            <div key={i} className="flex gap-3 items-end text-secondary">
+            <div key={i} className="flex gap-2 items-end text-secondary">
               <Icon />
               <span className="normalText">{text}</span>
             </div>
           ))}
-          <div className="flex gap-5 text-secondary normalText font-bold">
-            {socialMedia.map(({ icon: Icon }, index) => (
-              <div className="p-2 bg-secondary rounded-full" key={index}>
-                <Icon size={15} className="text-primary" />
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 
       <hr className="border-secondary" />
-      <div className="w-[95%] text-center mx-auto py-5 text-secondary font-bold normalText">
-        © 2025 {new Date().getFullYear()} UK — All rights reserved | Privacy
-        Policy
+      <div className="w-[95%] text-center mx-auto py-2 text-secondary font-bold normalText">
+        © {new Date().getFullYear()} UK — All rights reserved | Privacy Policy
       </div>
     </footer>
   );
