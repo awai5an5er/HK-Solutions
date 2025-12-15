@@ -15,7 +15,6 @@ export default function Navbar() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // ---------- 🔥 Outside Click Handler for Mobile Menu ----------
   useEffect(() => {
     const handleOutsideClick = (e: MouseEvent) => {
       if (
@@ -72,7 +71,7 @@ export default function Navbar() {
         {/* Desktop Button */}
         <ContactBtn
           text={navButton.text}
-          classes="hidden lg:block bg-secondary text-primary cursor-pointer font-bold normalText px-5 py-2 rounded-xl shadow"
+          classes="hidden lg:block bg-accent text-primary cursor-pointer font-bold normalText px-5 py-2 rounded-xl shadow"
         />
 
         {/* Mobile Hamburger */}

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
-import { User, Mail, Phone, MessageSquare } from "lucide-react";
+import { User, Mail, Phone, MessageSquare, X } from "lucide-react";
 import { z } from "zod";
 
 const userSchema = z.object({
@@ -78,9 +78,9 @@ function Form({
       {popup && setPopup && (
         <span
           onClick={() => setPopup(false)}
-          className="text-center absolute right-7/100 top-4/100 md:right-5/100 md:top-5/100 z-10 rounded-2xl px-2 cursor-pointer"
+          className="text-center absolute w-7 h-7 flex justify-center items-center right-7/100 top-5.5/100 md:right-5/100 md:top-7/100 z-10 rounded-full p-1 cursor-pointer text-accent bg-primary hover:bg-accent hover:text-primary hover:border-2"
         >
-          X
+          <X />
         </span>
       )}
       <form
