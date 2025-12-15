@@ -17,7 +17,13 @@ const userSchema = z.object({
 });
 type FormData = z.infer<typeof userSchema>;
 
-function Form() {
+function Form({
+  popup,
+  setPopup,
+}: {
+  popup?: boolean;
+  setPopup?: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   const [submit, setSubmit] = useState(false);
 
   const [errors, setErrors] = useState<
@@ -61,8 +67,26 @@ function Form() {
     console.log("Form submitted:", form);
   };
   return (
-    <div className="bg-accent backdrop-blur-md rounded-3xl p-6 lg:p-12 md:mx-0 mx-3 md:mt-0 mt-2 shadow-2xl border border-accent">
-      <form onSubmit={handleSubmit} className="flex flex-col md:gap-4 gap-3">
+    <div
+      className={`${
+        popup &&
+        "fixed z-40 w-9/10 h-[75vh] overflow-y-scroll md:w-2/3 lg:w-1/2 scroll-smooth inset-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
+      } bg-accent backdrop-blur-md rounded-3xl ${
+        popup ? "p-6 lg:p-12 md:mt-0 mt-2" : "p-6 lg:p-12 md:mx-0 mx-3"
+      } shadow-2xl border border-accent`}
+    >
+      {popup && setPopup && (
+        <span
+          onClick={() => setPopup(false)}
+          className="text-center absolute right-7/100 top-4/100 md:right-5/100 md:top-10/100 z-10 rounded-2xl px-2 cursor-pointer"
+        >
+          X
+        </span>
+      )}
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col md:gap-4 gap-3 h-full justify-around"
+      >
         <h3 className="subHeading font-bold text-primary">Send Us a message</h3>
         {/* NAME */}
         <div className="relative">
@@ -169,7 +193,7 @@ function Form() {
             <option value="">-Select-</option>
             <option value="yes">Yes</option>
             <option value="no">No</option>
-            <option value="dontKnow">Don't Know</option>
+            <option value="dontKnow">{"Don't Know"}</option>
           </select>
           <span className="pointer-events-none absolute right-4 top-7/10 -translate-y-1/2 text-primary">
             ▼
@@ -232,12 +256,14 @@ function Form() {
         {errors.message && (
           <p className="text-red-500 text-sm">{errors.message[0]}</p>
         )}
-        <button
-          type="submit"
-          className="mt-2 h-12 mormalText bg-primary text-secondary cursor-pointer font-bold rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-transform"
-        >
-          Send Message
-        </button>
+        <div className="pb-5">
+          <button
+            type="submit"
+            className="w-full py-2 mormalText bg-primary text-secondary cursor-pointer font-bold rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-transform"
+          >
+            Send Message
+          </button>
+        </div>
       </form>
     </div>
   );
