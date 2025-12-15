@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { navLinks, navButton, NavLink } from "../resources/Nanlinks";
+import { navLinks, navButton, NavLink } from "../resources/Navlinks";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import ContactBtn from "./ContactBtn";
 
