@@ -43,35 +43,6 @@ export const corevalues: corevaluesType[] = [
 
 ];
 
-import { Flag, Zap, Globe } from "lucide-react";
-
-export interface MilestoneType {
-  icon: LucideIcon;
-  title: string;
-  subtitle: string;
-  year: string;
-}
-
-export const milestones: MilestoneType[] = [
-  {
-    icon: Flag,
-    title: "Company Founded",
-    subtitle: "",
-    year: "2018",
-  },
-  {
-    icon: Zap,
-    title: "10 Homes Retrofitted",
-    subtitle: "",
-    year: "2021",
-  },
-  {
-    icon: Globe,
-    title: "National Expansion",
-    subtitle: "",
-    year: "2023",
-  },
-];
 export interface TeamMember {
   name: string;
   role: string;
