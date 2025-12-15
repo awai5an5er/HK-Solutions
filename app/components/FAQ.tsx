@@ -39,10 +39,10 @@ export default function FAQ({
               {/* Answer Box (Separate) */}
               <div
                 className={`overflow-hidden transition-all duration-500 ${
-                  openIndex === i ? "max-h-40" : "max-h-0"
+                  openIndex === i ? "max-h-50" : "max-h-0"
                 }`}
               >
-                <div className="bg-accent border border-txtColor rounded-xl md:p-8 p-4">
+                <div className="bg-accent border border-txtColor rounded-xl md:p-6 p-3">
                   <p className="text-txtColor normalText leading-relaxed">
                     {faq.answer}
                   </p>

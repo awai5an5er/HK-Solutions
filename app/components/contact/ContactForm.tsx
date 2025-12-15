@@ -12,12 +12,12 @@ export default function ContactForm() {
           <h2 className="heading font-extrabold text-primary leading-tight">
             Contact Our Energy Experts
           </h2>
-          <p className="mt-4 text-txtColor normalText">
+          <p className="py-2 text-txtColor normalText">
             Reduce your energy bills and upgrade your home with our UK-backed
             solutions. Fill the form and our certified team will reach out.
           </p>
 
-          <div className="mt-8 space-y-4 text-txtColor">
+          <div className="py-2 space-y-3 text-txtColor">
             <p className="flex items-center gap-3 text-txtColor normalText">
               <span className="text-primary">
                 <User />
