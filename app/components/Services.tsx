@@ -65,7 +65,7 @@ export default function Services() {
 
                 <p className="text-txtColor normalText">{item.desc}</p>
 
-                <button className=" text-primary font-semibold hover:underline flex items-center  normalText">
+                <button className=" text-primary font-semibold flex items-center cursor-pointer normalText">
                   Learn More →
                 </button>
               </div>
