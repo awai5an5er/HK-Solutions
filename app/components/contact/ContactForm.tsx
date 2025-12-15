@@ -34,7 +34,7 @@ export default function ContactForm() {
               <span className="text-primary">
                 <Mail />
               </span>
-              support@hkenergysolutions.co.uk
+              support@hk
             </p>
             {/* Map */}
             <div className="rounded-lg overflow-hidden h-60 shadow-lg">
