@@ -1,4 +1,3 @@
-import React from "react";
 import { Sun, Flame, Layers, FileCheck, Battery } from "lucide-react";
 
 export default function Services() {

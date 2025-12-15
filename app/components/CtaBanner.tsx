@@ -1,4 +1,3 @@
-import React from "react";
 import ContactBtn from "./ContactBtn";
 interface CtaBannerProps {
   title: string;
