@@ -21,28 +21,9 @@ const Story = () => {
           national efficiency goals.
         </p>
         <ContactBtn
-          text="Contact us"
+          text="Book Now"
           classes="bg-primary px-8 py-3 rounded-2xl text-secondary normalText cursor-pointer"
         />
-        {/* <div className="flex flex-col gap-3">
-          {milestones.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <div key={index} className="flex gap-3 items-start">
-                <Icon className="w-6 h-6 text-primary mt-1" />
-                <div className="flex flex-col">
-                  <span className="text-txtColor normalText">{item.title}</span>
-                  {item.subtitle && (
-                    <span className="text-gray-500 normalText">
-                      {item.subtitle}
-                    </span>
-                  )}
-                  <span className="italic normalText">{item.year}</span>
-                </div>
-              </div>
-            );
-          })}
-        </div> */}
       </div>
 
       <div className="flex justify-center ">

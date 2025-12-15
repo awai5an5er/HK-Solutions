@@ -259,7 +259,7 @@ function Form({
         <div className="pb-5">
           <button
             type="submit"
-            className="w-full py-3 mormalText bg-primary text-secondary cursor-pointer font-bold rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-transform"
+            className="w-full py-3 mormalText bg-primary text-secondary cursor-pointer font-bold rounded-xl hover:text-accent transition-transform"
           >
             Send Message
           </button>
