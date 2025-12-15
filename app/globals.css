@@ -24,7 +24,7 @@
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: #000;
+  color: #016630;
   padding: 2px;
 }
 
@@ -35,7 +35,8 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #016630;
+  color: #016630;
   transform-origin: bottom left;
   transform: scaleX(0);
   transition: transform 0.3s ease-out;
@@ -43,4 +44,21 @@
 
 .hover-underline:hover::after {
   transform: scaleX(1);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }

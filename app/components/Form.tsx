@@ -61,7 +61,7 @@ function Form() {
     console.log("Form submitted:", form);
   };
   return (
-    <div className="bg-accent backdrop-blur-md rounded-3xl p-6 lg:p-12 md:p-5 shadow-2xl border border-accent">
+    <div className="bg-accent backdrop-blur-md rounded-3xl p-6 lg:p-12 md:mx-0 mx-3 md:mt-0 mt-2 shadow-2xl border border-accent">
       <form onSubmit={handleSubmit} className="flex flex-col md:gap-4 gap-3">
         <h3 className="subHeading font-bold text-primary">Send Us a message</h3>
         {/* NAME */}
@@ -125,12 +125,23 @@ function Form() {
             name="homeOwner"
             value={form.homeOwner}
             onChange={handleChange}
-            className="pl-10 h-12 w-full rounded-xl border-2 border-primary focus:border-primary/75 focus:ring-1 focus:ring-primary outline-none transition"
+            className="
+      px-5 pr-12 h-12 w-full
+      rounded-xl cursor-pointer
+      border-2 border-primary
+      focus:border-primary/75
+      focus:ring-1 focus:ring-primary
+      outline-none transition
+      appearance-none
+    "
           >
             <option value="">-Select-</option>
             <option value="yes">Yes</option>
             <option value="no">No</option>
           </select>
+          <span className="pointer-events-none absolute right-4 top-7/10 -translate-y-1/2 text-primary">
+            ▼
+          </span>
         </div>
         {errors.homeOwner && (
           <p className="text-red-500 text-sm">{errors.homeOwner[0]}</p>
@@ -145,13 +156,24 @@ function Form() {
             name="systemAge"
             value={form.systemAge}
             onChange={handleChange}
-            className="pl-10 h-12 w-full rounded-xl border-2 border-primary focus:border-primary/75 focus:ring-1 focus:ring-primary outline-none transition"
+            className="
+      px-5 pr-12 h-12 w-full
+      rounded-xl cursor-pointer
+      border-2 border-primary
+      focus:border-primary/75
+      focus:ring-1 focus:ring-primary
+      outline-none transition
+      appearance-none
+    "
           >
             <option value="">-Select-</option>
             <option value="yes">Yes</option>
             <option value="no">No</option>
             <option value="dontKnow">Don't Know</option>
           </select>
+          <span className="pointer-events-none absolute right-4 top-7/10 -translate-y-1/2 text-primary">
+            ▼
+          </span>
         </div>
         {errors.systemAge && (
           <p className="text-red-500 text-sm">{errors.systemAge[0]}</p>
@@ -162,20 +184,34 @@ function Form() {
           <label className="relative bottom-1">
             What fuel does your home use?
           </label>
-          <select
-            name="fuelType"
-            value={form.fuelType}
-            onChange={handleChange}
-            className="pl-10 h-12 w-full rounded-xl border-2 border-primary focus:border-primary/75 focus:ring-1 focus:ring-primary outline-none transition"
-          >
-            <option value="">-Select-</option>
-            <option value="electric">Electric</option>
-            <option value="gas">Gas</option>
-            <option value="oil">Oil</option>
-            <option value="solidFuel">Solid Fuel</option>
-            <option value="lpg">LPG</option>
-            <option value="other">Other</option>
-          </select>
+          <div className="relative w-full">
+            <select
+              name="fuelType"
+              value={form.fuelType}
+              onChange={handleChange}
+              className="
+      px-5 pr-12 h-12 w-full
+      rounded-xl cursor-pointer
+      border-2 border-primary
+      focus:border-primary/75
+      focus:ring-1 focus:ring-primary
+      outline-none transition
+      appearance-none
+    "
+            >
+              <option value="">-Select-</option>
+              <option value="electric">Electric</option>
+              <option value="gas">Gas</option>
+              <option value="oil">Oil</option>
+              <option value="solidFuel">Solid Fuel</option>
+              <option value="lpg">LPG</option>
+              <option value="other">Other</option>
+            </select>
+
+            <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-primary">
+              ▼
+            </span>
+          </div>
         </div>
         {errors.fuelType && (
           <p className="text-red-500 text-sm">{errors.fuelType[0]}</p>
