@@ -48,7 +48,7 @@ export const services: ServiceData[] = [
     hero: {
       heading: "Professional Solar PV Installation for UK Homes",
       subHeading:
-        "Access government-backed solar PV systems to generate clean electricity, reduce energy costs, and improve long-term efficiency through certified installations.",
+        "Access government backed solar PV systems to generate clean electricity, reduce energy costs, and improve long-term efficiency through certified installations.",
       backgroundImage:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuARZTFDetSvY-TPCqYWfhKDO6fMyWnOKLCXLzQdFwY3aYdROaNKsXZEN-IYhALf6U0Dn4TBfvcNBTGE8L5sxfPp6IwmjATRiIFgC_vCQYCHZJt1qm9kDvRDqQi1KWqejWvByZyLwt_EHsPY9Vh6c3_aWp3j7P1GNJgXQ5xgDpdVywVE2GNB38sH6O2tSM4vdEj42e2uky6QE1xNXPI0OYN7ssrTpReK-1CPvUSEmz5qYYk3Qz09fgVZpeBCyjBJzYbCxYo1IkPZztnv",
     },
@@ -56,7 +56,7 @@ export const services: ServiceData[] = [
     featuresHeading: {
       heading: "Benefits of Solar PV Systems",
       subHeading:
-        "Government-supported solar solutions help homeowners reduce electricity bills, increase energy efficiency, and support a sustainable future by generating clean, renewable energy.",
+        "Government supported solar solutions help homeowners reduce electricity bills, increase energy efficiency, and support a sustainable future by generating clean, renewable energy.",
     },
 
     features: [
@@ -99,7 +99,7 @@ export const services: ServiceData[] = [
         stepNumber: 1,
         title: "Home Assessment",
         description:
-          "We evaluate your roof, sunlight exposure, available space, and energy usage to identify the most suitable government-backed solar PV solution for your home.",
+          "We evaluate your roof, sunlight exposure, available space, and energy usage to identify the most suitable government backed solar PV solution for your home.",
       },
       {
         stepNumber: 2,
@@ -147,14 +147,14 @@ export const services: ServiceData[] = [
     hero: {
       heading: "High Efficiency Heat Pump Installation for UK Homes",
       subHeading:
-        "Access government-supported heat pump systems to enjoy reliable, cost-effective heating and comfort all year round.",
+        "Access government supported heat pump systems to enjoy reliable, cost-effective heating and comfort all year round.",
       backgroundImage: "https://example.com/heatpump-hero.jpg",
     },
 
     featuresHeading: {
       heading: "Benefits of Heat Pump Systems",
       subHeading:
-        "Government-backed heat pumps offer an efficient alternative to traditional heating, providing comfort, cost savings, and environmental benefits.",
+        "Government backed heat pumps offer an efficient alternative to traditional heating, providing comfort, cost savings, and environmental benefits.",
     },
 
     features: [
@@ -196,7 +196,7 @@ export const services: ServiceData[] = [
         stepNumber: 1,
         title: "Home Evaluation",
         description:
-          "Our team assesses your property, current heating system, and insulation to recommend the most suitable government-backed heat pump solution.",
+          "Our team assesses your property, current heating system, and insulation to recommend the most suitable government backed heat pump solution.",
       },
       {
         stepNumber: 2,
@@ -215,7 +215,7 @@ export const services: ServiceData[] = [
     cta: {
       heading: "Switch to an Energy Efficient Heating Solution",
       subHeading:
-        "Upgrade your home with a government-supported heat pump system and enjoy lower energy costs all year long.",
+        "Upgrade your home with a government supported heat pump system and enjoy lower energy costs.",
       buttonText: "Get a Free Quote",
     },
 
@@ -244,7 +244,7 @@ export const services: ServiceData[] = [
     hero: {
       heading: "Premium Home Insulation Solutions",
       subHeading:
-        "Access government-backed insulation services to keep your home warm in winter, cool in summer, and maximise energy efficiency while reducing bills.",
+        "Access government backed insulation services to keep your home warm in winter, cool in summer, and maximise energy efficiency while reducing bills.",
       backgroundImage: "https://example.com/insulation-hero.jpg",
     },
 
@@ -270,7 +270,7 @@ export const services: ServiceData[] = [
       {
         icon: "/assets/battery.svg",
         title: "Eco-Friendly Solution",
-        text: "Enhance energy efficiency and reduce your household carbon footprint through government-supported programs.",
+        text: "Enhance energy efficiency and reduce your household carbon footprint through government supported programs.",
         gradient: "from-blue-400 to-blue-600",
       },
       {
@@ -293,7 +293,7 @@ export const services: ServiceData[] = [
         stepNumber: 1,
         title: "Comprehensive Assessment",
         description:
-          "Our team evaluates your roof, walls, floors, and attic to determine the most efficient insulation plan through government-backed programs.",
+          "Our team evaluates your roof, walls, floors, and attic to determine the most efficient insulation plan through government backed programs.",
       },
       {
         stepNumber: 2,
@@ -325,7 +325,7 @@ export const services: ServiceData[] = [
       {
         question: "What types of insulation are available?",
         answer:
-          "We provide loft, cavity wall, solid wall, and external wall insulation tailored to each home through government-supported programs.",
+          "We provide loft, cavity wall, solid wall, and external wall insulation tailored to each home through government supported programs.",
       },
       {
         question: "How much can insulation reduce my energy bills?",
@@ -422,7 +422,7 @@ export const services: ServiceData[] = [
       {
         question: "How long is an EPC valid?",
         answer:
-          "EPCs remain valid for 10 years, after which a reassessment is needed to keep your property’s rating current.",
+          "EPCs remain valid for a period of time, after which a reassessment is needed to keep your property’s rating current.",
       },
       {
         question: "Do I need an EPC to sell or rent my home?",
@@ -438,7 +438,7 @@ export const services: ServiceData[] = [
     hero: {
       heading: "Advanced Battery Storage Solutions for Your Home",
       subHeading:
-        "Access government-supported battery storage systems to store excess renewable energy, reduce grid reliance, and maintain reliable power anytime.",
+        "Access government supported battery storage systems to store excess renewable energy, reduce grid reliance, and maintain reliable power anytime.",
       backgroundImage: "https://example.com/battery-hero.jpg",
     },
 
@@ -487,7 +487,7 @@ export const services: ServiceData[] = [
         stepNumber: 1,
         title: "Energy Assessment",
         description:
-          "Our specialists evaluate your home’s energy consumption, renewable generation patterns, and backup needs to recommend the most suitable government-supported battery system.",
+          "Our specialists evaluate your home’s energy consumption, renewable generation patterns, and backup needs to recommend the most suitable government supported battery system.",
       },
       {
         stepNumber: 2,
@@ -524,7 +524,7 @@ export const services: ServiceData[] = [
       {
         question: "What is the typical lifespan of a home battery?",
         answer:
-          "Modern battery systems last 10 to 15 years on average, depending on usage, maintenance, and environmental conditions.",
+          "Modern battery systems have a long lifespan, depending on usage, maintenance, and environmental conditions.",
       },
     ],
   },
