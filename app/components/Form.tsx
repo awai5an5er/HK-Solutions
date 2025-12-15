@@ -71,7 +71,7 @@ function Form({
       className={`${
         popup &&
         "fixed z-40 w-9/10 h-[75vh] overflow-y-scroll md:w-2/3 lg:w-1/2 scroll-smooth inset-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
-      } bg-accent backdrop-blur-md rounded-3xl ${
+      } bg-accent backdrop-blur-md rounded-lg ${
         popup ? "p-6 lg:p-12 md:mt-0 mt-2" : "p-6 lg:p-12 md:mx-0 mx-3"
       } shadow-2xl border border-accent`}
     >
