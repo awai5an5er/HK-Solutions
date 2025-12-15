@@ -37,6 +37,8 @@ export type ServiceData = {
     subHeading: string;
     buttonText: string;
   };
+  seoTitle?: string;
+  seoDescription?: string;
   faqs: faqsType[];
 };
 
@@ -139,6 +141,10 @@ export const services: ServiceData[] = [
           "Yes, solar panels generate electricity even in cloudy conditions, although the output may be slightly lower compared to sunny days.",
       },
     ],
+    seoTitle:
+      "Solar PV Installation | Efficient & Reliable Solar Energy Solutions",
+    seoDescription:
+      "Professional solar PV installation services designed to reduce energy costs, improve efficiency, and provide long-term renewable energy solutions for homes and businesses.",
   },
 
   // --- Heat Pump Systems ---
@@ -236,6 +242,9 @@ export const services: ServiceData[] = [
           "Annual maintenance is recommended for government approved heat pumps to ensure ongoing efficiency and reliable performance.",
       },
     ],
+    seoTitle: "Heat Pump Systems | Efficient & Low-Carbon Heating Solutions",
+    seoDescription:
+      "Advanced heat pump systems that deliver reliable, energy-efficient heating and hot water while reducing carbon emissions and long-term energy costs.",
   },
 
   // --- Home Insulation ---
@@ -333,6 +342,9 @@ export const services: ServiceData[] = [
           "Properly installed insulation can substantially lower heating and cooling costs, often saving homeowners hundreds of pounds annually.",
       },
     ],
+    seoTitle: "Home Insulation - Keep Your Home Energy Efficient",
+    seoDescription:
+      "Explore effective home insulation solutions to reduce energy bills, maintain comfort, and improve your home's efficiency.",
   },
 
   // --- EPC Certificates ---
@@ -430,6 +442,10 @@ export const services: ServiceData[] = [
           "Yes, UK law requires an EPC whenever a property is sold or rented, providing buyers or tenants with verified energy efficiency information.",
       },
     ],
+    seoTitle:
+      "EPC Certificates - Energy Performance Certification for Your Property",
+    seoDescription:
+      "Get professional EPC certificates to assess your property's energy efficiency and comply with regulations.",
   },
 
   // --- Battery Storage ---
@@ -527,6 +543,9 @@ export const services: ServiceData[] = [
           "Modern battery systems have a long lifespan, depending on usage, maintenance, and environmental conditions.",
       },
     ],
+    seoTitle: "Battery Storage - Efficient Home Energy Solutions",
+    seoDescription:
+      "Discover advanced battery storage systems to store renewable energy and optimize your home's power usage.",
   },
 
   // --- EV Charging Solutions ---
@@ -624,6 +643,10 @@ export const services: ServiceData[] = [
           "Yes, integrating your charger with solar PV systems allows you to charge your EV using renewable energy, reducing grid reliance and cutting electricity costs.",
       },
     ],
+    seoTitle:
+      "EV Charging Solutions - Fast & Reliable Charging for Your Electric Vehicle",
+    seoDescription:
+      "Install efficient EV charging solutions at home or business to keep your electric vehicle powered up anytime.",
   },
 ];
 
