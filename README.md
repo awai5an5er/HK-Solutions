@@ -2,7 +2,7 @@
 
 ## **HK ENERGY SOLUTION:**
 
-At **HK Energy Solutions**, we empower homeowners across the UK to access vital government-backed home improvement services with ease and confidence. Specializing in central heating installations, energy-efficient home insulation, solar PV systems, heat pumps, battery storage, EV charging solutions, and EPC certification, we act as a trusted intermediary between you and the UK government.Our role is simple we guide you through the process, manage applications, and ensure you receive these essential services seamlessly, without the hassle of dealing directly with government channels. By simplifying access to sustainable home upgrades, we help you enhance comfort, reduce energy costs, and make your home greener-all with expert support every step of the way.
+At **HK Energy Solutions**, we empower homeowners across the UK to access vital government-backed home improvement services with ease and confidence. Specializing in central heating installations, energy-efficient home insulation, solar PV systems, heat pumps, battery storage, EV charging solutions, and EPC certification, we act as a trusted intermediary between you and the UK government.Our role is simple we guide you through the process, manage applications, and ensure you receive these essential services seamlessly, without the hassle of dealing directly with government channels. By simplifying access to sustainable home upgrades, we help you enhance comfort, reduce energy costs, and make your home greener all with expert support every step of the way.
 
 We specialize in a wide range of home services, including:
 
@@ -67,7 +67,7 @@ CTA button: "Get a Quote" → Contact Page.
 - Mission statement.
 - Optional: team or project images.
 
-## **Contact Page (email.js Form - No Backend)**
+## **Contact Page (email.js Form No Backend)**
 
 This is the primary lead-capture function. Form Fields:
 
@@ -343,7 +343,7 @@ buttonText={selectedService.cta.buttonText}
 
 )}
 
-This dynamic Service Page renders content based on the URL parameter using the findService helper function. It pulls service-specific data-such as banner, headings, descriptions, features, and "Why Choose Us" items-and uses reusable components (Hero, HowItWorks, InstallationProcess, Testimonials, CtaBanner Features, FAQ ) to build a complete, structured layout.
+This dynamic Service Page renders content based on the URL parameter using the findService helper function. It pulls service-specific data such as banner, headings, descriptions, features, and "Why Choose Us" items and uses reusable components (Hero, HowItWorks, InstallationProcess, Testimonials, CtaBanner Features, FAQ ) to build a complete, structured layout.
 
 The page also includes generateMetadata, ensuring each service receives unique SEO titles and descriptions. This implementation keeps the Services section fully scalable, SEO-friendly, and efficiently organized.
 
@@ -529,7 +529,7 @@ The Services component showcases the range of energy solutions offered by HK Ene
 
 located inside \`components\` folder
 
-The HeroSection component presents HK Energy Solutions' mission in a clean, responsive layout. On the left, it features a heading and a paragraph describing how the company helps homeowners access UK government-backed energy services-like solar PV, heat pumps, insulation, battery storage, EV charging, and EPC certification-to reduce energy costs, improve comfort, and support sustainability. It emphasizes HK Energy Solutions as a trusted intermediary, ensuring a smooth process from start to finish. On the right, an image visually complements the text, styled with object-cover and rounded-2xl for a polished appearance. The layout uses flexbox to stack elements on smaller screens and display them side by side on larger screens, maintaining readability and visual appeal across devices.
+The HeroSection component presents HK Energy Solutions' mission in a clean, responsive layout. On the left, it features a heading and a paragraph describing how the company helps homeowners access UK government-backed energy services like solar PV, heat pumps, insulation, battery storage, EV charging, and EPC certification to reduce energy costs, improve comfort, and support sustainability. It emphasizes HK Energy Solutions as a trusted intermediary, ensuring a smooth process from start to finish. On the right, an image visually complements the text, styled with object-cover and rounded-2xl for a polished appearance. The layout uses flexbox to stack elements on smaller screens and display them side by side on larger screens, maintaining readability and visual appeal across devices.
 
 ## **Testimonial.tsx:**
 
@@ -564,7 +564,7 @@ The \`resources\` folder contains structured data files used throughout the appl
 
 The \`about.ts\` file in the \`resources\` folder provides structured content for the About page of the website.
 
-This code organizes key company information for a website in a structured way. It defines the company's **vision** and **mission**, explaining its long-term goals of being a trusted energy solutions provider in the UK and how it operates with ethical standards, team support, and continuous growth to deliver high-quality services. The **core values** section highlights three guiding principles-Integrity, Innovation, and Customer Focus-each with an icon and description to show how the company works transparently, stays up-to-date with modern energy solutions, and prioritizes client needs. Finally, the **team** array lists key members with their names, roles, and images, showcasing the leadership and expertise behind the company. This setup allows the website to dynamically display the company's purpose, values, and team in a clear, engaging, and visually consistent way.
+This code organizes key company information for a website in a structured way. It defines the company's **vision** and **mission**, explaining its long-term goals of being a trusted energy solutions provider in the UK and how it operates with ethical standards, team support, and continuous growth to deliver high-quality services. The **core values** section highlights three guiding principles Integrity, Innovation, and Customer Focus each with an icon and description to show how the company works transparently, stays up-to-date with modern energy solutions, and prioritizes client needs. Finally, the **team** array lists key members with their names, roles, and images, showcasing the leadership and expertise behind the company. This setup allows the website to dynamically display the company's purpose, values, and team in a clear, engaging, and visually consistent way.
 
 ##### **faq.ts:**
 
@@ -604,7 +604,7 @@ This global.css file defines the core styling foundation of the project using Ta
 
 located inside \`app\` directory
 
-In layout.tsx, we include components that are used consistently across the entire application-such as &lt;Navbar /&gt; and &lt;Footer /&gt;. Placing these globally ensures a unified structure, consistent user experience, and avoids repeating the same components on every individual page.
+In layout.tsx, we include components that are used consistently across the entire application such as &lt;Navbar /&gt; and &lt;Footer /&gt;. Placing these globally ensures a unified structure, consistent user experience, and avoids repeating the same components on every individual page.
 
 ## **page.tsx:**
 
@@ -638,264 +638,44 @@ When a user types the website <https://www.speedfullauto.com> in the browser or 
 
 When a user clicks on **"About"** in the header navigation or selects the link from the footer, this page opens. It contains the company's introduction, expertise, experience, and other essential background information.
 
-**3) <https://www.speedfullauto.com/brands/audi>**
-
-**Page:** Audi brand Page
-
-**Navigation:**
-
-Brands menu → Audi
-
-**4) <https://www.speedfullauto.com/brands/bmw>**
-
-**Page:** bmw brand Page
-
-**Navigation:**
-
-Brands menu → bmw
-
-**5) <https://www.speedfullauto.com/brands/jaguar>**
-
-**Page:** jaguar brand Page
-
-**Navigation:**
-
-Brands menu → Jaguar
-
-**6) <https://www.speedfullauto.com/brands/meserati>**
-
-**Page:** Meserati brand Page
-
-**Navigation:**
-
-Brands menu → Meserati
-
-**7) <https://www.speedfullauto.com/brands/maybach>**
-
-**Page:** Maybach brand Page
-
-**Navigation:**
-
-Brands menu → Maybach
-
-**8) <https://www.speedfullauto.com/brands/mercedes>**
-
-**Page:** Mercedes brand Page
-
-**Navigation:**
-
-Brands menu → Mercedes
-
-**9) <https://www.speedfullauto.com/brands/prosche>**
-
-**Page:** Prosche brand Page
-
-**Navigation:**
-
-Brands menu → Prosche
-
-**10) <https://www.speedfullauto.com/brands/ferrari>**
-
-**Page:** Ferrari brand Page
-
-**Navigation:**
-
-Brands menu → Ferrari
-
-**11) <https://www.speedfullauto.com/brands/hyundai>**
-
-**Page:** Hyundai brand Page
-
-**Navigation:**
-
-Brands menu → Hyundai
-
-**12) <https://www.speedfullauto.com/brands/toyota>**
-
-**Page:** Toyota brand Page
-
-**Navigation:**
-
-Brands menu → Toyota
-
-**13) <https://www.speedfullauto.com/brands/lamborghini>**
-
-**Page:** Lamborghini brand Page
-
-**Navigation:**
-
-Brands menu → Lamborghini
-
-**14) <https://www.speedfullauto.com/brands/honda>**
-
-**Page:** Honda brand Page
-
-**Navigation:**
-
-Brands menu → Honda
-
-**15) <https://www.speedfullauto.com/brands/mazda>**
-
-**Page:** Mazda brand Page
-
-**Navigation:**
-
-Brands menu → Mazda
-
-**16) <https://www.speedfullauto.com/brands/mini-cooper>**
-
-**Page:** Mini Cooper brand Page
-
-**Navigation:**
-
-Brands menu → Mini Cooper
-
-**17) <https://www.speedfullauto.com/brands/volkswagen>**
-
-**Page:** Volkswagen brand Page
-
-**Navigation:**
-
-Brands menu → Vlkswagen
-
-**18) <https://www.speedfullauto.com/brands/pagani>**
-
-**Page:** Pagani brand Page
-
-**Navigation:**
-
-Brands menu → Pagani
-
-**19) <https://www.speedfullauto.com/brands/dodge>**
-
-**Page:** Dodge brand Page
-
-**Navigation:**
-
-Brands menu → Dodge
-
-**20) <https://www.speedfullauto.com/brands/bugatti>**
-
-**Page:** Bugatti brand Page
-
-**Navigation:**
-
-Brands menu → Bugatti
-
-**21) <https://www.speedfullauto.com/brands/jeep>**
-
-**Page:** Jeep brand Page
-
-**Navigation:**
-
-Brands menu → Jeep
-
-**22) <https://www.speedfullauto.com/brands/mclaren>**
-
-**Page:** Mclaren brand Page
-
-**Navigation:**
-
-Brands menu → Mclaren
-
-**23) <https://www.speedfullauto.com/brands/range-rover>**
-
-**Page:** Range Rover brand Page
-
-**Navigation:**
-
-Brands menu → Range Rover
-
-**24) <https://www.speedfullauto.com/brands/rolls-royce>**
-
-**Page:** Rolls Royce brand Page
-
-**Navigation:**
-
-Brands menu → Rolls Roys
-
 **Service Pages**
 
-**1)<https://www.speedfullauto.com/services/radiator-repair-service>**
+**1)<https://www.speedfullauto.com/services/solar-pv-installation>**
 
 **Navigation:**  
-Services → Radiator Repair
+Services → Solar PV Installation
 
-**2)** **<https://www.speedfullauto.com/services/ceramic-coating>**
-
-**Navigation:**  
-Services →Ceramic Coating
-
-**3)<https://www.speedfullauto.com/services/ac-repair-maintenance>**
+**2)** **<https://www.speedfullauto.com/services/heat-pump-systems>**
 
 **Navigation:**  
-Services → AC Repair and Maintenance
+Services →Heat Pump Systems
 
-**4)<https://www.speedfullauto.com/services/engine-ecu-service>**
-
-**Navigation:**  
-Services → Engine & ECU Service
-
-**5)<https://www.speedfullauto.com/services/brake-system-service>**
+**3)<https://www.speedfullauto.com/services/home-insulation>**
 
 **Navigation:**  
-Services → Brake System Service
+Services →Home Insulation
 
-**6)<https://www.speedfullauto.com/services/transmission-gearbox-repair>**
-
-**Navigation:**  
-Services → Transmission & Gearbox Repair
-
-**7)<https://www.speedfullauto.com/services/suspension-steering-maintenance>**
+**4)<https://www.speedfullauto.com/services/epc-certificates>**
 
 **Navigation:**  
-Services → Suspension & Steering Maintenance
+Services → EPC Certificates
 
-**8)<https://www.speedfullauto.com/services/oil-change-fluid-checks>**
-
-**Navigation:**  
-Services → Oil Change & Fluid Checks
-
-**9)<https://www.speedfullauto.com/services/electrical-comfort-systems>**
+**5)<https://www.speedfullauto.com/services/battery-storage>**
 
 **Navigation:**  
-Services → Electrical & Comfort Systems
+Services →Battery Storage
 
-**10)<https://www.speedfullauto.com/services/fuel-injection-service>**
-
-**Navigation:**  
-Services → Fuel Injection Service
-
-**11)<https://www.speedfullauto.com/services/pre-purchase-inspection-diagnostics>**
+**6)<https://www.speedfullauto.com/services/ev-charging-solutions>**
 
 **Navigation:**  
-Services → Pre Purchase Inspection & Diagnostics
-
-**12)<https://www.speedfullauto.com/services/performance-tuning-ecu-upgrade>**
-
-**Navigation:**  
-Services → Performance Tuning & ECU Upgrade
-
-**13)<https://www.speedfullauto.com/services/paint-protection-coatings>**
-
-**Navigation:**  
-Services → Paint Protection & Coatings
-
-**14)<https://www.speedfullauto.com/services/alloy-wheel-repair-refurbishment>**
-
-**Navigation:**  
-Services → Alloy Wheel Repair & Refurbishment Packages
+Services → EV Charging Solutions
 
 **Additional Pages**
 
-**1)<https://www.speedfullauto.com/packages>**
-
-**Navigation:** Header Menu → Packages
-
-**2)<https://www.speedfullauto.com/contact>**
+**1)<https://www.speedfullauto.com/contact>**
 
 **Navigation:** Header Menu → Contact
 
 Footer → Contact
 
-Buttons like "Book Now / Schedule Now"
+Buttons like "Book Free Survey, Book My Free Home Survey, Request a Free Quote, Book Now, Get Quote"
