@@ -19,7 +19,7 @@ const Footer = () => {
             key={i}
             className="
             md:mb-0 mb-4
-              flex flex-col md;gap-3 gap-0
+              flex flex-col md:gap-3 gap-0
               w-full md:w-[22%]
             "
           >
