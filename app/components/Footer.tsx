@@ -11,13 +11,15 @@ const Footer = () => {
         md:justify-between
         gap-3 
         md:gap-10
+      
       "
       >
         {text.map((value, i) => (
           <div
             key={i}
             className="
-              flex flex-col md:gap-3
+            md:mb-0 mb-4
+              flex flex-col md;gap-3 gap-0
               w-full md:w-[22%]
             "
           >
@@ -25,7 +27,7 @@ const Footer = () => {
               {value.title}
             </span>
 
-            <p className="normalText text-secondary">{value.content}</p>
+            <p className="normalText text-secondary pe-2">{value.content}</p>
           </div>
         ))}
 
@@ -79,7 +81,7 @@ const Footer = () => {
           </span>
 
           {contact.items.map(({ icon: Icon, text }, i) => (
-            <div key={i} className="flex gap-3 items-end text-secondary">
+            <div key={i} className="flex gap-2 items-end text-secondary">
               <Icon />
               <span className="normalText">{text}</span>
             </div>
@@ -88,7 +90,7 @@ const Footer = () => {
       </div>
 
       <hr className="border-secondary" />
-      <div className="w-[95%] text-center mx-auto py-5 text-secondary font-bold normalText">
+      <div className="w-[95%] text-center mx-auto py-2 text-secondary font-bold normalText">
         © {new Date().getFullYear()} UK — All rights reserved | Privacy Policy
       </div>
     </footer>
