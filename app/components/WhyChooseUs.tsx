@@ -32,8 +32,11 @@ export default function WhyChooseUs() {
     <section className="w-[95%] mx-auto py-5 md:py-10">
       <div className="flex flex-col items-center gap-3 md:gap-5">
         <h1 className="heading text-primary font-bold">Why Choose US</h1>
-        <p className="text-txtColor normalText max-w-5xl">
-         HK Energy Solutions helps homeowners access reliable, government-backed energy upgrades that lower bills, enhance comfort, and add long-term value. We ensure a smooth process to approved solutions that support a cleaner, more efficient, and sustainable home.
+        <p className="text-txtColor text-center normalText max-w-5xl">
+          HK Energy Solutions helps homeowners access reliable, government
+          backed energy upgrades that lower bills, enhance comfort, and add
+          long-term value. We ensure a smooth process to approved solutions that
+          support a cleaner, more efficient, and sustainable home
         </p>
       </div>
       <div
@@ -69,7 +72,7 @@ export default function WhyChooseUs() {
         <StatCard
           icon={<Building2 className="size-10" />}
           title="All Home Types"
-          subtitle="Solutions for flats, houses & commercial"
+          subtitle="Solutions for flats & houses"
         />
 
         <StatCard
