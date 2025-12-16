@@ -1,4 +1,4 @@
-import { Sun, Flame, Layers, FileCheck, Battery } from "lucide-react";
+import { Sun, Flame, Layers, FileCheck, Battery, Plug } from "lucide-react";
 
 export default function Services() {
   const services = [
@@ -30,7 +30,7 @@ export default function Services() {
     {
       title: "EV Charging Solutions",
       desc: "Access approved EV charging installations through UK government programs for safe and reliable home charging.",
-      icon: <Battery className="w-14 h-14 text-primary" />,
+      icon: <Plug className="w-14 h-14 text-primary" />,
     },
   ];
 
