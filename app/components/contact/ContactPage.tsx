@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const ContactPage = () => {
   return (
-    <div className="md:p-8 p-5 bg-accent rounded-xl mx-auto text-center">
+    <div className="md:p-8 p-5 shadow-xl rounded-xl mx-auto text-center">
       <div className="flex flex-col items-center">
         <h2 className="subHeading text-primary font-bold pb-3">
           Our Contact Details
@@ -48,7 +48,7 @@ const ContactPage = () => {
       </div>
 
       {/* Map */}
-      <div className="rounded-lg overflow-hidden h-60 shadow-lg">
+      <div className="rounded-lg overflow-hidden h-60 shadow-lg ">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1198.689093853261!2d55.36501520203905!3d25.17217144182619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f67ec76d0ae0b%3A0x482ba993ace9d7aa!2sSpeed%20Full%20Auto%20Garage!5e0!3m2!1sen!2s!4v1764074839736!5m2!1sen!2s"
           width="100%"

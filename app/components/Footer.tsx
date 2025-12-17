@@ -10,7 +10,7 @@ const Footer = () => {
         flex flex-wrap 
         md:justify-between
         gap-3 
-        md:gap-10
+        md:gap-7 lg:gap-10
       
       "
       >
@@ -20,7 +20,7 @@ const Footer = () => {
             className="
             md:mb-0 mb-4
               flex flex-col md:gap-3 gap-0
-              w-full md:w-[22%]
+              w-full lg:w-[22%]
             "
           >
             <span className="subHeading text-secondary font-bold">
@@ -73,7 +73,7 @@ const Footer = () => {
         <div
           className="
             flex flex-col gap-3
-            w-full md:w-[22%]
+            w-full md:w-[38%] lg:w-[22%]
           "
         >
           <span className="subHeading text-secondary font-bold">
@@ -81,8 +81,10 @@ const Footer = () => {
           </span>
 
           {contact.items.map(({ icon: Icon, text }, i) => (
-            <div key={i} className="flex gap-2 items-end text-secondary">
-              <Icon />
+            <div key={i} className="flex gap-2 items-center text-secondary">
+              <div>
+                <Icon />
+              </div>
               <span className="normalText">{text}</span>
             </div>
           ))}
