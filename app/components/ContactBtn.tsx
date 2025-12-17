@@ -12,7 +12,7 @@ function ContactBtn({ text, classes }: { text: string; classes: string }) {
   }, [popup]);
   return (
     <div>
-      <button onClick={() => setPopup(true)} className={classes}>
+      <button onClick={() => setPopup(true)} className={`hover:scale-105 transition-all duration-300 font-medium ${classes}`}>
         {text}
       </button>
       {popup &&

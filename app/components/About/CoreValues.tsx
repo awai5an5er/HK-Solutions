@@ -6,13 +6,13 @@ const CoreValues = () => {
       <p className="text-txtColor normalText max-w-7xl text-justify">
        At HK Energy Solutions, we are committed to helping homes and businesses access trusted, government-backed energy solutions that are reliable, sustainable, and cost-effective. Our focus is on guiding clients toward approved programs that support long-term efficiency, reduced energy costs, and a greener future.
       </p>
-      <div className="flex flex-col lg:flex-row lg:gap-10 gap-3">
+      <div className="flex flex-col lg:flex-row lg:gap-5 gap-3">
         {corevalues.map((value, i) => {
           const Icon = value.icon;
           return (
             <div
               key={`${value} ${i}`}
-              className="flex flex-col gap-3 bg-secondary p-5 rounded-2xl"
+              className="flex flex-col gap-3 bg-secondary p-5 w-full lg:w-[33%] rounded-2xl"
             >
               <Icon className="text-primary" />
               <h1 className="subHeading text-primary fonld-bold">
