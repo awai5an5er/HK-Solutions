@@ -3,6 +3,13 @@ import FAQ from "../components/FAQ";
 import Form from "../components/Form";
 import Testimonials from "../components/Testimonial";
 import { faqs } from "../resources/faq";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us - Home Energy Solutions UK",
+  description:
+    "Get in touch with our UK home energy experts for advice, consultations, and professional services including insulation, battery storage, and EV charging solutions",
+};
 
 export default function Page() {
   return (
