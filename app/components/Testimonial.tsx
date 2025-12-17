@@ -5,11 +5,11 @@ import { testimonials } from "../resources/testimonial";
 
 export default function Testimonials() {
   return (
-    <section className="relative py-3 md:py-10 bg-secondary overflow-hidden">
-      <div className="w-[95%] mx-auto ">
+    <section className="">
+      <div className="w-[95%] mx-auto flex flex-col gap-5 pt-5 md:pt-15">
         {/* Heading */}
-        <div className="text-center mb-5 md:mb-10">
-          <h2 className="heading font-bold text-primary pb-4">
+        <div className="flex flex-col items-center gap-5">
+          <h2 className="heading font-bold text-primary">
             What Our Clients Say
           </h2>
           <p className="text-txtColor normalText mx-auto">
@@ -19,21 +19,19 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-10 cursor-pointer">
+        <div className="flex gap-2  md:gap-3  flex-wrap justify-between">
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="relative bg-accent  border border-primary/40 rounded-3xl p-3 md:p-5 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3"
+              className="bg-accent flex flex-col gap-5 p-5 rounded-2xl w-full md:w-[49%] lg:w-[24%] shadow-lg justify-between"
             >
               {/* Feedback */}
-              <p className="text-txtColor normalText  py-1 md:py-4">
-                {t.feedback}
-              </p>
+              <p className="normalText text-txtColor">{t.feedback}</p>
 
               {/* Name & Role */}
-              <div className=" pt-2 flex flex-col items-center md:pt-4">
-                <p className="subHeading  font-bold text-primary">{t.name}</p>
-                {t.role && <p className="text-txtColor normalText">{t.role}</p>}
+              <div className=" flex flex-col">
+                <p className="subHeading text-primary font-bold">{t.name}</p>
+                {t.role && <p className="normalText text-txtColor">{t.role}</p>}
               </div>
             </div>
           ))}

@@ -72,7 +72,7 @@ function Form({
         popup &&
         "fixed z-40 w-9/10 h-[75vh] overflow-y-scroll md:w-2/3 lg:w-1/2 scroll-smooth inset-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
       } bg-accent backdrop-blur-md rounded-lg ${
-        popup ? "p-6 lg:p-8 " : "p-6 lg:p-12 md:mx-0 mx-3"
+        popup ? "p-6 lg:p-8 " : "p-6 lg:p-8 md:mx-0 "
       } shadow-2xl border border-accent`}
     >
       {popup && setPopup && (
@@ -83,6 +83,7 @@ function Form({
           <X />
         </span>
       )}
+      <div>
       <form
         onSubmit={handleSubmit}
         className="flex flex-col md:gap-4 gap-3 h-full justify-around"
@@ -256,7 +257,7 @@ function Form({
         {errors.message && (
           <p className="text-red-500 text-sm">{errors.message[0]}</p>
         )}
-        <div className="pb-5">
+        <div >
           <button
             type="submit"
             className="w-full py-3 mormalText bg-primary text-secondary cursor-pointer font-bold rounded-xl hover:text-accent transition-transform"
@@ -265,6 +266,8 @@ function Form({
           </button>
         </div>
       </form>
+
+      </div>
     </div>
   );
 }

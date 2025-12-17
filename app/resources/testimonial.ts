@@ -18,9 +18,16 @@ export const testimonials: Testimonial[] = [
       "Professional, reliable, and highly knowledgeable team. Highly recommended!",
   },
   {
-    name: "Michael Brown",
+    name: "Michael Alex",
     role: "Manager",
     feedback:
       "From installation to maintenance, everything was seamless and efficient.",
   },
+ {
+  name: "Daniel Carter",
+  role: "Operations Director",
+  feedback:
+    "The entire experience, from installation to aftercare, was efficient, reliable, and handled with great professionalism.",
+},
+  
 ];

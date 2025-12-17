@@ -71,7 +71,9 @@ export default function Navbar() {
         {/* Desktop Button */}
         <ContactBtn
           text={navButton.text}
-          classes="hidden lg:block bg-accent text-primary cursor-pointer font-bold normalText px-5 py-2 rounded-xl shadow"
+      
+          
+          classes="hidden hover:scale-103  transition-all duration-300 lg:block bg-accent text-primary cursor-pointer font-medium normalText px-5 py-2 rounded-xl"
         />
 
         {/* Mobile Hamburger */}

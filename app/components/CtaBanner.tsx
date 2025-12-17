@@ -11,7 +11,7 @@ export default function CtaBanner({
   buttonText,
 }: CtaBannerProps) {
   return (
-    <section className="">
+    <section className="mt-5 md:mt-10">
       <div className="w-[95%] mx-auto rounded-3xl bg-primary md:p-10 p-5">
         <div className="flex flex-col gap-5 items-center">
           <h2 className="heading text-secondary font-bold text-center mx-auto ">
