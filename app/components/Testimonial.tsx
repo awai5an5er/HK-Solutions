@@ -14,7 +14,7 @@ export default function Testimonials() {
           </h2>
           <p className="text-txtColor normalText mx-auto">
             Trusted by hundreds of satisfied customers. See why they love our
-            services.
+            services
           </p>
         </div>
 

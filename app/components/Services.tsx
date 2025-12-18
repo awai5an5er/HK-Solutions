@@ -59,7 +59,7 @@ export default function Services() {
             <p className=" text-txtColor  max-w-5xl  normalText">
               Reliable, government backed energy solutions that improve comfort,
               reduce costs, and help UK homeowners access certified programs for
-              a more efficient and sustainable home.
+              a more efficient and sustainable home
             </p>
           </div>
           {/* FLEXBOX LAYOUT (3 per row) */}
