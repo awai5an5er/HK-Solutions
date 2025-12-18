@@ -1,7 +1,7 @@
 import { missionvision } from "@/app/resources/about";
 const MissionVision = () => {
   return (
-    <section className="w-[95%] mx-auto flex flex-col gap-3 md:flex-row md:gap-5 pt-5">
+    <section className="w-[95%] mx-auto flex flex-col gap-3 md:flex-row md:gap-5 Space">
       {missionvision.map((value, i) => (
         <div
           key={`${value} ${i}`}

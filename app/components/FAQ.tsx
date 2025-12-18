@@ -13,7 +13,7 @@ export default function FAQ({
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="md:py-10 py-4">
+    <section className="Space">
       <div className="max-w-5xl mx-auto md:px-4 px-2">
         <h2 className="heading text-primary font-bold text-center md:pb-10 pb-4">
           Frequently Asked Questions
@@ -42,7 +42,7 @@ export default function FAQ({
                   openIndex === i ? "max-h-50" : "max-h-0"
                 }`}
               >
-                <div className="bg-accent border border-txtColor rounded-xl md:p-6 p-3">
+                <div className="bg-accent border border-txtColor rounded-xl p-3">
                   <p className="text-txtColor normalText leading-relaxed">
                     {faq.answer}
                   </p>

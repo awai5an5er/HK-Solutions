@@ -19,7 +19,9 @@
 .summary::marker {
   display: none;
 }
-
+.Space{
+  @apply py-2 md:py-5;
+}
 .hover-underline {
   position: relative;
   display: inline-block;

@@ -29,7 +29,7 @@ const StatCard = ({ icon, title, subtitle }: StatCardProps) => {
 
 export default function WhyChooseUs() {
   return (
-    <section className="w-[95%] mx-auto py-5 md:py-10">
+    <section className="w-[95%] mx-auto Space">
       <div className="flex flex-col items-center gap-3 md:gap-5">
         <h1 className="heading text-primary font-bold">Why Choose US</h1>
         <p className="text-txtColor text-center normalText max-w-5xl">

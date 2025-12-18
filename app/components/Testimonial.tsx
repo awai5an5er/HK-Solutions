@@ -6,7 +6,7 @@ import { testimonials } from "../resources/testimonial";
 export default function Testimonials() {
   return (
     <section className="">
-      <div className="w-[95%] mx-auto flex flex-col gap-5 pt-5 md:pt-15">
+      <div className="w-[95%] mx-auto flex flex-col gap-5 Space">
         {/* Heading */}
         <div className="flex flex-col items-center gap-5">
           <h2 className="heading font-bold text-primary">

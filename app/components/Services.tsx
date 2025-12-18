@@ -48,8 +48,8 @@ export default function Services() {
   ];
 
   return (
-    <section className="">
-      <div className="bg-accent py-7 md:py-15">
+    <section className="Space">
+      <div className="bg-accent py-3 md:py-5">
         <div className="flex flex-col gap-8 md:gap-12 w-[95%] mx-auto ">
           <div className="flex flex-col text-center items-center gap-3">
             <h2 className="heading font-extrabold text-primary ">
@@ -81,7 +81,7 @@ export default function Services() {
                   {item.link && (
                     <Link
                       href={item.link}
-                      className=" text-primary font-semibold flex items-center cursor-pointer normalText"
+                      className=" text-primary font-semibold cursor-pointer normalText inline"
                     >
                       Learn More →
                     </Link>

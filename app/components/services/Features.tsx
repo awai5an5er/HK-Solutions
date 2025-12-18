@@ -14,7 +14,8 @@ type FeaturesProps = {
 
 export default function Features({ features, featuresHeading }: FeaturesProps) {
   return (
-    <section className="my-5 lg:py-10 py-5 bg-accent rounded-2xl">
+    <section className="Space">
+    <div className="my-5 lg:py-10 py-5 bg-accent rounded-2xl">
       <div className="px-4">
         {/* Heading */}
         <div className="text-center lg:py-4 ">
@@ -59,6 +60,7 @@ export default function Features({ features, featuresHeading }: FeaturesProps) {
           })}
         </div>
       </div>
+    </div>
     </section>
   );
 }

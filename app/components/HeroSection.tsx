@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <section className="flex flex-col lg:items-center lg:flex-row justify-between lg:py-10 py-5 w-[95%] mx-auto gap-10">
+    <section className="flex flex-col lg:items-center lg:flex-row justify-between Space w-[95%] mx-auto gap-10">
       <div className="flex flex-col  gap-2 w-full lg:w-7/10">
         <h1 className="heading text-primary font-bold">
           {" "}

@@ -6,7 +6,7 @@ export default function Hero({ heroProps }: {
     }
 }) {
     return (
-        <section className="flex justify-center">
+        <section className="flex justify-center Space ">
             <div className="w-full  px-4">
                 <div
                     className="flex min-h-[480px] flex-col gap-6 rounded-xl bg-cover bg-center bg-no-repeat items-start justify-end px-4 pb-10 sm:px-10"
