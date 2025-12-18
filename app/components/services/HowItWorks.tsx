@@ -8,7 +8,7 @@ export default function HowItWorks({
   };
 }) {
   return (
-    <section className="flex justify-center lg:py-10 md:pb-0 pb-5 ">
+    <section className="flex justify-center Space ">
       <div className="w-full px-4 grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
         <div>
           <h2 className="text-primary heading font-bold pb-3">

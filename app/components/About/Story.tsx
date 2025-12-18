@@ -1,7 +1,7 @@
 import ContactBtn from "../ContactBtn";
 const Story = () => {
   return (
-    <section className="flex flex-col sm:flex-row justify-between lg:py-10 py-5 w-[95%] mx-auto gap-10">
+    <section className="flex flex-col sm:flex-row justify-between Space w-[95%] mx-auto gap-10">
       <div className="flex flex-col gap-5 w-full sm:w-7/10">
         <h1 className="heading text-primary font-bold">Our Story</h1>
         <p className="text-txtColor normalText text-justify">

@@ -8,7 +8,8 @@ export default function InstallationProcess({
   installprops: InstallationStep[];
 }) {
   return (
-    <section className="lg:py-20 py-5 bg-accent">
+    <section className="Space">
+    <div className="lg:py-20 py-5 bg-accent">
       <div className="mx-auto px-4">
         <h2 className="heading font-bold text-center lg:pb-8 pb-5 text-primary">
           Installation Process
@@ -33,6 +34,7 @@ export default function InstallationProcess({
           ))}
         </div>
       </div>
+    </div>
     </section>
   );
 }

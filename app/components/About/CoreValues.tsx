@@ -1,7 +1,10 @@
 import { corevalues } from "@/app/resources/about";
+import { div, section } from "framer-motion/client";
 const CoreValues = () => {
   return (
-    <section className="w-[95%] mx-auto flex flex-col lg:gap-8 gap-5 justify-center items-center lg:py-10 py-5">
+    <section className="Space">
+    <div className="bg-accent">
+    <div className="w-[95%]  mx-auto  flex flex-col lg:gap-8 gap-5 justify-center items-center lg:py-10 py-5">
       <h1 className="text-primary heading font-bold">Our Core Values</h1>
       <p className="text-txtColor normalText max-w-7xl text-justify">
         At HK Energy Solutions, we are committed to helping homes and businesses
@@ -29,6 +32,8 @@ const CoreValues = () => {
           );
         })}
       </div>
+    </div>
+    </div>
     </section>
   );
 };
