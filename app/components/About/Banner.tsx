@@ -3,7 +3,7 @@ const Banner = () => {
     <section
       className="
         relative 
-        bg-[url('/assets/banner.jpg')] 
+        bg-[url('/assets/about-banner.webp')] 
         h-[60vh] 
         md:h-screen 
         bg-no-repeat bg-center bg-cover 

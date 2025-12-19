@@ -52,7 +52,7 @@ export const services: ServiceData[] = [
       subHeading:
         "Access government backed solar PV systems to generate clean electricity, reduce energy costs, and improve long-term efficiency through certified installations.",
       backgroundImage:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuARZTFDetSvY-TPCqYWfhKDO6fMyWnOKLCXLzQdFwY3aYdROaNKsXZEN-IYhALf6U0Dn4TBfvcNBTGE8L5sxfPp6IwmjATRiIFgC_vCQYCHZJt1qm9kDvRDqQi1KWqejWvByZyLwt_EHsPY9Vh6c3_aWp3j7P1GNJgXQ5xgDpdVywVE2GNB38sH6O2tSM4vdEj42e2uky6QE1xNXPI0OYN7ssrTpReK-1CPvUSEmz5qYYk3Qz09fgVZpeBCyjBJzYbCxYo1IkPZztnv",
+        "/assets/solar-pv-installation-banner.webp",
     },
 
     featuresHeading: {
@@ -93,7 +93,7 @@ export const services: ServiceData[] = [
       description:
         "Solar panels capture sunlight and convert it into usable electricity through photovoltaic cells. The energy powers your home while reducing dependency on grid electricity. Any excess power can be stored in government approved battery systems or exported back to the grid, helping to lower bills, increase efficiency, and maximize long-term savings.",
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuDO_9B6tJ12DUCokUGEnwU8R4Fx1xqR05oBLrD8NEoFCMNf7X7RYkiIXkOslnV8hV0zNbGUo-jFjNIDBQ1MCMnoL5hTzsBXAZrjNlvuA5Wrum-ZmuJwqr9slyeI4Mb1ounRMLT15oa6xjg4WCUiusOxVHSJNG6xpClJkN57X9yWtpflM4NlhUGqNBigHY3vWCJtSzdYnk96dlxVh5TQW1gw7nYXz6fhEXgWXRzf-liAieoQejtUtaCt-F4A-axaBh8Z_BL2ZVPljtW4",
+        "/assets/solar-pv-installation-hero.webp",
     },
 
     installationProcess: [
@@ -154,7 +154,7 @@ export const services: ServiceData[] = [
       heading: "High Efficiency Heat Pump Installation for UK Homes",
       subHeading:
         "Access government supported heat pump systems to enjoy reliable, cost-effective heating and comfort all year round.",
-      backgroundImage: "https://example.com/heatpump-hero.jpg",
+      backgroundImage: "/assets/heat-pump-systems-banner.webp",
     },
 
     featuresHeading: {
@@ -194,7 +194,7 @@ export const services: ServiceData[] = [
       heading: "How Heat Pump Systems Operate",
       description:
         "Heat pumps extract renewable energy from air, ground, or water and transfer it into your home using advanced heat exchange technology. This efficient process provides reliable heating and, in many systems, cooling throughout the year while consuming minimal electricity. By optimising energy usage, homeowners connected through government approved programs reduce energy bills, lower carbon emissions, and maintain comfortable indoor temperatures year-round.",
-      image: "https://example.com/heatpump-howitworks.jpg",
+      image: "/assets/heat-pump-systems-hero.webp",
     },
 
     installationProcess: [
@@ -254,7 +254,7 @@ export const services: ServiceData[] = [
       heading: "Premium Home Insulation Solutions",
       subHeading:
         "Access government backed insulation services to keep your home warm in winter, cool in summer, and maximise energy efficiency while reducing bills.",
-      backgroundImage: "https://example.com/insulation-hero.jpg",
+      backgroundImage: "/assets/home-insulation-banner.webp",
     },
 
     featuresHeading: {
@@ -294,7 +294,7 @@ export const services: ServiceData[] = [
       heading: "How Home Insulation Improves Efficiency",
       description:
         "High-quality insulation prevents heat loss in winter and heat gain in summer, keeping your home comfortable all year. By sealing gaps, reducing drafts, and improving thermal performance, approved insulation programs lower energy consumption and bills. Additionally, effective insulation reduces carbon emissions, supporting a greener, more sustainable home while delivering long-term value for homeowners.",
-      image: "https://example.com/insulation-howitworks.jpg",
+      image: "/assets/home-insulation-hero.webp",
     },
 
     installationProcess: [
@@ -354,7 +354,7 @@ export const services: ServiceData[] = [
       heading: "Energy Performance Certificates for UK Homes",
       subHeading:
         "Access certified EPC assessments to demonstrate your property’s energy efficiency, comply with UK regulations, and guide smarter home improvements.",
-      backgroundImage: "https://example.com/epc-hero.jpg",
+      backgroundImage: "/assets/epc-certificate-banner.webp",
     },
 
     featuresHeading: {
@@ -394,7 +394,7 @@ export const services: ServiceData[] = [
       heading: "How EPC Certification Works",
       description:
         "Certified assessors evaluate your property’s heating, insulation, lighting, and energy systems. A detailed EPC rating from A (most efficient) to G (least efficient) is provided, along with personalised recommendations for improving efficiency, reducing bills, and supporting a greener home.",
-      image: "https://example.com/epc-howitworks.jpg",
+      image: "/assets/epc-certificate-hero.webp",
     },
 
     installationProcess: [

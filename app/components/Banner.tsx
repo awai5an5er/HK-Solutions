@@ -2,7 +2,7 @@ const Banner = () => {
   return (
     <section
       className="relative w-full h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
-      style={{ backgroundImage: "url('/assets/home-banner.png')" }}
+      style={{ backgroundImage: "url('/assets/home-banner.webp')" }}
     >
       <div className="absolute inset-0 bg-black/50"></div>
 
