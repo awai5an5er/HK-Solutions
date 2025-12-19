@@ -1,8 +1,8 @@
 import ContactBtn from "../ContactBtn";
 const Story = () => {
   return (
-    <section className="flex flex-col sm:flex-row justify-between Space w-[95%] mx-auto gap-10">
-      <div className="flex flex-col gap-5 w-full sm:w-7/10">
+    <section className="flex flex-col lg:flex-row justify-between items-center Space w-[95%] mx-auto gap-10">
+      <div className="flex flex-col  gap-5 w-full lg:w-7/10">
         <h1 className="heading text-primary font-bold">Our Story</h1>
         <p className="text-txtColor normalText text-justify">
           HK Energy Solutions was founded to make accessing UK
@@ -28,7 +28,7 @@ const Story = () => {
 
       <div className="flex justify-center ">
         <img
-          src="/assets/hero.webp"
+          src="/assets/about-hero.webp"
           alt=""
           className="w-full object-cover object-center rounded-2xl"
         />
