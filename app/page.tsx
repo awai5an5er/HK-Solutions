@@ -5,7 +5,7 @@ import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonial";
 import WhyChooseUs from "./components/WhyChooseUs";
-import ContactForm from "./components/contact/ContactForm";
+import ContactForm from "./components/Contact/ContactForm";
 import { faqs } from "./resources/faq";
 
 export default function Home() {

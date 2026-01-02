@@ -1,4 +1,4 @@
-import ContactPage from "../components/contact/ContactPage";
+import ContactPage from "../components/Contact/ContactPage";
 import FAQ from "../components/FAQ";
 import Form from "../components/Form";
 import Testimonials from "../components/Testimonial";
@@ -28,9 +28,9 @@ export default function Page() {
           <ContactPage />
         </div>
       </div>
-      
-        <Testimonials />
-    
+
+      <Testimonials />
+
       <FAQ faqs={faqs} />
     </div>
   );

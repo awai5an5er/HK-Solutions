@@ -1,9 +1,9 @@
 import Testimonials from "@/app/components/Testimonial";
 import FAQ from "../../components/FAQ";
-import Features from "../../components/services/Features";
-import Hero from "../../components/services/Hero";
-import HowItWorks from "../../components/services/HowItWorks";
-import InstallationProcess from "../../components/services/InstallationProcess";
+import Features from "../../components/Services/Features";
+import Hero from "../../components/Services/Hero";
+import HowItWorks from "../../components/Services/HowItWorks";
+import InstallationProcess from "../../components/Services/InstallationProcess";
 import { findService } from "../../resources/services";
 import CtaBanner from "@/app/components/CtaBanner";
 export default async function Page({
