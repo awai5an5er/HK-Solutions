@@ -36,7 +36,9 @@ export default async function Page({
           <FAQ faqs={selectedService.faqs} />
         </div>
       ) : (
-        <h1>Service not found</h1>
+        <div className="h-[50vh] flex justify-center items-center">
+          <h1 className="heading">404 : Page not found!</h1>
+        </div>
       )}
     </div>
   );
